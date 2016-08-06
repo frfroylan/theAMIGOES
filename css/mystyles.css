@@ -1,0 +1,80 @@
+.navbar{
+	margin-top: 0px;
+	border: 0;
+	background: transparent;
+	transition: 1s background ease;
+}
+.navbarTransition{
+	background: lightgrey;
+}
+.nav-text{
+	font-size: 20px;
+	color: #333;
+}
+/**Have to add logic where once the nav bar gets the height of the header amount down the window add background color
+
+like once it passes 700px add a margin bottom of 50px or something with a backrground 
+transition of course**/
+
+/** Header section **/
+header.carousel{
+	margin-top: -50px;
+	height: 700px;
+}
+.carousel-img-one{
+	background: url(../img/header_one_lg.jpg);
+}
+.carousel-img-two{
+	background: url(../img/header_two_lg.jpg);
+}
+.carousel-caption{
+	padding: 0;
+	margin-bottom: 430px;
+}
+.carousel-text{
+	font-size: 38px;
+}
+/*********************/
+/** Blockquote **/
+blockquote{
+  display:block;
+  background: #fff;
+  padding: 15px 20px 15px 45px;
+  margin: 60px 30px 30px 30px;
+  position: relative;
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 28px;
+  line-height: 1.2;
+  color: #666;
+  text-align: center;
+  border:none;
+}
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  /*Positioning*/
+  position: absolute;
+  left: 30px;
+  top:5px;
+}
+blockquote::after{
+  /*Reset to make sure*/
+  content: "";
+}
+blockquote footer{
+	font-size: 18px;
+}
+.quote-text{
+	padding: 10px 30px;
+}
+/***************************/
+.index-about{
+	border: 1px solid black;
+	height: 500px;
+	width:50%;
+}
