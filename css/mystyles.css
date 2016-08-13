@@ -1,22 +1,44 @@
+
 .navbar{
-	margin-top: 0px;
-	border: 0;
-	background: transparent;
-	transition: 1s background ease;
+  border: 0;
+  background: transparent;
+  transition: 1s background ease;
+}
+.navbar a{
+  transition: 500ms color ease;
+}
+.navbar a{
+  color: #757575;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.navbar .nav-link:hover{
+  background: transparent;
+  color: #3A539B;
 }
 .navbarTransition{
-	background: lightgrey;
+  background: #333;
+}
+.navbarTransition a{
+  color: #fff;
+}
+.navbarTransition .nav-link:hover{
+  color: #3A539B;
 }
 .nav-text{
-	font-size: 20px;
-	color: #333;
+  font-size: 20px;
+  color: #333;
 }
+
 /**Have to add logic where once the nav bar gets the height of the header amount down the window add background color
 
 like once it passes 700px add a margin bottom of 50px or something with a backrground 
 transition of course**/
 
 /** Header section **/
+#myCarousel{
+  height:100vh;
+}
 header.carousel{
 	margin-top: -50px;
 	height: 700px;
@@ -29,24 +51,33 @@ header.carousel{
 }
 .carousel-caption{
 	padding: 0;
-	margin-bottom: 430px;
+	margin-bottom: 500px;
 }
 .carousel-text{
 	font-size: 38px;
+  letter-spacing: 2px;
 }
 /*********************/
-/** Blockquote **/
+/******************** Blockquote **/
+#test{
+  background-color: #ecf0f1;
+}
+.quote-sect{
+  height: 500px;
+}
+.quote-text{
+  padding: 70px 30px 30px 30px;
+}
 blockquote{
   display:block;
-  background: #fff;
-  padding: 15px 20px 15px 45px;
+  padding: 15px 50px 15px 50px;
   margin: 60px 30px 30px 30px;
   position: relative;
   /*Font*/
   font-family: Georgia, serif;
   font-size: 28px;
-  line-height: 1.2;
-  color: #666;
+  line-height: 1.5;
+  color: #333;
   text-align: center;
   border:none;
 }
@@ -56,25 +87,367 @@ blockquote::before{
   font-family: Georgia, serif;
   font-size: 60px;
   font-weight: bold;
-  color: #999;
+  color: #666;
   /*Positioning*/
   position: absolute;
   left: 30px;
-  top:5px;
+  top:20px;
 }
 blockquote::after{
   /*Reset to make sure*/
   content: "";
 }
 blockquote footer{
-	font-size: 18px;
-}
-.quote-text{
-	padding: 10px 30px;
+  font-size: 24px;
+  color: #666;
 }
 /***************************/
-.index-about{
-	border: 1px solid black;
+/******************** About US / Mission **/
+.index-about,
+.index-mission{
 	height: 500px;
 	width:50%;
+        background:
+            linear-gradient(
+              rgba(0,0,0,.3),
+              rgba(0,0,0,.3)),
+            url(../img/about_us_export1.jpg);
+        background-position: top center;
+        transition: 500ms background;
+}
+.index-mission{
+        background:
+            linear-gradient(
+              rgba(0,0,0,.3),
+              rgba(0,0,0,.3)),
+            url(../img/miss_stmt_lg.jpg);
+}
+.index-about:hover{
+        background:
+            linear-gradient(
+              rgba(0,0,0,.6),
+              rgba(0,0,0,.6)),
+            url(../img/about_us_export1.jpg);
+        background-position: top center;
+        cursor: pointer;
+}
+.index-mission:hover{
+        background:
+            linear-gradient(
+              rgba(0,0,0,.6),
+              rgba(0,0,0,.6)),
+            url(../img/miss_stmt_lg.jpg);
+        background-position: top top;
+        cursor: pointer;
+}
+.about-text,
+.miss-text{
+        margin-top: 200px;
+        text-align: center;
+        font-size: 56px;
+        color: white;
+}
+#about button{
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.learn-more{
+  width: 120px;
+  height: 40px;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  transition: 500ms background-color,
+                        500ms color,
+                        500ms border-radius;
+}
+.index-about:hover .learn-more,
+.index-mission:hover .learn-more{
+  background-color: white;
+  color: #333;
+  border-radius: 0px;
+}
+/*********************************/
+/******************** BIO Section **/
+#bio{
+  background-color: #F3F3F3;
+}
+.bio-sect{
+  margin-top: 70px;
+  margin-bottom: 40px;
+  padding: 0px 130px 0px 130px;
+}
+.bio-img{
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.bio-text-author{
+  text-align: center;
+  font-size: 32px;
+}
+.bio-text{
+  margin-bottom: 70px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 35px;
+}
+.bio-text-full{
+  opacity: 0;
+  font-size: 0;
+  line-height: 0;
+}
+.bio-text:hover .bio-text-full{
+  opacity: 1;
+  font-size: 22px;
+}
+/*********************************/
+/******************** Social Media/ Guides & Services **/
+#services{
+  margin-top: 30px;
+}
+.serv-title{
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  padding-top: 40px;
+}
+.service-flex{
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  padding-bottom: 150px;
+}
+.ser-flex-child{
+  width: 350px;
+  height: 350px;
+  margin-top: 30px;
+}
+.serv-header{
+  text-align: center;
+  color: #eee;
+  margin-top: -50px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  opacity: 0;
+  transition: .6s margin-top,
+                        .6s opacity;
+}
+.san-fran{
+  background:
+        linear-gradient(
+        rgba(0,0,0,0),
+        rgba(0,0,0,0)),
+        url(../img/SF_guide.jpg) center center;
+  transition: .5s background;
+}
+.nica{
+  background:
+        linear-gradient(
+        rgba(0,0,0,0),
+        rgba(0,0,0,0)),
+        url(../img/nica_guide.jpg) center center;
+ transition: .5s background;
+}
+.holly{
+  background:
+        linear-gradient(
+        rgba(0,0,0,0),
+        rgba(0,0,0,0)),
+        url(../img/LA_guide.jpg) center center;
+  transition: .5s background;
+}
+.san-fran:hover .serv-header,
+.nica:hover .serv-header,
+.holly:hover .serv-header{
+  opacity: 1;
+  margin-top: 100px;
+}
+.san-fran:hover{
+  background:
+        linear-gradient(
+        rgba(0,0,0,.3),
+        rgba(0,0,0,.3)),
+        url(../img/SF_guide.jpg) center center;
+}
+.nica:hover{
+  background:
+        linear-gradient(
+        rgba(0,0,0,.3),
+        rgba(0,0,0,.3)),
+        url(../img/nica_guide.jpg) center center;
+}
+.holly:hover{
+  background:
+        linear-gradient(
+        rgba(0,0,0,.3),
+        rgba(0,0,0,.3)),
+        url(../img/LA_guide.jpg) center center;
+}
+/*********************************/
+/******************** CONTACT **/
+.contact-form{
+  background-color: #F3F3F3;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+.contact-form-header{
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.form-control{
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #333;
+}
+.message{
+  border: 1px solid #333;
+}
+.control-group{
+  margin-bottom: 40px;
+}
+.controls label{
+  margin-bottom: 10px;
+}
+.label-text{
+  font-size: 22px;
+}
+form .btn-primary{
+  background-color: #fff;
+  color: #333;
+  border: 1px solid black;
+  border-radius: 0;
+  transition: .3s background-color,
+                        .3s color;
+}
+form .btn-primary:hover{
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #333;
+}
+form{
+  width: 50%;
+  margin: 0 auto;
+}
+/*********************************/
+/******************** FOOTER **/
+footer{
+  margin: 0;
+  padding: 0;
+}
+.footer-copy{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.footer{
+  border-top: 1px solid #000;
+}
+.social-links{
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.fa-instagram,
+.fa-facebook-square,
+.fa-youtube-play,
+.fa-twitter-square{
+  margin-right: 10px;
+  cursor: pointer;
+}
+.social-links a{
+  color: #333;
+}
+.top{
+  position: absolute;
+  top:0;
+  right:0;
+  margin-right: 40px;
+  margin-top: 20px;
+  font-size: 22px;
+  cursor: pointer;
+}
+.top:hover{
+    text-decoration: none;
+}
+
+/* Font 1
+body,blockquote{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+h1,h2,h3,h4,h5{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+.navbar a{
+  font-size: 24px;
+}
+.bio-text{
+  font-size: 26px;
+  letter-spacing: 1px;
+  line-height: 54px;
+}
+.btn-text{
+  font-size: 20px;
+}*/
+/* Font 2
+body,blockquote{
+  font-family: 'Droid Sans', sans-serif;
+}
+h1,h2,h3,h4,h5{
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+.bio-text{
+  letter-spacing: 1px;
+  line-height: 44px;
+}*/
+/*
+font-family: 'Droid Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'PT Sans Narrow', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+*/
+/* Font three
+body,blockquote{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+h1,h2,h3,h4,h5{
+  font-family: 'Quicksand', sans-serif;
+}
+.bio-text{
+  font-size: 22px;
+  letter-spacing: 1px;
+  line-height: 38px;
+}
+*/
+body,blockquote{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+h1,h2,h3,h4,h5{
+  font-family: 'Permanent Marker', cursive;
+}
+.navbar a{
+  font-size: 24px;
+}
+.bio-text{
+  font-size: 26px;
+  letter-spacing: 1px;
+  line-height: 54px;
+}
+.btn-text{
+  font-size: 20px;
+}
+.quote-text{
+  letter-spacing: 1px;
 }

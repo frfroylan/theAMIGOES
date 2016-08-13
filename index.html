@@ -7,7 +7,7 @@
     <meta name="description" content="theAMIGOES - Revolutionizing the way you travel">
     <meta name="author" content="FroyTerriquez@gmail.com">
     <title>theAMIGOES</title>
-
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|PT+Sans+Narrow:700|Quicksand:700|Permanent+Marker|Raleway:400,700|Droid+Sans' rel='stylesheet' type='text/css'>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -16,6 +16,7 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!--MY CSS -->
     <link rel="stylesheet" href="css/mystyles.css">
+    <script src="https://use.fontawesome.com/b2664de9de.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -44,7 +45,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="nav-link nav-link nav-text" href="#test">Testimonials</a>
+                        <a class="nav-link nav-text" href="#test">Testimonials</a>
                     </li>
                     <li>
                         <a class="nav-link nav-text" href="#about">About</a>
@@ -53,13 +54,10 @@
                         <a class="nav-link nav-text" href="#about">Mission</a>
                     </li>
                     <li>
-                        <a class="nav-link nav-text" href="#services">Services</a>
-                    </li>
-                    <li>
                         <a class="nav-link nav-text" href="#bio">Bio</a>
                     </li>
                     <li>
-                        <a class="nav-link nav-text" href="#where">Currently</a>
+                        <a class="nav-link nav-text" href="#services">Services</a>
                     </li>
                     <li>
                         <a class="nav-link nav-text" href="#contact">Contact</a>
@@ -108,10 +106,10 @@
     <!--Testimonials Section ************************************-->
     <div class="container-fluid">
         <div class="row"  id="test">
-            <div class="col-lg-12">
+            <div class="col-lg-12 quote-sect">
                 <blockquote>
-                    <p class="quote-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                    <footer>Somone Famous in</footer>
+                    <p class="quote-text">I am very stoked we were able to find theAMIGOES for this trip. Found some new and awesome spots we would have never been able to visit.</p>
+                    <footer>Ruslan Akhmerov</footer>
                 </blockquote>
             </div>
         </div>
@@ -120,60 +118,88 @@
         <div class="row" id="about">
             <div class="col-sm-12 col-md-6 index-about">
                 <h3 class="about-text">About Us</h3>
-                <img class="img-responsive" src="" alt="">
+                <button class="learn-more">Read more</button>
             </div>
-            <div class="col-sm-12 col-md-6 index-about">
-                <h3 class="about-text">Mission</h3>
-                <img class="img-responsive"  src="" alt="">
+            <div class="col-sm-12 col-md-6 index-mission">
+                <h3 class="miss-text">Mission</h3>
+                <button class="learn-more">Learn more</button>
             </div>
         </div>
         <!-- /.row -->
 
         <!-- Bio Section   ****************************************-->
         <div class="row" id="bio">
-            <div class="col-sm-12">
-                <img class="img-responsive" src="" alt="">
-                <p class="bio-text">-BIO TEXT</p>
+            <div class="col-sm-12 bio-sect">
+                <img class="img-responsive bio-img" src="img/noah_bio_export1.JPG" width="200" height="150"  alt="theAMIGOES - Noah Pamintuan , CEO">
+                <p class="bio-text-author">NOAH</p>
+                <!-- need to update the bio-text full so that it shows a preview and you have the option to expand... -->
+                <p class="bio-text">Being a business professional and a father to an 8 year old girl are the highest points of his life. Being able to raise and prepare her for what she would come to experience in her life has been the most fulfilling duty he has had, passing down tradition, belief systems, and concepts on right and wrong...<span class="bio-text-full"> Even with all that he has been able to do and provide for her, she had asked him a simple question that he couldn't answer. Who was he before she was born? We love that he taught her to become curious, to try and discover the meaning of things she doesn't understand. But this question caught him completely off guard. He tried to answer it but in the process he had to come to realize a few things himself. His life. This gift, he has yet to even experience the cusp of what makes it beautiful. He has taken a simplified path. Rushing to get by. Running in this rat race, that sometime along the way her forgot to sit back and enjoy it. Take a chance, forget the rules, be UNIQUE! We all have this point of self discovery in our lifes, it may come as a significant other, an accident, or maybe a simple bio you read online. Regardless we all have a chance to write our own stories...the real question is, how many pages is yours going to be? For him...he wants his legacy to be of a man who took a chance and closed his eyes and reopened them with no regrets.</span> </p>
             </div>
         </div>
         <!-- /.row -->
 
-        <!-- Services & Guides Section ************************************-->
-        <div class="row" id="services">
-            <div class="col-lg-12">
-                <h2 class="header">Services &amp; Guides</h2>
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <a href="portfolio-item.html">
-                    <!-- Nice twitter section -->
-                    <p>GUIDE/SERVICE</p>
-                </a>
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <a href="portfolio-item.html">
-                    <!-- Nice Instagram section -->
-                    <p>GUIDE/SERVICE</p>
-                </a>
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <a href="portfolio-item.html">
-                    <!-- Nice Facebook section -->
-                    <p>GUIDE/SERVICE</p>
-                </a>
-            </div>
-        </div>
-        <!-- /.row -->
-        <hr>
-
-        <!-- Footer *****************************************-->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; theAMIGOES 2016</p>
+        <!-- GUIDES AND SERVICES************************************-->
+        <div class="container serv-section" id="services">
+            <h1 class="serv-title">GUIDES AND SERVICES</h1>
+            <div class="service-flex">
+                <div class="ser-flex-child san-fran">
+                    <h2 class="serv-header">San Francisco</h2>
+                </div>
+                <div class="ser-flex-child  nica">
+                    <h2 class="serv-header">Nicaragua</h2>
+                </div>
+                <div class="ser-flex-child holly">
+                    <h2 class="serv-header">Hollywood</h2>
                 </div>
             </div>
-        </footer>
+        </div><!-- /.row -->
 
+        <div class="row contact-form" id="contact">
+            <div class="col-lg-12">
+                <h3 class="contact-form-header">CONTACT US</h3>
+                <form id="contactForm" action="http://www.theamigoes.com/cgi-sys/formmail.pl" method="post" name="hgmailer">
+                    <input type="hidden" name="recipient" value="info@theamigoes.com">
+                    <input type="hidden" name="subject" value="FormMail E-Mail">
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label class="label-text">Name:</label>
+                            <input type="text" name="name" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label class="label-text">Email Address:</label>
+                            <input type="email" name="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label class="label-text">Message:</label>
+                            <textarea name="comment" rows="8" class="form-control message" required data-validation-required-message="Please enter your message" maxlength="500"></textarea>
+                        </div>
+                    </div>
+                    <input type="hidden" name="redirect" value="thankyou.html">
+                    <div id="success"></div>
+                    <!-- For success/fail messages -->
+                    <button type="submit" class="btn btn-primary btn-text">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <!-- Footer *****************************************-->
+        <div class="row footer">
+            <div class="col-lg-12">
+                <footer id="footer">
+                    <h3 class="footer-copy">Copyright &copy; theAMIGOES 2016</h3>
+                    <div class="social-links">
+                        <a target="_blank" href="https://www.instagram.com/theamigoes/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/theamigoes"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                        <a target="_blank" href="https://youtu.be/u-RuLjJ0-Bo"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+                        <a target="_blank" href="https://twitter.com/theamigoes"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                    </div>
+                    <a class="top nav-link nav-text" href="#test">TOP</a>
+                </footer>
+            </div>
+        </div>
     </div>
     <!-- /.container -->
 
@@ -183,6 +209,8 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- MY SCRIPT-->
     <script src="js/myscript.js"></script>
+    <!-- CONTACT FORM VALIDATOR SCRIPT -->
+    <script src="js/contact_me.js"></script>
 
     <!-- Script to Activate the Carousel -->
 <script>
