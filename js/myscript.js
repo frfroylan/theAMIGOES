@@ -21,9 +21,27 @@ $(document).ready(function(){
     } // End if
   });
 
+  //Add background color to navbar when in mobile mode 
+  //remove background once menu items are closed
+  $(".navbar-toggle").on('click', function(){
+    $('.navbar-header').css('background-color', '#333');
+      if($('#mobileMenu').hasClass('in')){
+        $('.navbar-header').css('background-color', 'transparent');
+      }
+      else{
+        $('.navbar-header').css('background-color', '#333');
+      }
+
+      $('#navbar-collapse').children('a').on('click', function(){
+        $('#navbar-collapse').removeClass('collapse').addClass('collapsing');
+        $('#navbar-collapse').addClass('in').removeClass('collapsing');
+        $('#navbar-collapse').addClass('collapse');
+      })
+    });
+
   $(window).scroll(function () {
           // set distance user needs to scroll before we fadeIn navbar
-    if ($(this).scrollTop() > 400) {
+    if ($(this).scrollTop() > 350) {
       $('.navbar').addClass('navbarTransition');
     }else{
       $('.navbar').removeClass('navbarTransition');

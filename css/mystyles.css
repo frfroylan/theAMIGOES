@@ -1,40 +1,41 @@
-
+body{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+h1,h2,h3,h4{
+  font-family: 'Permanent Marker', cursive;
+}
 .navbar{
   border: 0;
   background: transparent;
   transition: 1s background ease;
 }
 .navbar a{
-  transition: 500ms color ease;
-}
-.navbar a{
-  color: #757575;
+  color: #fff;
   letter-spacing: 1px;
-  font-weight: 300;
+  font-weight: 400;
+  transition: 500ms color ease;
+  font-size: 24px;
 }
 .navbar .nav-link:hover{
-  background: transparent;
-  color: #3A539B;
+  color: #9E9E9E;
 }
 .navbarTransition{
-  background: #333;
+  background: #000;
 }
 .navbarTransition a{
+  color: #9E9E9E;
+}
+.navbarTransition a:hover{
+  color: #9E9E9E;
+}
+/*Brand*/
+.navbar-header a{
   color: #fff;
 }
-.navbarTransition .nav-link:hover{
-  color: #3A539B;
+.navbar-brand{
+  font-family: 'Permanent Marker', cursive;
 }
-.nav-text{
-  font-size: 20px;
-  color: #333;
-}
-
-/**Have to add logic where once the nav bar gets the height of the header amount down the window add background color
-
-like once it passes 700px add a margin bottom of 50px or something with a backrground 
-transition of course**/
-
+/***********************************/
 /** Header section **/
 #myCarousel{
   height:100vh;
@@ -44,7 +45,10 @@ header.carousel{
 	height: 700px;
 }
 .carousel-img-one{
-	background: url(../img/header_one_lg.jpg);
+	background:
+              linear-gradient(
+              rgba(0,0,0,.2),
+              rgba(0,0,0,.2)),url(../img/header_one_lg.jpg);
 }
 .carousel-img-two{
 	background: url(../img/header_two_lg.jpg);
@@ -54,7 +58,7 @@ header.carousel{
 	margin-bottom: 500px;
 }
 .carousel-text{
-	font-size: 38px;
+  font-size: 48px;
   letter-spacing: 2px;
 }
 /*********************/
@@ -67,6 +71,8 @@ header.carousel{
 }
 .quote-text{
   padding: 70px 30px 30px 30px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 34px;
 }
 blockquote{
   display:block;
@@ -77,7 +83,7 @@ blockquote{
   font-family: Georgia, serif;
   font-size: 28px;
   line-height: 1.5;
-  color: #333;
+  color: #212121;
   text-align: center;
   border:none;
 }
@@ -87,7 +93,7 @@ blockquote::before{
   font-family: Georgia, serif;
   font-size: 60px;
   font-weight: bold;
-  color: #666;
+  color: #212121;
   /*Positioning*/
   position: absolute;
   left: 30px;
@@ -98,15 +104,16 @@ blockquote::after{
   content: "";
 }
 blockquote footer{
-  font-size: 24px;
-  color: #666;
+  font-size: 28px;
+  color: #333;
+  font-family: 'Permanent Marker', cursive;
+  letter-spacing: 1px;
 }
 /***************************/
 /******************** About US / Mission **/
 .index-about,
 .index-mission{
 	height: 500px;
-	width:50%;
         background:
             linear-gradient(
               rgba(0,0,0,.3),
@@ -178,23 +185,28 @@ blockquote footer{
   background-color: #F3F3F3;
 }
 .bio-sect{
+  text-align: center;
   margin-top: 70px;
   margin-bottom: 40px;
-  padding: 0px 130px 0px 130px;
 }
 .bio-img{
-  margin: 0 auto;
   margin-bottom: 30px;
+  width: 300px;
+  height: auto;
 }
 .bio-text-author{
   text-align: center;
-  font-size: 32px;
+  font-size: 38px;
+  font-family: 'Permanent Marker', cursive;
 }
 .bio-text{
+  padding: 0px 130px 0px 130px;
   margin-bottom: 70px;
   text-align: center;
-  font-size: 20px;
-  line-height: 35px;
+  font-size: 26px;
+  letter-spacing: 1px;
+  line-height: 54px;
+  color:#212121;
 }
 .bio-text-full{
   opacity: 0;
@@ -203,7 +215,8 @@ blockquote footer{
 }
 .bio-text:hover .bio-text-full{
   opacity: 1;
-  font-size: 22px;
+  font-size: 26px;
+  line-height: 54px;
 }
 /*********************************/
 /******************** Social Media/ Guides & Services **/
@@ -328,6 +341,9 @@ form .btn-primary{
   transition: .3s background-color,
                         .3s color;
 }
+.btn-text{
+  font-size: 20px;
+}
 form .btn-primary:hover{
   background-color: #333;
   color: #fff;
@@ -347,9 +363,10 @@ footer{
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
+  font-size: 32px;
 }
 .footer{
-  border-top: 1px solid #000;
+  border-top: 1px solid #212121;
 }
 .social-links{
   float: right;
@@ -373,81 +390,895 @@ footer{
   margin-right: 40px;
   margin-top: 20px;
   font-size: 22px;
+  color: #212121;
   cursor: pointer;
 }
 .top:hover{
     text-decoration: none;
 }
+/**********************************/
+/**MEDIA QUERIES **/
+@media screen and (min-width: 0px) and (max-width: 320px) {
+  /**NAVBAR********************/
+  .navbar-toggle{
+    border: 1px solid #333;
+    background-color: #212121;
+  }
+ .navbar-toggle span{
+    background-color: white;
+  }
+  .navbar-collapse{
+    background: #333;
+    color: white;
+  }
+  /**CAROUSEL*********************/
+  .carousel-caption{
+    padding: 0;
+    margin-bottom: 370px;
+  }
+  .carousel-text{
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+  /***BLOCKQUOTE***************/
+  .quote-sect{
+    height: 500px;
+  }
+  .quote-text{
+    padding: 0px  0px 0px 0px;
+    font-size: 26px;
+  }
+  blockquote{
+    display:block;
+    padding: 50px 10px 20px 30px;
+    margin: 0px;
+    position: relative;
+    font-size: 26px;
+    line-height: 2;
+    text-align: center;
+    border:none;
+  }
+  blockquote::before{
+    content: "\201C"; /*Unicode for Left Double Quote*/
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #212121;
+    /*Positioning*/
+    position: absolute;
+    left: 10px;
+    top:40px;
+  }
+  blockquote::after{
+    /*Reset to make sure*/
+    content: "";
+  }
+  blockquote footer{
+    font-size: 28px;
+    color: #333;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 1px;
+    margin-top: 20px;
+  }
 
-/* Font 1
-body,blockquote{
-  font-family: 'Open Sans Condensed', sans-serif;
+  /******************** About US / Mission **/
+  .index-about,
+  .index-mission{
+    background:
+    linear-gradient(
+      rgba(0,0,0,.3),
+      rgba(0,0,0,.3)),
+    url(../img/about_us_export1.jpg);
+    background-position: top center;
+    transition: 500ms background;
+    padding: 0;
+    margin:0;
+  }
+  .index-mission{
+    background:
+    linear-gradient(
+      rgba(0,0,0,.3),
+      rgba(0,0,0,.3)),
+    url(../img/miss_stmt_lg.jpg);
+  }
+  .index-about:hover{
+    background:
+    linear-gradient(
+      rgba(0,0,0,.6),
+      rgba(0,0,0,.6)),
+    url(../img/about_us_export1.jpg);
+    background-position: top center;
+    cursor: pointer;
+  }
+  .index-mission:hover{
+    background:
+    linear-gradient(
+      rgba(0,0,0,.6),
+      rgba(0,0,0,.6)),
+    url(../img/miss_stmt_lg.jpg);
+    background-position: top left;
+    cursor: pointer;
+  }
+  .about-text,
+  .miss-text{
+    margin-top: 0px;
+    padding-top: 120px;
+    text-align: center;
+    font-size: 56px;
+    color: white;
+  }
+  #about button{
+    margin-top: 120px;
+  }
+  .learn-more{
+    width: 120px;
+    height: 40px;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+  .index-about:active .learn-more,
+  .index-mission:active .learn-more{
+    background-color: white;
+    color: #333;
+    border-radius: none;
+  }
+  /******************** BIO Section **/
+  .bio-sect{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+  .bio-img{
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+  }
+  .bio-text-author{
+    text-align: center;
+    font-size: 38px;
+    font-family: 'Permanent Marker', cursive;
+  }
+  .bio-text{
+    padding: 0px 0px 0px 0px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 1px;
+    line-height: 54px;
+    color:#212121;
+  }
+  .bio-text-full{
+    opacity: 0;
+    font-size: 0;
+    line-height: 0;
+  }
+  .bio-text:hover .bio-text-full{
+    opacity: 1;
+    font-size: 26px;
+    line-height: 54px;
+  }
+  /******************** Social Media/ Guides & Services **/
+  .serv-title{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+  }
+  .service-flex{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding-bottom: 150px;
+  }
+  .ser-flex-child{
+    height: 270px;
+  }
+  .serv-header{
+    text-align: center;
+    color: #eee;
+    margin-top: 70px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    opacity: 1;
+  }
+  .san-fran:hover .serv-header,
+  .nica:hover .serv-header,
+  .holly:hover .serv-header{
+    margin-top: 70px;
+  }
+  /******************** CONTACT **/
+  form{
+    width: 100%;
+  }
+  /*********************FOOOTER**/
+  .footer-copy{
+    text-align: center;
+    font-size: 26px;
+  }
+  .social-links{
+    float: right;
+    margin-right: -10px;
+    margin-bottom: 20px;
+  }
+  .fa-instagram,
+  .fa-facebook-square,
+  .fa-youtube-play,
+  .fa-twitter-square{
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  .social-links a{
+    color: #333;
+  }
+  .top{
+    margin-right: 10px;
+  }
 }
-h1,h2,h3,h4,h5{
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  /**NAVBAR********************/
+  .navbar-toggle{
+    border: 1px solid #333;
+    background-color: #212121;
+  }
+ .navbar-toggle span{
+    background-color: white;
+  }
+  .navbar-collapse{
+    background: #333;
+    color: white;
+  }
+  /**CAROUSEL*********************/
+  .carousel-caption{
+    padding: 0;
+    margin-bottom: 350px;
+  }
+  .carousel-text{
+    font-size: 34px;
+    letter-spacing: 2px;
+  }
+  /***BLOCKQUOTE***************/
+  .quote-sect{
+    height: 500px;
+  }
+  .quote-text{
+    padding: 0px  0px 0px 0px;
+    font-size: 28px;
+  }
+  blockquote{
+    display:block;
+    padding: 50px 10px 20px 30px;
+    margin: 0px;
+    position: relative;
+    font-size: 26px;
+    line-height: 2;
+    text-align: center;
+    border:none;
+  }
+  blockquote::before{
+    content: "\201C"; /*Unicode for Left Double Quote*/
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #212121;
+    /*Positioning*/
+    position: absolute;
+    left: 10px;
+    top:40px;
+  }
+  blockquote::after{
+    /*Reset to make sure*/
+    content: "";
+  }
+  blockquote footer{
+    font-size: 30px;
+    color: #333;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 1px;
+    margin-top: 20px;
+  }
+
+  /******************** About US / Mission **/
+  .index-about,
+  .index-mission{
+    background:
+    linear-gradient(
+      rgba(0,0,0,.3),
+      rgba(0,0,0,.3)),
+    url(../img/about_us_export1.jpg);
+    background-position: top center;
+    transition: 500ms background;
+    padding: 0;
+    margin:0;
+  }
+  .index-mission{
+    background:
+    linear-gradient(
+      rgba(0,0,0,.3),
+      rgba(0,0,0,.3)),
+    url(../img/miss_stmt_lg.jpg);
+  }
+  .index-about:hover{
+    background:
+    linear-gradient(
+      rgba(0,0,0,.6),
+      rgba(0,0,0,.6)),
+    url(../img/about_us_export1.jpg);
+    background-position: top center;
+    cursor: pointer;
+  }
+  .index-mission:hover{
+    background:
+    linear-gradient(
+      rgba(0,0,0,.6),
+      rgba(0,0,0,.6)),
+    url(../img/miss_stmt_lg.jpg);
+    background-position: top left;
+    cursor: pointer;
+  }
+  .about-text,
+  .miss-text{
+    margin-top: 0px;
+    padding-top: 120px;
+    text-align: center;
+    font-size: 56px;
+    color: white;
+  }
+  #about button{
+    margin-top: 120px;
+  }
+  .learn-more{
+    width: 120px;
+    height: 40px;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+  .index-about:active .learn-more,
+  .index-mission:active .learn-more{
+    background-color: white;
+    color: #333;
+    border-radius: none;
+  }
+  /******************** BIO Section **/
+  .bio-sect{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+  .bio-img{
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+  }
+  .bio-text-author{
+    text-align: center;
+    font-size: 38px;
+    font-family: 'Permanent Marker', cursive;
+  }
+  .bio-text{
+    padding: 0px 0px 0px 0px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 1px;
+    line-height: 54px;
+    color:#212121;
+  }
+  .bio-text-full{
+    opacity: 0;
+    font-size: 0;
+    line-height: 0;
+  }
+  .bio-text:hover .bio-text-full{
+    opacity: 1;
+    font-size: 26px;
+    line-height: 54px;
+  }
+  /******************** Social Media/ Guides & Services **/
+  .serv-title{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+  }
+  .service-flex{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding-bottom: 150px;
+  }
+  .ser-flex-child{
+    height: 270px;
+  }
+  .serv-header{
+    text-align: center;
+    color: #eee;
+    margin-top: 70px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    opacity: 1;
+  }
+  .san-fran:hover .serv-header,
+  .nica:hover .serv-header,
+  .holly:hover .serv-header{
+    margin-top: 70px;
+  }
+  /******************** CONTACT **/
+  form{
+    width: 100%;
+  }
+  /*********************FOOOTER**/
+  .footer-copy{
+    text-align: center;
+    font-size: 26px;
+  }
+  .social-links{
+    float: right;
+    margin-right: -10px;
+    margin-bottom: 20px;
+  }
+  .fa-instagram,
+  .fa-facebook-square,
+  .fa-youtube-play,
+  .fa-twitter-square{
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  .social-links a{
+    color: #333;
+  }
+  .top{
+    margin-right: 10px;
+    margin-top: 55px;
+  }
 }
-.navbar a{
-  font-size: 24px;
+
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  /**NAVBAR********************/
+  .navbar-toggle{
+    border: 1px solid #333;
+    background-color: #212121;
+  }
+ .navbar-toggle span{
+    background-color: white;
+  }
+  .navbar-collapse{
+    background: #333;
+    color: white;
+  }
+  /**CAROUSEL*********************/
+  .carousel-caption{
+    padding: 0;
+    margin-bottom: 350px;
+  }
+  .carousel-text{
+    font-size: 36px;
+    letter-spacing: 2px;
+  }
+  /***BLOCKQUOTE***************/
+  .quote-sect{
+    height: 500px;
+  }
+  .quote-text{
+    padding: 0px  0px 0px 0px;
+    font-size: 28px;
+  }
+  blockquote{
+    display:block;
+    padding: 50px 10px 20px 30px;
+    margin: 0px;
+    position: relative;
+    font-size: 26px;
+    line-height: 2;
+    text-align: center;
+    border:none;
+  }
+  blockquote::before{
+    content: "\201C"; /*Unicode for Left Double Quote*/
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #212121;
+    /*Positioning*/
+    position: absolute;
+    left: 10px;
+    top:40px;
+  }
+  blockquote::after{
+    /*Reset to make sure*/
+    content: "";
+  }
+  blockquote footer{
+    font-size: 30px;
+    color: #333;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 1px;
+    margin-top: 20px;
+  }
+
+  /******************** About US / Mission **/
+  .index-about,
+  .index-mission{
+    background:
+    linear-gradient(
+      rgba(0,0,0,.3),
+      rgba(0,0,0,.3)),
+    url(../img/about_us_export1.jpg);
+    background-position: top center;
+    transition: 500ms background;
+    padding: 0;
+    margin:0;
+  }
+  .index-mission{
+    background:
+    linear-gradient(
+      rgba(0,0,0,.3),
+      rgba(0,0,0,.3)),
+    url(../img/miss_stmt_lg.jpg);
+  }
+  .index-about:hover{
+    background:
+    linear-gradient(
+      rgba(0,0,0,.6),
+      rgba(0,0,0,.6)),
+    url(../img/about_us_export1.jpg);
+    background-position: top center;
+    cursor: pointer;
+  }
+  .index-mission:hover{
+    background:
+    linear-gradient(
+      rgba(0,0,0,.6),
+      rgba(0,0,0,.6)),
+    url(../img/miss_stmt_lg.jpg);
+    background-position: top left;
+    cursor: pointer;
+  }
+  .about-text,
+  .miss-text{
+    margin-top: 0px;
+    padding-top: 120px;
+    text-align: center;
+    font-size: 56px;
+    color: white;
+  }
+  #about button{
+    margin-top: 120px;
+  }
+  .learn-more{
+    width: 120px;
+    height: 40px;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+  .index-about:active .learn-more,
+  .index-mission:active .learn-more{
+    background-color: white;
+    color: #333;
+    border-radius: none;
+  }
+  /******************** BIO Section **/
+  .bio-sect{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+  .bio-img{
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+  }
+  .bio-text-author{
+    text-align: center;
+    font-size: 38px;
+    font-family: 'Permanent Marker', cursive;
+  }
+  .bio-text{
+    padding: 0px 0px 0px 0px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 1px;
+    line-height: 54px;
+    color:#212121;
+  }
+  .bio-text-full{
+    opacity: 0;
+    font-size: 0;
+    line-height: 0;
+  }
+  .bio-text:hover .bio-text-full{
+    opacity: 1;
+    font-size: 26px;
+    line-height: 54px;
+  }
+  /******************** Social Media/ Guides & Services **/
+  .serv-title{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+  }
+  .service-flex{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding-bottom: 150px;
+  }
+  .ser-flex-child{
+    height: 270px;
+  }
+  .serv-header{
+    text-align: center;
+    color: #eee;
+    margin-top: 70px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    opacity: 1;
+  }
+  .san-fran:hover .serv-header,
+  .nica:hover .serv-header,
+  .holly:hover .serv-header{
+    margin-top: 70px;
+  }
+  /******************** CONTACT **/
+  form{
+    width: 100%;
+  }
+  /*********************FOOOTER**/
+  .footer-copy{
+    text-align: center;
+    font-size: 26px;
+  }
+  .social-links{
+    float: right;
+    margin-right: 35px;
+    margin-bottom: 20px;
+  }
+  .fa-instagram,
+  .fa-facebook-square,
+  .fa-youtube-play,
+  .fa-twitter-square{
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  .social-links a{
+    color: #333;
+  }
+  .top{
+    margin-right: 10px;
+    margin-top: 65px;
+  }
 }
-.bio-text{
-  font-size: 26px;
-  letter-spacing: 1px;
-  line-height: 54px;
-}
-.btn-text{
-  font-size: 20px;
-}*/
-/* Font 2
-body,blockquote{
-  font-family: 'Droid Sans', sans-serif;
-}
-h1,h2,h3,h4,h5{
-  font-family: 'PT Sans Narrow', sans-serif;
-}
-.bio-text{
-  letter-spacing: 1px;
-  line-height: 44px;
-}*/
-/*
-font-family: 'Droid Sans', sans-serif;
-font-family: 'Raleway', sans-serif;
-font-family: 'Permanent Marker', cursive;
-font-family: 'Quicksand', sans-serif;
-font-family: 'PT Sans Narrow', sans-serif;
-font-family: 'Open Sans Condensed', sans-serif;
-*/
-/* Font three
-body,blockquote{
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-}
-h1,h2,h3,h4,h5{
-  font-family: 'Quicksand', sans-serif;
-}
-.bio-text{
-  font-size: 22px;
-  letter-spacing: 1px;
-  line-height: 38px;
-}
-*/
-body,blockquote{
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-h1,h2,h3,h4,h5{
-  font-family: 'Permanent Marker', cursive;
-}
-.navbar a{
-  font-size: 24px;
-}
-.bio-text{
-  font-size: 26px;
-  letter-spacing: 1px;
-  line-height: 54px;
-}
-.btn-text{
-  font-size: 20px;
-}
-.quote-text{
-  letter-spacing: 1px;
+
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  /**CAROUSEL*********************/
+  .carousel-caption{
+    padding: 0;
+    margin-bottom: 350px;
+  }
+  .carousel-text{
+    font-size: 36px;
+    letter-spacing: 2px;
+  }
+  /***BLOCKQUOTE***************/
+  .quote-sect{
+    height: 500px;
+  }
+  .quote-text{
+    padding: 0px  0px 0px 0px;
+    font-size: 34px;
+  }
+  blockquote{
+    display:block;
+    padding: 50px 10px 20px 30px;
+    margin: 0px;
+    position: relative;
+    font-size: 26px;
+    line-height: 2;
+    text-align: center;
+    border:none;
+  }
+  blockquote::before{
+    content: "\201C"; /*Unicode for Left Double Quote*/
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #212121;
+    /*Positioning*/
+    position: absolute;
+    left: 5px;
+    top:40px;
+  }
+  blockquote::after{
+    /*Reset to make sure*/
+    content: "";
+  }
+  blockquote footer{
+    font-size: 38px;
+    color: #333;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 1px;
+    margin-top: 20px;
+  }
+
+  /******************** About US / Mission **/
+  .index-about,
+  .index-mission{
+    background:
+    linear-gradient(
+      rgba(0,0,0,.3),
+      rgba(0,0,0,.3)),
+    url(../img/about_us_export1.jpg);
+    background-position: top center;
+    transition: 500ms background;
+    padding: 0;
+    margin:0;
+  }
+  .index-mission{
+    background:
+    linear-gradient(
+      rgba(0,0,0,.3),
+      rgba(0,0,0,.3)),
+    url(../img/miss_stmt_lg.jpg);
+  }
+  .index-about:hover{
+    background:
+    linear-gradient(
+      rgba(0,0,0,.6),
+      rgba(0,0,0,.6)),
+    url(../img/about_us_export1.jpg);
+    background-position: top center;
+    cursor: pointer;
+  }
+  .index-mission:hover{
+    background:
+    linear-gradient(
+      rgba(0,0,0,.6),
+      rgba(0,0,0,.6)),
+    url(../img/miss_stmt_lg.jpg);
+    background-position: top left;
+    cursor: pointer;
+  }
+  .about-text,
+  .miss-text{
+    margin-top: 0px;
+    padding-top: 120px;
+    text-align: center;
+    font-size: 56px;
+    color: white;
+  }
+  #about button{
+    margin-top: 120px;
+  }
+  .learn-more{
+    width: 120px;
+    height: 40px;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+  .index-about:active .learn-more,
+  .index-mission:active .learn-more{
+    background-color: white;
+    color: #333;
+    border-radius: none;
+  }
+  /******************** BIO Section **/
+  .bio-sect{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+  .bio-img{
+    margin-bottom: 30px;
+    width: 70%;
+    height: auto;
+  }
+  .bio-text-author{
+    text-align: center;
+    font-size: 38px;
+    font-family: 'Permanent Marker', cursive;
+  }
+  .bio-text{
+    padding: 0px 0px 0px 0px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 1px;
+    line-height: 54px;
+    color:#212121;
+  }
+  .bio-text-full{
+    opacity: 0;
+    font-size: 0;
+    line-height: 0;
+  }
+  .bio-text:hover .bio-text-full{
+    opacity: 1;
+    font-size: 26px;
+    line-height: 54px;
+  }
+  /******************** Social Media/ Guides & Services **/
+  .serv-title{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+  }
+  .service-flex{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding-bottom: 150px;
+  }
+  .ser-flex-child{
+    height: 270px;
+  }
+  .serv-header{
+    text-align: center;
+    color: #eee;
+    margin-top: 70px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    opacity: 1;
+  }
+  .san-fran:hover .serv-header,
+  .nica:hover .serv-header,
+  .holly:hover .serv-header{
+    margin-top: 70px;
+  }
+  /******************** CONTACT **/
+  form{
+    width: 100%;
+  }
+  /*********************FOOOTER**/
+  .footer-copy{
+    text-align: center;
+    font-size: 26px;
+  }
+  .social-links{
+    float: right;
+    margin-right: -10px;
+    margin-bottom: 20px;
+  }
+  .fa-instagram,
+  .fa-facebook-square,
+  .fa-youtube-play,
+  .fa-twitter-square{
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  .social-links a{
+    color: #333;
+  }
+  .top{
+    margin-right: 10px;
+  }
 }
