@@ -31,12 +31,6 @@ $(document).ready(function(){
       else{
         $('.navbar-header').css('background-color', '#333');
       }
-
-      $('#navbar-collapse').children('a').on('click', function(){
-        $('#navbar-collapse').removeClass('collapse').addClass('collapsing');
-        $('#navbar-collapse').addClass('in').removeClass('collapsing');
-        $('#navbar-collapse').addClass('collapse');
-      })
     });
 
   $(window).scroll(function () {
@@ -47,6 +41,4 @@ $(document).ready(function(){
       $('.navbar').removeClass('navbarTransition');
     }
   });
-
-
 });
