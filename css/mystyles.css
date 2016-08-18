@@ -1,6 +1,14 @@
 body{
   font-family: 'Open Sans Condensed', sans-serif;
 }
+hr{
+  margin: 0;
+  margin-left: -15px;
+  padding: 0;
+  width: 130%;
+  height: 1px;
+  background-color: #9E9E9E;
+}
 h1,h2,h3,h4{
   font-family: 'Permanent Marker', cursive;
 }
@@ -64,7 +72,7 @@ header.carousel{
 /*********************/
 /******************** Blockquote **/
 #test{
-  background-color: #ecf0f1;
+  background-color: #fff;
 }
 .quote-sect{
   height: 500px;
@@ -118,7 +126,7 @@ blockquote footer{
             linear-gradient(
               rgba(0,0,0,.3),
               rgba(0,0,0,.3)),
-            url(../img/about_us_export1.jpg);
+            url(../img/about_us_export1.JPG);
         background-position: top center;
         transition: 500ms background;
 }
@@ -134,7 +142,7 @@ blockquote footer{
             linear-gradient(
               rgba(0,0,0,.6),
               rgba(0,0,0,.6)),
-            url(../img/about_us_export1.jpg);
+            url(../img/about_us_export1.JPG);
         background-position: top center;
         cursor: pointer;
 }
@@ -182,41 +190,36 @@ blockquote footer{
 /*********************************/
 /******************** BIO Section **/
 #bio{
-  background-color: #F3F3F3;
+  margin-top: 50px;
+  margin-bottom: 120px;
 }
-.bio-sect{
+.team-text{
+  padding-top: 50px;
+  margin-bottom: 50px;
+  font-size: 32px;
   text-align: center;
-  margin-top: 70px;
-  margin-bottom: 40px;
+}
+.bio-flex{
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+}
+.bio-flex-child{
+  width: 400px;
+  height: 450px;
+  text-align: center;
 }
 .bio-img{
-  margin-bottom: 30px;
-  width: 300px;
+  margin-top: 20px;
+  width: 90%;
   height: auto;
 }
-.bio-text-author{
-  text-align: center;
-  font-size: 38px;
-  font-family: 'Permanent Marker', cursive;
-}
 .bio-text{
-  padding: 0px 130px 0px 130px;
-  margin-bottom: 70px;
-  text-align: center;
   font-size: 26px;
-  letter-spacing: 1px;
-  line-height: 54px;
-  color:#212121;
 }
-.bio-text-full{
-  opacity: 0;
-  font-size: 0;
-  line-height: 0;
-}
-.bio-text:hover .bio-text-full{
-  opacity: 1;
-  font-size: 26px;
-  line-height: 54px;
+.bio-flex-child:hover{
+  background-color: lightgrey;
+  cursor: pointer;
 }
 /*********************************/
 /******************** Social Media/ Guides & Services **/
@@ -227,7 +230,7 @@ blockquote footer{
   text-align: center;
   font-size: 32px;
   margin-bottom: 40px;
-  padding-top: 40px;
+  padding-top: 50px;
 }
 .service-flex{
   display: flex;
@@ -249,6 +252,10 @@ blockquote footer{
   opacity: 0;
   transition: .6s margin-top,
                         .6s opacity;
+}
+.ser-flex-child:hover .serv-header{
+  opacity: 1;
+  margin-top: 100px;
 }
 .san-fran{
   background:
@@ -274,11 +281,49 @@ blockquote footer{
         url(../img/LA_guide.jpg) center center;
   transition: .5s background;
 }
-.san-fran:hover .serv-header,
-.nica:hover .serv-header,
-.holly:hover .serv-header{
-  opacity: 1;
-  margin-top: 100px;
+.holly{
+  background:
+        linear-gradient(
+        rgba(0,0,0,0),
+        rgba(0,0,0,0)),
+        url(../img/LA_guide.jpg) center center;
+  transition: .5s background;
+}
+.santa{
+  background:
+        linear-gradient(
+        rgba(0,0,0,0),
+        rgba(0,0,0,0)),
+        url(../img/santa_barbara.jpg) bottom center;
+  transition: .5s background;
+  background-size: cover;
+}
+.la{
+  background:
+        linear-gradient(
+        rgba(0,0,0,0),
+        rgba(0,0,0,0)),
+        url(../img/LA_guide_2.jpg) center center;
+  transition: .5s background;
+
+}
+.san-diego{
+  background:
+        linear-gradient(
+        rgba(0,0,0,0),
+        rgba(0,0,0,0)),
+        url(../img/san_diego.jpg) left top;
+  transition: .5s background;
+  background-size: cover;
+}
+.sydney{
+  background:
+        linear-gradient(
+        rgba(0,0,0,0),
+        rgba(0,0,0,0)),
+        url(../img/sydney.jpg) center center;
+  transition: .5s background;
+  background-size: cover;
 }
 .san-fran:hover{
   background:
@@ -294,6 +339,37 @@ blockquote footer{
         rgba(0,0,0,.3)),
         url(../img/nica_guide.jpg) center center;
 }
+.santa:hover{
+  background:
+        linear-gradient(
+        rgba(0,0,0,.3),
+        rgba(0,0,0,.3)),
+        url(../img/santa_barbara.jpg) center center;
+  background-size: cover;
+}
+.la:hover{
+  background:
+        linear-gradient(
+        rgba(0,0,0,.3),
+        rgba(0,0,0,.3)),
+        url(../img/LA_guide_2.jpg) center center;
+}
+.san-diego:hover{
+  background:
+        linear-gradient(
+        rgba(0,0,0,.3),
+        rgba(0,0,0,.3)),
+        url(../img/san_diego.jpg) left top;
+  background-size: cover;
+}
+.sydney:hover{
+  background:
+        linear-gradient(
+        rgba(0,0,0,.3),
+        rgba(0,0,0,.3)),
+        url(../img/sydney.jpg) center center;
+  background-size: cover;
+}
 .holly:hover{
   background:
         linear-gradient(
@@ -304,7 +380,7 @@ blockquote footer{
 /*********************************/
 /******************** CONTACT **/
 .contact-form{
-  background-color: #F3F3F3;
+  background-color: #fff;
   padding-bottom: 40px;
   padding-top: 40px;
 }
@@ -317,9 +393,7 @@ blockquote footer{
   border-radius: 0;
   box-shadow: none;
   border: none;
-  border-right: 1px solid #333;
-  border-bottom: 1px solid #333;
-  border-left: 1px solid #333;
+  border: 1px solid #333;
 }
 .message{
   border: 1px solid #333;
@@ -469,7 +543,7 @@ footer{
     linear-gradient(
       rgba(0,0,0,.3),
       rgba(0,0,0,.3)),
-    url(../img/about_us_export1.jpg);
+    url(../img/about_us_export1.JPG);
     background-position: top center;
     transition: 500ms background;
     padding: 0;
@@ -487,7 +561,7 @@ footer{
     linear-gradient(
       rgba(0,0,0,.6),
       rgba(0,0,0,.6)),
-    url(../img/about_us_export1.jpg);
+    url(../img/about_us_export1.JPG);
     background-position: top center;
     cursor: pointer;
   }
@@ -529,40 +603,7 @@ footer{
     border-radius: none;
   }
   /******************** BIO Section **/
-  .bio-sect{
-    text-align: center;
-    margin-top: 70px;
-    margin-bottom: 40px;
-  }
-  .bio-img{
-    margin-bottom: 30px;
-    width: 100%;
-    height: auto;
-  }
-  .bio-text-author{
-    text-align: center;
-    font-size: 38px;
-    font-family: 'Permanent Marker', cursive;
-  }
-  .bio-text{
-    padding: 0px 0px 0px 0px;
-    margin-bottom: 70px;
-    text-align: center;
-    font-size: 26px;
-    letter-spacing: 1px;
-    line-height: 54px;
-    color:#212121;
-  }
-  .bio-text-full{
-    opacity: 0;
-    font-size: 0;
-    line-height: 0;
-  }
-  .bio-text:hover .bio-text-full{
-    opacity: 1;
-    font-size: 26px;
-    line-height: 54px;
-  }
+
   /******************** Social Media/ Guides & Services **/
   .serv-title{
     text-align: center;
@@ -693,7 +734,7 @@ footer{
     linear-gradient(
       rgba(0,0,0,.3),
       rgba(0,0,0,.3)),
-    url(../img/about_us_export1.jpg);
+    url(../img/about_us_export1.JPG);
     background-position: top center;
     transition: 500ms background;
     padding: 0;
@@ -711,7 +752,7 @@ footer{
     linear-gradient(
       rgba(0,0,0,.6),
       rgba(0,0,0,.6)),
-    url(../img/about_us_export1.jpg);
+    url(../img/about_us_export1.JPG);
     background-position: top center;
     cursor: pointer;
   }
@@ -753,40 +794,7 @@ footer{
     border-radius: none;
   }
   /******************** BIO Section **/
-  .bio-sect{
-    text-align: center;
-    margin-top: 70px;
-    margin-bottom: 40px;
-  }
-  .bio-img{
-    margin-bottom: 30px;
-    width: 100%;
-    height: auto;
-  }
-  .bio-text-author{
-    text-align: center;
-    font-size: 38px;
-    font-family: 'Permanent Marker', cursive;
-  }
-  .bio-text{
-    padding: 0px 0px 0px 0px;
-    margin-bottom: 70px;
-    text-align: center;
-    font-size: 26px;
-    letter-spacing: 1px;
-    line-height: 54px;
-    color:#212121;
-  }
-  .bio-text-full{
-    opacity: 0;
-    font-size: 0;
-    line-height: 0;
-  }
-  .bio-text:hover .bio-text-full{
-    opacity: 1;
-    font-size: 26px;
-    line-height: 54px;
-  }
+
   /******************** Social Media/ Guides & Services **/
   .serv-title{
     text-align: center;
@@ -918,7 +926,7 @@ footer{
     linear-gradient(
       rgba(0,0,0,.3),
       rgba(0,0,0,.3)),
-    url(../img/about_us_export1.jpg);
+    url(../img/about_us_export1.JPG);
     background-position: top center;
     transition: 500ms background;
     padding: 0;
@@ -936,7 +944,7 @@ footer{
     linear-gradient(
       rgba(0,0,0,.6),
       rgba(0,0,0,.6)),
-    url(../img/about_us_export1.jpg);
+    url(../img/about_us_export1.JPG);
     background-position: top center;
     cursor: pointer;
   }
@@ -978,40 +986,7 @@ footer{
     border-radius: none;
   }
   /******************** BIO Section **/
-  .bio-sect{
-    text-align: center;
-    margin-top: 70px;
-    margin-bottom: 40px;
-  }
-  .bio-img{
-    margin-bottom: 30px;
-    width: 100%;
-    height: auto;
-  }
-  .bio-text-author{
-    text-align: center;
-    font-size: 38px;
-    font-family: 'Permanent Marker', cursive;
-  }
-  .bio-text{
-    padding: 0px 0px 0px 0px;
-    margin-bottom: 70px;
-    text-align: center;
-    font-size: 26px;
-    letter-spacing: 1px;
-    line-height: 54px;
-    color:#212121;
-  }
-  .bio-text-full{
-    opacity: 0;
-    font-size: 0;
-    line-height: 0;
-  }
-  .bio-text:hover .bio-text-full{
-    opacity: 1;
-    font-size: 26px;
-    line-height: 54px;
-  }
+
   /******************** Social Media/ Guides & Services **/
   .serv-title{
     text-align: center;
@@ -1131,7 +1106,7 @@ footer{
     linear-gradient(
       rgba(0,0,0,.3),
       rgba(0,0,0,.3)),
-    url(../img/about_us_export1.jpg);
+    url(../img/about_us_export1.JPG);
     background-position: top center;
     transition: 500ms background;
     padding: 0;
@@ -1149,7 +1124,7 @@ footer{
     linear-gradient(
       rgba(0,0,0,.6),
       rgba(0,0,0,.6)),
-    url(../img/about_us_export1.jpg);
+    url(../img/about_us_export1.JPG);
     background-position: top center;
     cursor: pointer;
   }
@@ -1191,40 +1166,7 @@ footer{
     border-radius: none;
   }
   /******************** BIO Section **/
-  .bio-sect{
-    text-align: center;
-    margin-top: 70px;
-    margin-bottom: 40px;
-  }
-  .bio-img{
-    margin-bottom: 30px;
-    width: 70%;
-    height: auto;
-  }
-  .bio-text-author{
-    text-align: center;
-    font-size: 38px;
-    font-family: 'Permanent Marker', cursive;
-  }
-  .bio-text{
-    padding: 0px 0px 0px 0px;
-    margin-bottom: 70px;
-    text-align: center;
-    font-size: 26px;
-    letter-spacing: 1px;
-    line-height: 54px;
-    color:#212121;
-  }
-  .bio-text-full{
-    opacity: 0;
-    font-size: 0;
-    line-height: 0;
-  }
-  .bio-text:hover .bio-text-full{
-    opacity: 1;
-    font-size: 26px;
-    line-height: 54px;
-  }
+
   /******************** Social Media/ Guides & Services **/
   .serv-title{
     text-align: center;
