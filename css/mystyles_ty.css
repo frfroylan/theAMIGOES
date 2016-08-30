@@ -1,0 +1,103 @@
+body{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+hr{
+  margin: 0;
+  margin-left: -15px;
+  padding: 0;
+  width: 130%;
+  height: 1px;
+  background-color: #9E9E9E;
+}
+h1,h2,h3,h4{
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+}
+.navbar{
+  border: 0;
+  background: #000;
+  transition: 1s background ease;
+}
+.navbar a{
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 400;
+  transition: 500ms color ease;
+  font-size: 24px;
+}
+.navbar .nav-link:hover{
+  color: #9E9E9E;
+}
+.navbarTransition{
+  background: #000;
+}
+.navbarTransition a{
+  color: #9E9E9E;
+}
+.navbarTransition a:hover{
+  color: #9E9E9E;
+}
+/*Brand*/
+.navbar-header a{
+  color: #fff;
+}
+.navbar-brand{
+  font-family: 'Permanent Marker', cursive;
+}
+.navbar-toggle{
+  border:1px solid white;
+}
+ .navbar-toggle span{
+    background-color: white;
+  }
+/***********************************/
+.ty-row{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.ty-header{
+  letter-spacing: 2px;
+  line-height: 38px;
+}
+/******************** FOOTER **/
+.footer{
+  padding:0;
+  margin-bottom:0px;
+}
+.footer-copy{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 32px;
+}
+.footer{
+  border-top: 1px solid #212121;
+}
+.social-links{
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.fa-instagram,
+.fa-facebook-square,
+.fa-youtube-play,
+.fa-twitter-square{
+  margin-right: 10px;
+  cursor: pointer;
+}
+.social-links a{
+  color: #333;
+}
+.top{
+  position: absolute;
+  top:0;
+  right:0;
+  margin-right: 40px;
+  margin-top: 20px;
+  font-size: 22px;
+  color: #212121;
+  cursor: pointer;
+}
+.top:hover{
+    text-decoration: none;
+}

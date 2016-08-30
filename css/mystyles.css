@@ -49,21 +49,21 @@ h1,h2,h3,h4{
   height:100vh;
 }
 header.carousel{
-	margin-top: -50px;
-	height: 700px;
+  margin-top: -50px;
+  height: 700px;
 }
 .carousel-img-one{
-	background:
+  background:
               linear-gradient(
               rgba(0,0,0,.2),
               rgba(0,0,0,.2)),url(../img/header_one_lg.jpg);
 }
 .carousel-img-two{
-	background: url(../img/header_two_lg.jpg);
+  background: url(../img/header_two_lg.jpg);
 }
 .carousel-caption{
-	padding: 0;
-	margin-bottom: 500px;
+  padding: 0;
+  margin-bottom: 500px;
 }
 .carousel-text{
   font-size: 48px;
@@ -121,7 +121,7 @@ blockquote footer{
 /******************** About US / Mission **/
 .index-about,
 .index-mission{
-	height: 500px;
+  height: 500px;
         background:
             linear-gradient(
               rgba(0,0,0,.3),
@@ -475,14 +475,14 @@ footer{
 @media screen and (min-width: 0px) and (max-width: 320px) {
   /**NAVBAR********************/
   .navbar-toggle{
-    border: 1px solid #333;
-    background-color: #212121;
+    border: 1px solid #f3f3f3;
+    background-color: #000;
   }
- .navbar-toggle span{
+  .navbar-toggle span{
     background-color: white;
   }
   .navbar-collapse{
-    background: #333;
+    background: #000;
     color: white;
   }
   /**CAROUSEL*********************/
@@ -603,7 +603,21 @@ footer{
     border-radius: none;
   }
   /******************** BIO Section **/
-
+  #bio{
+    margin-top: 0px;
+    margin-bottom: 80px;
+  }
+  .team-text{
+    padding-top: 50px;
+    margin-bottom: 20px;
+  }
+  .bio-flex{
+    flex-flow: row wrap;
+  }
+  .bio-flex-child{
+    width: 100%;
+    height: 350px;
+  }
   /******************** Social Media/ Guides & Services **/
   .serv-title{
     text-align: center;
@@ -666,14 +680,14 @@ footer{
 @media screen and (min-width: 321px) and (max-width: 375px) {
   /**NAVBAR********************/
   .navbar-toggle{
-    border: 1px solid #333;
-    background-color: #212121;
+    border: 1px solid #f3f3f3;
+    background-color: #000;
   }
- .navbar-toggle span{
+  .navbar-toggle span{
     background-color: white;
   }
   .navbar-collapse{
-    background: #333;
+    background: #000;
     color: white;
   }
   /**CAROUSEL*********************/
@@ -793,7 +807,23 @@ footer{
     color: #333;
     border-radius: none;
   }
-  /******************** BIO Section **/
+    /******************** BIO Section **/
+  #bio{
+    margin-top: 0px;
+    margin-bottom: 100px;
+  }
+  .team-text{
+    padding-top: 50px;
+    margin-bottom: 20px;
+  }
+  .bio-flex{
+    flex-flow: row wrap;
+  }
+  .bio-flex-child{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 40px;
+  }
 
   /******************** Social Media/ Guides & Services **/
   .serv-title{
@@ -858,14 +888,14 @@ footer{
 @media screen and (min-width: 376px) and (max-width: 425px) {
   /**NAVBAR********************/
   .navbar-toggle{
-    border: 1px solid #333;
-    background-color: #212121;
+    border: 1px solid #f3f3f3;
+    background-color: #000;
   }
  .navbar-toggle span{
     background-color: white;
   }
   .navbar-collapse{
-    background: #333;
+    background: #000;
     color: white;
   }
   /**CAROUSEL*********************/
@@ -986,11 +1016,28 @@ footer{
     border-radius: none;
   }
   /******************** BIO Section **/
+  #bio{
+    margin-top: 0px;
+    margin-bottom: 100px;
+  }
+  .team-text{
+    padding-top: 50px;
+    margin-bottom: 20px;
+    font-size: 38px;
+  }
+  .bio-flex{
+    flex-flow: row wrap;
+  }
+  .bio-flex-child{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 80px;
+  }
 
   /******************** Social Media/ Guides & Services **/
   .serv-title{
     text-align: center;
-    font-size: 32px;
+    font-size: 38px;
     margin-bottom: 20px;
     padding-top: 40px;
   }
@@ -1048,14 +1095,18 @@ footer{
 
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
+  /**NAVBAR********************/
+  .navbar{
+    border: 1px solid #f3f3f3;
+    background-color: #000;
+  }
+ .navbar span{
+    background-color: white;
+  }
   /**CAROUSEL*********************/
   .carousel-caption{
     padding: 0;
-    margin-bottom: 350px;
-  }
-  .carousel-text{
-    font-size: 36px;
-    letter-spacing: 2px;
+    margin-bottom: 550px;
   }
   /***BLOCKQUOTE***************/
   .quote-sect{
@@ -1079,12 +1130,12 @@ footer{
     content: "\201C"; /*Unicode for Left Double Quote*/
     /*Font*/
     font-family: Georgia, serif;
-    font-size: 40px;
+    font-size: 44px;
     font-weight: bold;
     color: #212121;
     /*Positioning*/
     position: absolute;
-    left: 5px;
+    left: 10px;
     top:40px;
   }
   blockquote::after{
@@ -1092,7 +1143,7 @@ footer{
     content: "";
   }
   blockquote footer{
-    font-size: 38px;
+    font-size: 36px;
     color: #333;
     font-family: 'Permanent Marker', cursive;
     letter-spacing: 1px;
@@ -1143,19 +1194,18 @@ footer{
     padding-top: 120px;
     text-align: center;
     font-size: 56px;
-    color: white;
   }
   #about button{
     margin-top: 120px;
   }
   .learn-more{
-    width: 120px;
-    height: 40px;
-    border: 1px solid white;
-    background-color: transparent;
+    width: 140px;
+    height: 60px;
+    border: 1px solid #333;
+    background-color: #333;
     border-radius: 10px;
     color: white;
-    font-size: 18px;
+    font-size: 24px;
     letter-spacing: 1px;
     font-weight: 300;
   }
@@ -1166,11 +1216,31 @@ footer{
     border-radius: none;
   }
   /******************** BIO Section **/
+  #bio{
+    margin-top: 0px;
+    margin-bottom: 100px;
+  }
+  .team-text{
+    padding-top: 50px;
+    margin-bottom: 40px;
+    font-size: 56px;
+  }
+  .bio-text{
+    font-size: 38px;
+  }
+  .bio-flex{
+    flex-flow: row wrap;
+  }
+  .bio-flex-child{
+    width: 100%;
+    height: 530px;
+    margin-bottom: 80px;
+  }
 
   /******************** Social Media/ Guides & Services **/
   .serv-title{
     text-align: center;
-    font-size: 32px;
+    font-size: 56px;
     margin-bottom: 20px;
     padding-top: 40px;
   }
@@ -1181,14 +1251,16 @@ footer{
     padding-bottom: 150px;
   }
   .ser-flex-child{
-    height: 270px;
+    height: 400px;
+    width: 400px;
   }
   .serv-header{
     text-align: center;
     color: #eee;
-    margin-top: 70px;
+    margin-top: 110px;
     letter-spacing: 1px;
     font-weight: 300;
+    font-size: 38px;
     opacity: 1;
   }
   .san-fran:hover .serv-header,
@@ -1197,24 +1269,62 @@ footer{
     margin-top: 70px;
   }
   /******************** CONTACT **/
+  .contact-form-header{
+    font-size: 56px;
+  }
+  .form-control{
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    border: 1px solid #333;
+  }
+  .controls input{
+    height: 40px;
+  }
+  .message{
+    border: 1px solid #333;
+  }
+  .control-group{
+    margin-bottom: 40px;
+  }
+  .controls label{
+    margin-bottom: 10px;
+  }
+  .label-text{
+    font-size: 38px;
+  }
+  form .btn-primary{
+    width: 180px;
+    height: 60px;
+  }
+  .btn-text{
+    font-size: 26px;
+    letter-spacing: 1.5px;
+  }
   form{
     width: 100%;
+    margin: 0 auto;
+  }
+  .controls input[type="text"],
+  .controls input[type="email"],
+  .controls textarea{
+    font-size: 28px;
   }
   /*********************FOOOTER**/
   .footer-copy{
     text-align: center;
-    font-size: 26px;
+    font-size: 28px;
   }
   .social-links{
     float: right;
-    margin-right: -10px;
+    margin-right: 35px;
     margin-bottom: 20px;
   }
   .fa-instagram,
   .fa-facebook-square,
   .fa-youtube-play,
   .fa-twitter-square{
-    margin-right: 5px;
+    margin-right: 10px;
     cursor: pointer;
   }
   .social-links a{
@@ -1222,5 +1332,526 @@ footer{
   }
   .top{
     margin-right: 10px;
+    margin-top: 65px;
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /**CAROUSEL*********************/
+  .carousel-caption{
+    padding: 0;
+    margin-bottom: 170px;
+  }
+  .carousel-text{
+    font-size: 36px;
+    letter-spacing: 2px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .navbar a{
+    font-size: 28px;
+  }
+ /**CAROUSEL*********************/
+  .carousel-caption{
+    padding: 0;
+    margin-bottom: 470px;
+  }
+  .carousel-text{
+    font-size: 42px;
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .navbar a{
+    font-size: 28px;
+  }
+ /**CAROUSEL*********************/
+  .carousel-caption{
+    padding: 0;
+    margin-bottom: 470px;
+  }
+  .carousel-text{
+    font-size: 52px;
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (min-width: 1367px) and (max-width: 1440px) {
+  .navbar{
+    padding-top: 10px;
+  }
+  .navbar a{
+    color: #fff;
+    font-size: 32px;
+  }
+  #comp_name{
+    font-size: 40px;
+  }
+
+  /**CAROUSEL*********************/
+  /** Header section **/
+  #myCarousel{
+    height:100vh;
+  }
+  header.carousel{
+    margin-top: -50px;
+    height: 700px;
+  }
+  .carousel-caption{
+    padding: 0;
+    margin-bottom: 500px;
+  }
+  .carousel-text{
+    font-size: 48px;
+    letter-spacing: 2px;
+  }
+  /*********************/
+  /******************** Blockquote **/
+  #test{
+    background-color: #fff;
+  }
+  .quote-sect{
+    height: 500px;
+  }
+  .quote-text{
+    padding: 70px 30px 30px 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
+  }
+  blockquote{
+    display:block;
+    padding: 15px 50px 15px 50px;
+    margin: 60px 30px 30px 30px;
+    position: relative;
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 28px;
+    line-height: 1.5;
+    color: #212121;
+    text-align: center;
+    border:none;
+  }
+  blockquote::before{
+    content: "\201C"; /*Unicode for Left Double Quote*/
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #212121;
+    /*Positioning*/
+    position: absolute;
+    left: 30px;
+    top:20px;
+  }
+  blockquote::after{
+    /*Reset to make sure*/
+    content: "";
+  }
+  blockquote footer{
+    font-size: 44px;
+    color: #333;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 1px;
+  }
+  /***************************/
+  /******************** About US / Mission **/
+  .about-text,
+  .miss-text{
+          margin-top: 200px;
+          text-align: center;
+          font-size: 62px;
+          letter-spacing: 1px;
+  }
+  .learn-more{
+    width: 140px;
+    height: 60px;
+    font-size: 26px;
+    letter-spacing: 1px;
+  }
+  /*********************************/
+  /******************** BIO Section **/
+  .team-text{
+    font-size: 46px;
+  }
+  .bio-text{
+    font-size: 36px;
+  }
+  /*********************************/
+  /******************** Social Media/ Guides & Services **/
+  #services{
+    margin-top: 30px;
+  }
+  .serv-title{
+    font-size: 46px;
+  }
+  .serv-header{
+    font-size: 36px;
+  }
+  /*********************************/
+  /******************** CONTACT **/
+  .contact-form-header{
+    font-size: 46px;
+  }
+  .form-control{
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    border: 1px solid #333;
+  }
+  .controls input{
+    height: 40px;
+  }
+
+  .message{
+    border: 1px solid #333;
+  }
+  .control-group{
+    margin-bottom: 40px;
+  }
+  .controls label{
+    margin-bottom: 10px;
+  }
+  .label-text{
+    font-size: 36px;
+  }
+  form .btn-primary{
+    width: 180px;
+    height: 60px;
+  }
+  .btn-text{
+    font-size: 26px;
+    letter-spacing: 1.5px;
+  }
+  form{
+    width: 60%;
+    margin: 0 auto;
+  }
+  .controls input[type="text"],
+  .controls input[type="email"],
+  .controls textarea{
+    font-size: 28px;
+  }
+  /*********************************/
+  /******************** FOOTER **/
+  .footer-copy{
+    font-size: 46px;
+  }
+  .fa-instagram,
+  .fa-facebook-square,
+  .fa-youtube-play,
+  .fa-twitter-square{
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  .top{
+    font-size: 28px;
+    color: #212121;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 1600px){
+  .navbar{
+    padding-top: 10px;
+  }
+  .navbar a{
+    color: #fff;
+    font-size: 32px;
+  }
+  #comp_name{
+    font-size: 40px;
+  }
+
+  /**CAROUSEL*********************/
+  /** Header section **/
+  #myCarousel{
+    height:100vh;
+  }
+  header.carousel{
+    margin-top: -50px;
+    height: 700px;
+  }
+  .carousel-caption{
+    padding: 0;
+    margin-bottom: 500px;
+  }
+  .carousel-text{
+    font-size: 48px;
+    letter-spacing: 2px;
+  }
+  /*********************/
+  /******************** Blockquote **/
+  #test{
+    background-color: #fff;
+  }
+  .quote-sect{
+    height: 500px;
+  }
+  .quote-text{
+    padding: 70px 30px 30px 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
+  }
+  blockquote{
+    display:block;
+    padding: 15px 50px 15px 50px;
+    margin: 60px 30px 30px 30px;
+    position: relative;
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 28px;
+    line-height: 1.5;
+    color: #212121;
+    text-align: center;
+    border:none;
+  }
+  blockquote::before{
+    content: "\201C"; /*Unicode for Left Double Quote*/
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #212121;
+    /*Positioning*/
+    position: absolute;
+    left: 30px;
+    top:20px;
+  }
+  blockquote::after{
+    /*Reset to make sure*/
+    content: "";
+  }
+  blockquote footer{
+    font-size: 44px;
+    color: #333;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 1px;
+  }
+  /***************************/
+  /******************** About US / Mission **/
+  .about-text,
+  .miss-text{
+          margin-top: 200px;
+          text-align: center;
+          font-size: 62px;
+          letter-spacing: 1px;
+  }
+  .learn-more{
+    width: 140px;
+    height: 60px;
+    font-size: 26px;
+    letter-spacing: 1px;
+  }
+  /*********************************/
+  /******************** BIO Section **/
+  .team-text{
+    font-size: 46px;
+  }
+  .bio-text{
+    font-size: 36px;
+  }
+  /*********************************/
+  /******************** Social Media/ Guides & Services **/
+  #services{
+    margin-top: 30px;
+  }
+  .serv-title{
+    font-size: 46px;
+  }
+  .serv-header{
+    font-size: 36px;
+  }
+  /*********************************/
+  /******************** CONTACT **/
+  .contact-form-header{
+    font-size: 46px;
+  }
+  .form-control{
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    border: 1px solid #333;
+  }
+  .controls input{
+    height: 40px;
+  }
+
+  .message{
+    border: 1px solid #333;
+  }
+  .control-group{
+    margin-bottom: 40px;
+  }
+  .controls label{
+    margin-bottom: 10px;
+  }
+  .label-text{
+    font-size: 36px;
+  }
+  form .btn-primary{
+    width: 180px;
+    height: 60px;
+  }
+  .btn-text{
+    font-size: 26px;
+    letter-spacing: 1.5px;
+  }
+  form{
+    width: 60%;
+    margin: 0 auto;
+  }
+  .controls input[type="text"],
+  .controls input[type="email"],
+  .controls textarea{
+    font-size: 28px;
+  }
+  /*********************************/
+  /******************** FOOTER **/
+  .footer-copy{
+    font-size: 46px;
+  }
+  .fa-instagram,
+  .fa-facebook-square,
+  .fa-youtube-play,
+  .fa-twitter-square{
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  .top{
+    font-size: 28px;
+    color: #212121;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1601px){
+  .navbar{
+    padding-top: 30px;
+  }
+  .navbar a{
+    color: #fff;
+    font-size: 36px;
+  }
+  #comp_name{
+    font-size: 40px;
+  }
+
+  /**CAROUSEL*********************/
+  /** Header section **/
+  .carousel-caption{
+    padding: 0;
+    margin-bottom: 650px;
+  }
+  .carousel-text{
+    font-size: 58px;
+    letter-spacing: 2px;
+  }
+  /*********************/
+  /******************** Blockquote **/
+  .quote-text{
+    padding: 70px 30px 30px 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 48px;
+  }
+
+  blockquote footer{
+    font-size: 54px;
+    color: #333;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 1px;
+  }
+  /***************************/
+  /******************** About US / Mission **/
+  .about-text,
+  .miss-text{
+          margin-top: 150px;
+          text-align: center;
+          font-size: 68px;
+          letter-spacing: 2px;
+  }
+  .learn-more{
+    width: 180px;
+    height: 70px;
+    font-size: 32px;
+    letter-spacing: 1px;
+  }
+  /*********************************/
+  /******************** BIO Section **/
+  .team-text{
+    font-size: 68px;
+    padding-top: 80px;
+  }
+  .bio-text{
+    font-size: 46px;
+  }
+  /*********************************/
+  /******************** Social Media/ Guides & Services **/
+  #services{
+    margin-top: 30px;
+    width: 80%;
+  }
+  .ser-flex-child{
+    width: 400px;
+    height: 400px;
+  }
+  .serv-title{
+    font-size: 68px;
+    padding-top: 80px;
+  }
+  .serv-header{
+    font-size: 46px;
+  }
+  /*********************************/
+  /******************** CONTACT **/
+  .contact-form-header{
+    font-size: 68px;
+    padding-top: 70px;
+  }
+  .form-control{
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    border: 1px solid #333;
+  }
+  .controls input{
+    height: 50px;
+  }
+  .label-text{
+    font-size: 46px;
+  }
+  form .btn-primary{
+    width: 200px;
+    height: 60px;
+  }
+  .btn-text{
+    font-size: 32px;
+    letter-spacing: 1.5px;
+  }
+  form{
+    width: 60%;
+    margin: 0 auto;
+  }
+  .controls input[type="text"],
+  .controls input[type="email"],
+  .controls textarea{
+    font-size: 28px;
+  }
+  /*********************************/
+  /******************** FOOTER **/
+  .footer-copy{
+    font-size: 56px;
+  }
+  .fa-instagram,
+  .fa-facebook-square,
+  .fa-youtube-play,
+  .fa-twitter-square{
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  .top{
+    font-size: 32px;
+    color: #212121;
+    cursor: pointer;
   }
 }

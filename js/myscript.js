@@ -21,15 +21,15 @@ $(document).ready(function(){
     } // End if
   });
 
-  //Add background color to navbar when in mobile mode 
+  //Add background color to navbar when in mobile mode
   //remove background once menu items are closed
   $(".navbar-toggle").on('click', function(){
-    $('.navbar-header').css('background-color', '#333');
+    $('.navbar-header').css('background-color', '#000');
       if($('#mobileMenu').hasClass('in')){
         $('.navbar-header').css('background-color', 'transparent');
       }
       else{
-        $('.navbar-header').css('background-color', '#333');
+        $('.navbar-header').css('background-color', '#000');
       }
     });
 
