@@ -12,6 +12,11 @@ hr{
 h1,h2,h3,h4{
   font-family: 'Permanent Marker', cursive;
 }
+.four-oh-four-text{
+  font-size: 3em;
+  padding: 3em;
+  letter-spacing: 2px;
+}
 .navbar{
   border: 0;
   background: transparent;
@@ -126,7 +131,7 @@ blockquote footer{
             linear-gradient(
               rgba(0,0,0,.3),
               rgba(0,0,0,.3)),
-            url(../img/about_us_export1.JPG);
+            url(../img/about_us.jpeg);
         background-position: top center;
         transition: 500ms background;
 }
@@ -142,7 +147,7 @@ blockquote footer{
             linear-gradient(
               rgba(0,0,0,.6),
               rgba(0,0,0,.6)),
-            url(../img/about_us_export1.JPG);
+            url(../img/about_us.jpeg);
         background-position: top center;
         cursor: pointer;
 }
@@ -543,7 +548,7 @@ footer{
     linear-gradient(
       rgba(0,0,0,.3),
       rgba(0,0,0,.3)),
-    url(../img/about_us_export1.JPG);
+    url(../img/about_us.jpeg);
     background-position: top center;
     transition: 500ms background;
     padding: 0;
@@ -561,7 +566,7 @@ footer{
     linear-gradient(
       rgba(0,0,0,.6),
       rgba(0,0,0,.6)),
-    url(../img/about_us_export1.JPG);
+    url(../img/about_us.jpeg);
     background-position: top center;
     cursor: pointer;
   }
@@ -748,7 +753,7 @@ footer{
     linear-gradient(
       rgba(0,0,0,.3),
       rgba(0,0,0,.3)),
-    url(../img/about_us_export1.JPG);
+    url(../img/about_us.jpeg);
     background-position: top center;
     transition: 500ms background;
     padding: 0;
@@ -766,7 +771,7 @@ footer{
     linear-gradient(
       rgba(0,0,0,.6),
       rgba(0,0,0,.6)),
-    url(../img/about_us_export1.JPG);
+    url(../img/about_us.jpeg);
     background-position: top center;
     cursor: pointer;
   }
@@ -956,7 +961,7 @@ footer{
     linear-gradient(
       rgba(0,0,0,.3),
       rgba(0,0,0,.3)),
-    url(../img/about_us_export1.JPG);
+    url(../img/about_us.jpeg);
     background-position: top center;
     transition: 500ms background;
     padding: 0;
@@ -974,7 +979,7 @@ footer{
     linear-gradient(
       rgba(0,0,0,.6),
       rgba(0,0,0,.6)),
-    url(../img/about_us_export1.JPG);
+    url(../img/about_us.jpeg);
     background-position: top center;
     cursor: pointer;
   }
@@ -1157,7 +1162,7 @@ footer{
     linear-gradient(
       rgba(0,0,0,.3),
       rgba(0,0,0,.3)),
-    url(../img/about_us_export1.JPG);
+    url(../img/about_us.jpeg);
     background-position: top center;
     transition: 500ms background;
     padding: 0;
@@ -1175,7 +1180,7 @@ footer{
     linear-gradient(
       rgba(0,0,0,.6),
       rgba(0,0,0,.6)),
-    url(../img/about_us_export1.JPG);
+    url(../img/about_us.jpeg);
     background-position: top center;
     cursor: pointer;
   }
@@ -1400,7 +1405,7 @@ footer{
     linear-gradient(
       rgba(0,0,0,.3),
       rgba(0,0,0,.3)),
-    url(../img/about_us_export1.JPG);
+    url(../img/about_us.jpeg);
     background-position: top center;
     transition: 500ms background;
     padding: 0;
@@ -1418,7 +1423,7 @@ footer{
     linear-gradient(
       rgba(0,0,0,.6),
       rgba(0,0,0,.6)),
-    url(../img/about_us_export1.JPG);
+    url(../img/about_us.jpeg);
     background-position: top center;
     cursor: pointer;
   }
