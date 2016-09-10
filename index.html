@@ -9,13 +9,11 @@
     <title>theAMIGOES</title>
      <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Permanent+Marker" rel="stylesheet">
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css"  rel="stylesheet prefetch" >
     <!-- Custom CSS -->
-    <link href="css/modern-business.css" rel="stylesheet">
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/modern-business.css"  rel="stylesheet prefetch" >
     <!--MY CSS -->
-    <link rel="stylesheet" href="css/mystyles.css">
+    <link href="css/mystyles.css" rel="stylesheet prefetch" >
     <script src="https://use.fontawesome.com/b2664de9de.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -60,7 +58,7 @@
                         <a class="nav-link nav-text" href="#services">Services</a>
                     </li>
                     <li>
-                        <a class="nav-link nav-text" href="#contact">Contact</a>
+                        <a class="nav-link nav-text" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -129,20 +127,16 @@
 
         <!-- Bio Section   ****************************************-->
         <div class="container-fluid" id="bio">
-        <h2 class="team-text">MEET THE TEAM</h2>
+        <h2 class="team-text">Who am I ?</h2>
             <div class="bio-flex">
-                <div class="bio-flex-child">
-                    <img class="bio-img" src="img/ray_abalo.jpg" alt="Ray Abalo - The AMIGOES">
-                    <h3 class="bio-text">RAY</h3>
-                </div>
                 <div class="bio-flex-child">
                     <img class="bio-img"  src="img/noah_pamintuan.jpg" alt="Noah Pamintuan - The AMIGOES">
                     <h3 class="bio-text">NOAH</h3>
                 </div>
-                <div class="bio-flex-child">
+                <!-- <div class="bio-flex-child">
                     <img class="bio-img"  src="img/maciej_bozejewicz.jpg" alt="Maciej Bozejewicz - The AMIGOES">
                     <h3 class="bio-text">MACIEJ</h3>
-                </div>
+                </div> -->
             </div>
         </div>
         <!-- /.row -->
@@ -169,45 +163,12 @@
                 <div class="ser-flex-child san-diego">
                     <h2 class="serv-header">San Diego</h2>
                 </div>
-                <div class="ser-flex-child sydney">
+                <!-- <div class="ser-flex-child sydney">
                     <h2 class="serv-header">Sydney</h2>
-                </div>
+                </div> -->
             </div>
         </div><!-- /.row -->
 
-
-
-        <div class="row contact-form" id="contact">
-            <div class="col-lg-12">
-                <h3 class="contact-form-header">CONTACT US</h3>
-                <form id="contactForm" action="http://www.theamigoes.com/cgi-sys/formmail.pl" method="post" name="hgmailer">
-                    <input type="hidden" name="recipient" value="info@theamigoes.com">
-                    <input type="hidden" name="subject" value="FormMail E-Mail">
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label class="label-text">Name:</label>
-                            <input type="text" name="name" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
-                        </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label class="label-text">Email Address:</label>
-                            <input type="email" name="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
-                        </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label class="label-text">Message:</label>
-                            <textarea name="comment" rows="8" class="form-control message" required data-validation-required-message="Please enter your message" maxlength="500"></textarea>
-                        </div>
-                    </div>
-                    <input type="hidden" name="redirect" value="thankyou.html">
-                    <div id="success"></div>
-                    <!-- For success/fail messages -->
-                    <button type="submit" class="btn btn-primary btn-text">Send Message</button>
-                </form>
-            </div>
-        </div>
         <!-- Footer *****************************************-->
         <div class="row footer">
             <div class="col-xs-12">

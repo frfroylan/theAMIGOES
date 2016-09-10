@@ -1094,7 +1094,7 @@ footer{
 }
 
 
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 599px) {
   /**NAVBAR********************/
   .navbar{
     border: 1px solid #f3f3f3;
@@ -1337,31 +1337,262 @@ footer{
   }
 }
 
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  /**NAVBAR********************/
+  .navbar{
+    border: 1px solid #f3f3f3;
+    background-color: #000;
+  }
+ .navbar span{
+    background-color: white;
+  }
+  /**CAROUSEL*********************/
+  .carousel-caption{
+    padding: 0;
+    margin-bottom: 450px;
+  }
+  /***BLOCKQUOTE***************/
+  .quote-sect{
+    height: 500px;
+  }
+  .quote-text{
+    padding: 0px  0px 0px 0px;
+    font-size: 34px;
+  }
+  blockquote{
+    display:block;
+    padding: 50px 10px 20px 30px;
+    margin: 0px;
+    position: relative;
+    font-size: 26px;
+    line-height: 2;
+    text-align: center;
+    border:none;
+  }
+  blockquote::before{
+    content: "\201C"; /*Unicode for Left Double Quote*/
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 44px;
+    font-weight: bold;
+    color: #212121;
+    /*Positioning*/
+    position: absolute;
+    left: 10px;
+    top:40px;
+  }
+  blockquote::after{
+    /*Reset to make sure*/
+    content: "";
+  }
+  blockquote footer{
+    font-size: 36px;
+    color: #333;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 1px;
+    margin-top: 20px;
+  }
+
+  /******************** About US / Mission **/
+  .index-about,
+  .index-mission{
+    background:
+    linear-gradient(
+      rgba(0,0,0,.3),
+      rgba(0,0,0,.3)),
+    url(../img/about_us_export1.JPG);
+    background-position: top center;
+    transition: 500ms background;
+    padding: 0;
+    margin:0;
+  }
+  .index-mission{
+    background:
+    linear-gradient(
+      rgba(0,0,0,.3),
+      rgba(0,0,0,.3)),
+    url(../img/miss_stmt_lg.jpg);
+  }
+  .index-about:hover{
+    background:
+    linear-gradient(
+      rgba(0,0,0,.6),
+      rgba(0,0,0,.6)),
+    url(../img/about_us_export1.JPG);
+    background-position: top center;
+    cursor: pointer;
+  }
+  .index-mission:hover{
+    background:
+    linear-gradient(
+      rgba(0,0,0,.6),
+      rgba(0,0,0,.6)),
+    url(../img/miss_stmt_lg.jpg);
+    background-position: top left;
+    cursor: pointer;
+  }
+  .about-text,
+  .miss-text{
+    margin-top: 0px;
+    padding-top: 120px;
+    text-align: center;
+    font-size: 56px;
+  }
+  #about button{
+    margin-top: 120px;
+  }
+  .learn-more{
+    width: 140px;
+    height: 60px;
+    border: 1px solid #333;
+    background-color: #333;
+    border-radius: 10px;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+  .index-about:active .learn-more,
+  .index-mission:active .learn-more{
+    background-color: white;
+    color: #333;
+    border-radius: none;
+  }
+  /******************** BIO Section **/
+  #bio{
+    margin-top: 0px;
+    margin-bottom: 100px;
+  }
+  .team-text{
+    padding-top: 50px;
+    margin-bottom: 40px;
+    font-size: 56px;
+  }
+  .bio-text{
+    font-size: 38px;
+  }
+  .bio-flex{
+    flex-flow: row wrap;
+  }
+  .bio-flex-child{
+    width: 100%;
+    height: 530px;
+    margin-bottom: 200px;
+  }
+
+  /******************** Social Media/ Guides & Services **/
+  .serv-title{
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+  }
+  .service-flex{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding-bottom: 150px;
+  }
+  .ser-flex-child{
+    width: 80%;
+    height: 450px;
+    background-size: cover;
+  }
+  .serv-header{
+    text-align: center;
+    color: #eee;
+    margin-top: 110px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 38px;
+    opacity: 1;
+  }
+  .san-fran:hover .serv-header,
+  .nica:hover .serv-header,
+  .holly:hover .serv-header{
+    margin-top: 70px;
+  }
+  /******************** CONTACT **/
+  .contact-form-header{
+    font-size: 56px;
+  }
+  .form-control{
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    border: 1px solid #333;
+  }
+  .controls input{
+    height: 40px;
+  }
+  .message{
+    border: 1px solid #333;
+  }
+  .control-group{
+    margin-bottom: 40px;
+  }
+  .controls label{
+    margin-bottom: 10px;
+  }
+  .label-text{
+    font-size: 38px;
+  }
+  form .btn-primary{
+    width: 180px;
+    height: 60px;
+  }
+  .btn-text{
+    font-size: 26px;
+    letter-spacing: 1.5px;
+  }
+  form{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .controls input[type="text"],
+  .controls input[type="email"],
+  .controls textarea{
+    font-size: 28px;
+  }
+  /*********************FOOOTER**/
+  .footer-copy{
+    text-align: center;
+    font-size: 28px;
+  }
+  .social-links{
+    float: right;
+    margin-right: 35px;
+    margin-bottom: 20px;
+  }
+  .fa-instagram,
+  .fa-facebook-square,
+  .fa-youtube-play,
+  .fa-twitter-square{
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .social-links a{
+    color: #333;
+  }
+  .top{
+    margin-right: 10px;
+    margin-top: 65px;
+    font-size: 24px;
+  }
+}
+
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   /**CAROUSEL*********************/
   .carousel-caption{
     padding: 0;
-    margin-bottom: 170px;
+    margin-bottom: 400px;
   }
   .carousel-text{
     font-size: 36px;
     letter-spacing: 2px;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .navbar a{
-    font-size: 28px;
-  }
- /**CAROUSEL*********************/
-  .carousel-caption{
-    padding: 0;
-    margin-bottom: 470px;
-  }
-  .carousel-text{
-    font-size: 42px;
-    letter-spacing: 2px;
-  }
-}
+
 
 @media screen and (min-width: 1025px) and (max-width: 1366px) {
   .navbar a{
