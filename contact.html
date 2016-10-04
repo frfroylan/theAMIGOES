@@ -21,13 +21,14 @@
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
-
+    <!-- CONTACT FORM VALIDATOR SCRIPT -->
+    <script src="js/contact_me.js"></script>
 </head>
 <body>
 
 
     <!-- Navigation****************************************** -->
-    <nav class="navbar navbar-fixed-top navbarTransition" role="navigation">
+    <nav class="navbar navbar-fixed-top contactNavbar" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -43,7 +44,7 @@
             <div class="collapse navbar-collapse" id="mobileMenu">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="nav-link nav-text" href="index.html#test">Testimonials</a>
+                        <a class="nav-link nav-text" href="/index.html#test">Testimonials</a>
                     </li>
                     <li>
                         <a class="nav-link nav-text" href="index.html#about">About</a>
@@ -91,7 +92,7 @@
                         <textarea name="comment" rows="8" class="form-control message" required data-validation-required-message="Please enter your message" maxlength="500"></textarea>
                     </div>
                 </div>
-                <input type="hidden" name="redirect" value="/thankyou.html">
+                <input type="hidden" name="redirect" value="http://www.theamigoes.com/thankyou.html">
                 <div id="success"></div>
                 <!-- For success/fail messages -->
                 <button type="submit" class="btn btn-primary btn-text">Send Message</button>
@@ -124,7 +125,6 @@
     <script src="js/myscript.js"></script>
     <!-- MY SCRIPT-->
     <script src="js/prefixfree.min.js"></script>
-    <!-- CONTACT FORM VALIDATOR SCRIPT -->
-    <script src="js/contact_me.js"></script>
+
 </body>
 </html>

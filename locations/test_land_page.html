@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Test landing page</title>
+	<meta NAME="viewport" CONTENT="width=device-width, initial-scale=1">
+	<meta NAME="google" CONTENT="notranslate" />
+	<meta NAME="robots" CONTENT="index, follow">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Permanent+Marker" rel="stylesheet">
+	<!-- Bootstrap Core CSS -->
+	<link href="../css/bootstrap.min.css"  rel="stylesheet prefetch" >
+	<!-- Custom CSS -->
+	<link href="../css/modern-business.css"  rel="stylesheet prefetch" >
+	<!--MY CSS -->
+	<link href="../css/mystyles.css" rel="stylesheet prefetch" >
+	<script src="https://use.fontawesome.com/b2664de9de.js"></script>
+	<style>
+		*,body{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			list-style-type: none;
+		}
+		body{
+			background-color: white;
+		}
+		.background-img{
+			width: 110%;
+			height: 460px;
+			position: absolute;
+			top: 58px;
+			left: -10px;
+			background-image:
+			linear-gradient(
+				rgba(0, 0, 0, 0.5),
+				rgba(0, 0, 0, 0.5)
+				),
+			url(../img/nica_one.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			filter:blur(2px);
+		}
+		.wrapper{
+			width: 960px;
+			height: auto;
+			margin: 0 auto;
+			margin-top: 150px;
+			box-shadow: 4px 0px 25px 0px rgba(0,0,0,0.75);
+		}
+		.header{
+			position: relative;
+			width: 100%;
+			height: 460px;
+			background-image:
+			linear-gradient(
+				rgba(0, 0, 0, 0),
+				rgba(0, 0, 0, 0)
+				),
+			url(../img/nica_one.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.main{
+			width: 100%;
+			text-align: center;
+			padding: 60px 20px 40px 20px;
+			border-right: 1px solid #999;
+			border-left: 1px solid #999;
+		}
+		.header-bot-links{
+			width: 100%;
+			height: 40px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			top: 460px;
+
+			border: 1px solid black;
+			text-align: center;
+
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: center;
+
+			font-weight: 700;
+			font-size: 18px;
+		}
+		.link{
+			width: 100%;
+			height: 100%;
+			color: black;
+			text-decoration: none;
+			padding-top: 9px;
+			transition: .5s color,
+				.5s background-color;
+		}
+		.link:nth-child(2){
+			border-left: 1px solid black;
+		}
+		.link:nth-child(2),
+		.link:nth-child(3),
+		.link:nth-child(4){
+			border-right: 1px solid black;
+		}
+		.link:hover{
+			background-color: #333;
+			color: white;
+			text-decoration: none;
+		}
+		.header-text{
+			color: #000;
+			text-align: left;
+			margin-top: 10px;
+			margin-left: 5px;
+			font-weight: 400;
+			font-size: 28px;
+		}
+		.loc-main-text{
+			font-family: 'Open Sans Condensed';
+			font-size: 24px;
+			font-weight: 300;
+			text-align: left;
+		}
+		.test-sub-header{
+			text-align: left;
+			padding-top: 80px;
+			letter-spacing: 1px;
+		}
+		.loc-header-text{
+			font-size: 72px;
+			color: #fafafa;
+			position: absolute;
+			top: 70px;
+			left: 80px;
+			z-index: 100;
+		}
+		.dest-img{
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+		.glyphicon{
+			position: absolute;
+			top:13px;
+		}
+		.glyphicon-menu-left{
+			left: 20px;
+		}
+		.glyphicon-menu-right{
+			right: 20px;
+		}
+	</style>
+</head>
+<body>
+	<!-- Navigation****************************************** -->
+	<nav class="navbar navbar-fixed-top contactNavbar" role="navigation">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobileMenu">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" id="comp_name" href="index.html#myCarousel">theAMIGOES</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="mobileMenu">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a class="nav-link nav-text" href="../index.html#test">Testimonials</a>
+					</li>
+					<li>
+						<a class="nav-link nav-text" href="../index.html#about">About</a>
+					</li>
+					<li>
+						<a class="nav-link nav-text" href="../index.html#miss">Mission</a>
+					</li>
+					<li>
+						<a class="nav-link nav-text" href="../index.html#bio">Team</a>
+					</li>
+					<li>
+						<a class="nav-link nav-text" href="../index.html#services">Services</a>
+					</li>
+					<li>
+						<a class="nav-link nav-text" href="../contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container -->
+	</nav>
+	<!-- Navigation****************************************** -->
+	<div class="background-img"></div>
+	<h1 class="loc-header-text">Santa Barbara</h1>
+	<div class="wrapper">
+		<div class="header">
+			<div class="header-bot-links">
+				<a href="#" class="link">
+					<span class="glyphicon glyphicon-menu-left"></span>Nicaragua
+				</a>
+				<a href="#out" class="link">
+					Outdoor
+				</a>
+				<a href="#rest" class="link">
+					Restaurants
+				</a>
+				<a href="#night" class="link">
+					Nightlife
+				</a>
+				<a href="#" class="link">
+					San Diego<span class="glyphicon glyphicon-menu-right">
+				</a>
+			</div>
+		</div>
+		<div class="main">
+			<h2 class="header-text">Santa Barbara</h2>
+
+			<p class="loc-main-text">&nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lacinia nibh a tincidunt bibendum. Vestibulum ac est ac neque bibendum bibendum vitae quis mi. Maecenas sit amet purus tempus purus tincidunt faucibus. Vivamus laoreet libero id est congue, sed vestibulum urna lobortis. Vestibulum quis mauris ac augue tempus aliquet. Vivamus condimentum semper neque non posuere. Nunc a lobortis neque. Suspendisse convallis blandit urna et dictum. Nullam sed egestas ex, ut dapibus mi.  </p>
+
+			<img src="http://placehold.it/600x300" alt="" class="dest-img">
+
+			<p class="loc-main-text">&nbsp;&nbsp;&nbsp;&nbsp; Mauris vulputate sem id neque mattis placerat. Nullam eleifend ornare dolor, at volutpat sapien efficitur ut. Proin ut facilisis elit, ultricies pellentesque quam. Quisque mattis fermentum dictum. Nullam ac auctor augue. Aenean justo nibh, bibendum sit amet porta eu, dictum vel diam. Quisque pulvinar sed quam at porta. Mauris efficitur leo ac neque pretium congue. Vestibulum eget rhoncus neque, eget sollicitudin felis. </p>
+
+			<h2 class="test-sub-header" id="out">Outdoor</h2>
+
+			<p class="loc-main-text">&nbsp;&nbsp;&nbsp;&nbsp; Nam porta ultrices sapien, nec sagittis lacus lobortis et. Phasellus facilisis bibendum rutrum. Nunc volutpat sit amet nunc imperdiet efficitur. Etiam lacus erat, feugiat nec magna sit amet, viverra malesuada ipsum. Morbi dapibus sapien eu sapien lacinia, sit amet scelerisque neque imperdiet. Vivamus faucibus volutpat volutpat. Nunc viverra est in condimentum porttitor. Aenean interdum sem vel luctus vulputate. Donec velit metus, gravida luctus neque nec, convallis fringilla orci. Aenean arcu ante, ultricies vitae pretium et, porttitor vitae nulla. </p>
+
+			<p class="loc-main-text">&nbsp;&nbsp;&nbsp;&nbsp; Nam porta ultrices sapien, nec sagittis lacus lobortis et. Phasellus facilisis bibendum rutrum. Nunc volutpat sit amet nunc imperdiet efficitur. Etiam lacus erat, feugiat nec magna sit amet, viverra malesuada ipsum. Morbi dapibus sapien eu sapien lacinia, sit amet scelerisque neque imperdiet. Vivamus faucibus volutpat volutpat. Nunc viverra est in condimentum porttitor. Aenean interdum sem vel luctus vulputate. Donec velit metus, gravida luctus neque nec, convallis fringilla orci. Aenean arcu ante, ultricies vitae pretium et, porttitor vitae nulla. </p>
+
+			<img src="http://placehold.it/600x300" alt="" class="dest-img">
+
+			<h2 class="test-sub-header" id="rest">Restaurants</h2>
+			
+			<p class="loc-main-text">&nbsp;&nbsp;&nbsp;&nbsp; Nam porta ultrices sapien, nec sagittis lacus lobortis et. Phasellus facilisis bibendum rutrum. Nunc volutpat sit amet nunc imperdiet efficitur. Etiam lacus erat, feugiat nec magna sit amet, viverra malesuada ipsum. Morbi dapibus sapien eu sapien lacinia, sit amet scelerisque neque imperdiet. Vivamus faucibus volutpat volutpat. Nunc viverra est in condimentum porttitor. Aenean interdum sem vel luctus vulputate. Donec velit metus, gravida luctus neque nec, convallis fringilla orci. Aenean arcu ante, ultricies vitae pretium et, porttitor vitae nulla. </p>
+
+			<img src="http://placehold.it/600x300" alt="" class="dest-img">
+
+			<p class="loc-main-text">&nbsp;&nbsp;&nbsp;&nbsp; Nam porta ultrices sapien, nec sagittis lacus lobortis et. Phasellus facilisis bibendum rutrum. Nunc volutpat sit amet nunc imperdiet efficitur. Etiam lacus erat, feugiat nec magna sit amet, viverra malesuada ipsum. Morbi dapibus sapien eu sapien lacinia, sit amet scelerisque neque imperdiet. Vivamus faucibus volutpat volutpat. Nunc viverra est in condimentum porttitor. Aenean interdum sem vel luctus vulputate. Donec velit metus, gravida luctus neque nec, convallis fringilla orci. Aenean arcu ante, ultricies vitae pretium et, porttitor vitae nulla. </p>
+
+			<h2 class="test-sub-header" id="night">Nightlife</h2>
+
+			<p class="loc-main-text">&nbsp;&nbsp;&nbsp;&nbsp; Nam porta ultrices sapien, nec sagittis lacus lobortis et. Phasellus facilisis bibendum rutrum. Nunc volutpat sit amet nunc imperdiet efficitur. Etiam lacus erat, feugiat nec magna sit amet, viverra malesuada ipsum. Morbi dapibus sapien eu sapien lacinia, sit amet scelerisque neque imperdiet. Vivamus faucibus volutpat volutpat. Nunc viverra est in condimentum porttitor. Aenean interdum sem vel luctus vulputate. Donec velit metus, gravida luctus neque nec, convallis fringilla orci. Aenean arcu ante, ultricies vitae pretium et, porttitor vitae nulla. </p>
+
+			<img src="http://placehold.it/600x300" alt="" class="dest-img">
+
+			<p class="loc-main-text">&nbsp;&nbsp;&nbsp;&nbsp; Nam porta ultrices sapien, nec sagittis lacus lobortis et. Phasellus facilisis bibendum rutrum. Nunc volutpat sit amet nunc imperdiet efficitur. Etiam lacus erat, feugiat nec magna sit amet, viverra malesuada ipsum. Morbi dapibus sapien eu sapien lacinia, sit amet scelerisque neque imperdiet. Vivamus faucibus volutpat volutpat. Nunc viverra est in condimentum porttitor. Aenean interdum sem vel luctus vulputate. Donec velit metus, gravida luctus neque nec, convallis fringilla orci. Aenean arcu ante, ultricies vitae pretium et, porttitor vitae nulla. </p>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<!-- Footer *****************************************-->
+		<div class="row footer">
+			<div class="col-xs-12">
+				<footer id="footer">
+					<h3 class="footer-copy">Copyright &copy; theAMIGOES 2016</h3>
+					<div class="social-links">
+						<a target="_blank" href="https://www.instagram.com/theamigoes/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+						<a target="_blank" href="https://www.facebook.com/theamigoes"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+						<a target="_blank" href="https://youtu.be/u-RuLjJ0-Bo"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+						<a target="_blank" href="https://twitter.com/theamigoes"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+					</div>
+					<a class="top nav-link nav-text" href="#test">TOP</a>
+				</footer>
+			</div>
+		</div>
+	</div>
+	<!-- jQuery -->
+	<script src="../js/jquery.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="../js/bootstrap.min.js"></script>
+	<!-- MY SCRIPT-->
+	<script src="../js/myscript.js"></script>
+	<!-- MY SCRIPT-->
+	<script src="../js/prefixfree.min.js"></script>
+	<!-- CONTACT FORM VALIDATOR SCRIPT -->
+	<script src="../js/contact_me.js"></script>
+</body>
+</html>
