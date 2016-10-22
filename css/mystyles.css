@@ -1,2646 +1,2845 @@
 body{
-  font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
+	background-color: white;
 }
 hr{
-  margin: 0;
-  margin-left: -15px;
-  padding: 0;
-  width: 130%;
-  height: 1px;
-  background-color: #9E9E9E;
+	margin: 0;
+	margin-left: -15px;
+	padding: 0;
+	width: 130%;
+	height: 1px;
+	background-color: #9E9E9E;
 }
 h1,h2,h3,h4{
-  font-family: 'Permanent Marker', cursive;
+	font-family: 'Permanent Marker', cursive;
 }
 .four-oh-four-text{
-  font-size: 3em;
-  padding: 3em;
-  letter-spacing: 2px;
+	font-size: 3em;
+	padding: 3em;
+	letter-spacing: 2px;
 }
 .navbar{
-  border: 0;
-  background: transparent;
-  transition: 1s background ease;
+	border: 0;
+	background: transparent;
+	transition: 1s background ease;
 }
 .navbar a{
-  color: #fff;
-  letter-spacing: 1px;
-  font-weight: 400;
-  transition: 500ms color ease;
-  font-size: 24px;
+	color: #fff;
+	letter-spacing: 1px;
+	font-weight: 400;
+	transition: 300ms color ease;
+	font-size: 24px;
+}
+.navbar .nav-link{
+	color: #fff;
 }
 .navbar .nav-link:hover{
-  color: #9E9E9E;
+	color: #9E9E9E;
 }
 .navbarTransition{
-  background: #000;
+	background: #000;
 }
 .navbarTransition a{
-  color: #9E9E9E;
+	color: #9E9E9E;
 }
 .navbarTransition a:hover{
-  color: #9E9E9E;
+	color: #9E9E9E;
 }
 /*Brand*/
 .navbar-header a{
-  color: #fff;
+	color: #fff;
 }
 .navbar-brand{
-  font-family: 'Permanent Marker', cursive;
+	font-family: 'Permanent Marker', cursive;
 }
 /***********************************/
 /** Header section **/
 #myCarousel{
-  height:100vh;
+	height:100vh;
 }
 header.carousel{
-  margin-top: -50px;
-  height: 700px;
+	margin-top: -50px;
+	height: 700px;
 }
 .carousel-img-one{
-  background:
-  linear-gradient(
-    rgba(0,0,0,.2),
-    rgba(0,0,0,.2)),url(../img/header_one_lg.jpg);
+	background:
+	linear-gradient(
+		rgba(0,0,0,.2),
+		rgba(0,0,0,.2)),url(../img/header_one_lg.jpg);
 }
 .carousel-img-two{
-  background: url(../img/header_two_lg.jpg);
+	background: url(../img/header_two_lg.jpg);
 }
 .carousel-caption{
-  padding: 0;
-  margin-bottom: 500px;
+	padding: 0;
+	margin-bottom: 500px;
 }
 .carousel-text{
-  font-size: 48px;
-  letter-spacing: 2px;
+	font-size: 48px;
+	letter-spacing: 2px;
 }
 /*********************/
 /******************** Blockquote **/
 #test{
-  background-color: #fff;
+	background-color: #fff;
 }
 .quote-sect{
-  height: 500px;
+	height: 500px;
 }
 .quote-text{
-  padding: 70px 30px 30px 30px;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 34px;
+	padding: 70px 30px 30px 30px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 34px;
 }
 blockquote{
-  display:block;
-  padding: 15px 50px 15px 50px;
-  margin: 60px 30px 30px 30px;
-  position: relative;
-  /*Font*/
-  font-family: Georgia, serif;
-  font-size: 28px;
-  line-height: 1.5;
-  color: #212121;
-  text-align: center;
-  border:none;
+	display:block;
+	padding: 15px 50px 15px 50px;
+	margin: 60px 30px 30px 30px;
+	position: relative;
+	/*Font*/
+	font-family: Georgia, serif;
+	font-size: 28px;
+	line-height: 1.5;
+	color: #212121;
+	text-align: center;
+	border:none;
 }
 blockquote::before{
-  content: "\201C"; /*Unicode for Left Double Quote*/
-  /*Font*/
-  font-family: Georgia, serif;
-  font-size: 60px;
-  font-weight: bold;
-  color: #212121;
-  /*Positioning*/
-  position: absolute;
-  left: 30px;
-  top:20px;
+	content: "\201C"; /*Unicode for Left Double Quote*/
+	/*Font*/
+	font-family: Georgia, serif;
+	font-size: 60px;
+	font-weight: bold;
+	color: #212121;
+	/*Positioning*/
+	position: absolute;
+	left: 30px;
+	top:20px;
 }
 blockquote::after{
-  /*Reset to make sure*/
-  content: "";
+	/*Reset to make sure*/
+	content: "";
 }
 blockquote footer{
-  font-size: 28px;
-  color: #333;
-  font-family: 'Permanent Marker', cursive;
-  letter-spacing: 1px;
+	font-size: 28px;
+	color: #333;
+	font-family: 'Permanent Marker', cursive;
+	letter-spacing: 1px;
 }
 /***************************/
 /******************** About US / Mission **/
 .index-about,
 .index-mission{
-  height: 500px;
-  background:
-  linear-gradient(
-    rgba(0,0,0,.3),
-    rgba(0,0,0,.3)),
-  url(../img/about_us.jpeg);
-  background-position: top center;
-  transition: 500ms background;
+	height: 500px;
+	background:
+	linear-gradient(
+		rgba(0,0,0,.3),
+		rgba(0,0,0,.3)),
+	url(../img/about_us.jpeg);
+	background-position: top center;
+	transition: 500ms background;
 }
 .index-mission{
-  background:
-  linear-gradient(
-    rgba(0,0,0,.3),
-    rgba(0,0,0,.3)),
-  url(../img/miss_stmt_lg.jpg);
+	background:
+	linear-gradient(
+		rgba(0,0,0,.3),
+		rgba(0,0,0,.3)),
+	url(../img/miss_stmt_lg.jpg);
 }
 .index-about:hover{
-  background:
-  linear-gradient(
-    rgba(0,0,0,.6),
-    rgba(0,0,0,.6)),
-  url(../img/about_us.jpeg);
-  background-position: top center;
-  cursor: pointer;
+	background:
+	linear-gradient(
+		rgba(0,0,0,.6),
+		rgba(0,0,0,.6)),
+	url(../img/about_us.jpeg);
+	background-position: top center;
+	cursor: pointer;
 }
 .index-mission:hover{
-  background:
-  linear-gradient(
-    rgba(0,0,0,.6),
-    rgba(0,0,0,.6)),
-  url(../img/miss_stmt_lg.jpg);
-  background-position: top top;
-  cursor: pointer;
+	background:
+	linear-gradient(
+		rgba(0,0,0,.6),
+		rgba(0,0,0,.6)),
+	url(../img/miss_stmt_lg.jpg);
+	background-position: top top;
+	cursor: pointer;
 }
 .about-text,
 .miss-text{
-  margin-top: 200px;
-  text-align: center;
-  font-size: 56px;
-  color: white;
+	margin-top: 200px;
+	text-align: center;
+	font-size: 56px;
+	color: white;
 }
 #about button{
-  display: block;
-  margin: 0 auto;
-  margin-top: 40px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 40px;
 }
 .learn-more{
-  width: 120px;
-  height: 40px;
-  border: 1px solid white;
-  background-color: transparent;
-  border-radius: 10px;
-  color: white;
-  font-size: 18px;
-  letter-spacing: 1px;
-  font-weight: 300;
-  transition: 500ms background-color,
-  500ms color,
-  500ms border-radius;
+	width: 120px;
+	height: 40px;
+	border: 1px solid white;
+	background-color: transparent;
+	border-radius: 10px;
+	color: white;
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-weight: 300;
+	transition: 500ms background-color,
+	500ms color,
+	500ms border-radius;
 }
 .index-about:hover .learn-more,
 .index-mission:hover .learn-more{
-  background-color: white;
-  color: #333;
-  border-radius: 0px;
+	background-color: white;
+	color: #333;
+	border-radius: 0;
 }
 /*********************************/
 /******************** BIO Section **/
 #bio{
-  margin-top: 50px;
-  margin-bottom: 120px;
+	margin-top: 50px;
+	margin-bottom: 120px;
 }
 .team-text{
-  padding-top: 50px;
-  margin-bottom: 50px;
-  font-size: 32px;
-  text-align: center;
+	padding-top: 50px;
+	margin-bottom: 50px;
+	font-size: 32px;
+	text-align: center;
 }
 .bio-flex{
-  display: flex;
-  justify-content: space-around;
-  flex-flow: row nowrap;
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row nowrap;
 }
 .bio-flex-child{
-  width: 400px;
-  height: 450px;
-  text-align: center;
+	width: 400px;
+	height: 450px;
+	text-align: center;
 }
 .bio-img{
-  margin-top: 20px;
-  width: 90%;
-  height: auto;
+	margin-top: 20px;
+	width: 90%;
+	height: auto;
 }
 .bio-text{
-  font-size: 26px;
+	font-size: 26px;
 }
 .bio-flex-child:hover{
-  background-color: lightgrey;
-  cursor: pointer;
+	background-color: lightgrey;
+	cursor: pointer;
 }
 /*********************************/
 /******************** Social Media/ Guides & Services **/
 #services{
-  margin-top: 30px;
+	margin-top: 30px;
 }
 .serv-title{
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 40px;
-  padding-top: 50px;
+	text-align: center;
+	font-size: 32px;
+	margin-bottom: 40px;
+	padding-top: 50px;
 }
 .service-flex{
-  display: flex;
-  justify-content: space-around;
-  flex-flow: row wrap;
-  padding-bottom: 150px;
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+	padding-bottom: 150px;
 }
 .ser-flex-child{
-  width: 350px;
-  height: 350px;
-  margin-top: 30px;
+	width: 350px;
+	height: 350px;
+	margin-top: 30px;
+	border: 3px solid #555;
 }
 .ser-flex-child a{
-  text-decoration: none;
+	text-decoration: none;
 }
 .serv-header{
-  text-align: center;
-  color: #eee;
-  margin-top: -50px;
-  letter-spacing: 1px;
-  font-weight: 300;
-  opacity: 0;
-  transition: .6s margin-top,
-  .6s opacity;
+	text-align: center;
+	color: #eee;
+	margin-top: -50px;
+	letter-spacing: 1px;
+	font-weight: 300;
+	opacity: 0;
+	transition: all .6s;
 }
 .ser-flex-child:hover .serv-header{
-  opacity: 1;
-  margin-top: 100px;
+	opacity: 1;
+	margin-top: 100px;
 }
 .san-fran{
-  background:
-  linear-gradient(
-    rgba(0,0,0,0),
-    rgba(0,0,0,0)),
-  url(../img/SF_guide.jpg) center center;
-  transition: .5s background;
+	background:
+	linear-gradient(
+		rgba(0,0,0,0),
+		rgba(0,0,0,0)),
+	url(../img/SF_guide.jpg) center center;
+	transition: .5s background;
 }
 .nica{
-  background:
-  linear-gradient(
-    rgba(0,0,0,0),
-    rgba(0,0,0,0)),
-  url(../img/nica_guide.jpg) center center;
-  transition: .5s background;
+	background:
+	linear-gradient(
+		rgba(0,0,0,0),
+		rgba(0,0,0,0)),
+	url(../img/nica_guide.jpg) center center;
+	transition: .5s background;
 }
 .holly{
-  background:
-  linear-gradient(
-    rgba(0,0,0,0),
-    rgba(0,0,0,0)),
-  url(../img/LA_guide.jpg) center center;
-  transition: .5s background;
+	background:
+	linear-gradient(
+		rgba(0,0,0,0),
+		rgba(0,0,0,0)),
+	url(../img/LA_guide.jpg) center center;
+	transition: .5s background;
 }
 .holly{
-  background:
-  linear-gradient(
-    rgba(0,0,0,0),
-    rgba(0,0,0,0)),
-  url(../img/LA_guide.jpg) center center;
-  transition: .5s background;
+	background:
+	linear-gradient(
+		rgba(0,0,0,0),
+		rgba(0,0,0,0)),
+	url(../img/LA_guide.jpg) center center;
+	transition: .5s background;
 }
 .santa{
-  background:
-  linear-gradient(
-    rgba(0,0,0,0),
-    rgba(0,0,0,0)),
-  url(../img/santa_barbara.jpg) bottom center;
-  transition: .5s background;
-  background-size: cover;
+	background:
+	linear-gradient(
+		rgba(0,0,0,0),
+		rgba(0,0,0,0)),
+	url(../img/santa_barbara.jpg) bottom center;
+	transition: .5s background;
+	background-size: cover;
 }
 .la{
-  background:
-  linear-gradient(
-    rgba(0,0,0,0),
-    rgba(0,0,0,0)),
-  url(../img/LA_guide_2.jpg) center center;
-  transition: .5s background;
+	background:
+	linear-gradient(
+		rgba(0,0,0,0),
+		rgba(0,0,0,0)),
+	url(../img/LA_guide_2.jpg) center center;
+	transition: .5s background;
 
 }
 .san-diego{
-  background:
-  linear-gradient(
-    rgba(0,0,0,0),
-    rgba(0,0,0,0)),
-  url(../img/san_diego.jpg) left top;
-  transition: .5s background;
-  background-size: cover;
+	background:
+	linear-gradient(
+		rgba(0,0,0,0),
+		rgba(0,0,0,0)),
+	url(../img/san_diego.jpg) left top;
+	transition: .5s background;
+	background-size: cover;
 }
 .sydney{
-  background:
-  linear-gradient(
-    rgba(0,0,0,0),
-    rgba(0,0,0,0)),
-  url(../img/sydney.jpg) center center;
-  transition: .5s background;
-  background-size: cover;
+	background:
+	linear-gradient(
+		rgba(0,0,0,0),
+		rgba(0,0,0,0)),
+	url(../img/sydney.jpg) center center;
+	transition: .5s background;
+	background-size: cover;
 }
 .san-fran:hover{
-  background:
-  linear-gradient(
-    rgba(0,0,0,.3),
-    rgba(0,0,0,.3)),
-  url(../img/SF_guide.jpg) center center;
+	background:
+	linear-gradient(
+		rgba(0,0,0,.3),
+		rgba(0,0,0,.3)),
+	url(../img/SF_guide.jpg) center center;
+	box-shadow: inset 0px 0px 42px 5px rgba(0,0,0,1);
 }
 .nica:hover{
-  background:
-  linear-gradient(
-    rgba(0,0,0,.3),
-    rgba(0,0,0,.3)),
-  url(../img/nica_guide.jpg) center center;
+	background:
+	linear-gradient(
+		rgba(0,0,0,.3),
+		rgba(0,0,0,.3)),
+	url(../img/nica_guide.jpg) center center;
+	box-shadow: inset 0px 0px 42px 5px rgba(0,0,0,1);
 }
 .santa:hover{
-  background:
-  linear-gradient(
-    rgba(0,0,0,.3),
-    rgba(0,0,0,.3)),
-  url(../img/santa_barbara.jpg) center center;
-  background-size: cover;
+	background:
+	linear-gradient(
+		rgba(0,0,0,.3),
+		rgba(0,0,0,.3)),
+	url(../img/santa_barbara.jpg) center center;
+	box-shadow: inset 0px 0px 42px 5px rgba(0,0,0,1);
+	background-size: cover;
 }
 .la:hover{
-  background:
-  linear-gradient(
-    rgba(0,0,0,.3),
-    rgba(0,0,0,.3)),
-  url(../img/LA_guide_2.jpg) center center;
+	background:
+	linear-gradient(
+		rgba(0,0,0,.3),
+		rgba(0,0,0,.3)),
+	url(../img/LA_guide_2.jpg) center center;
+	box-shadow: inset 0px 0px 42px 5px rgba(0,0,0,1);
 }
 .san-diego:hover{
-  background:
-  linear-gradient(
-    rgba(0,0,0,.3),
-    rgba(0,0,0,.3)),
-  url(../img/san_diego.jpg) left top;
-  background-size: cover;
+	background:
+	linear-gradient(
+		rgba(0,0,0,.3),
+		rgba(0,0,0,.3)),
+	url(../img/san_diego.jpg) left top;
+	background-size: cover;
+	box-shadow: inset 0px 0px 42px 5px rgba(0,0,0,1);
 }
 .sydney:hover{
-  background:
-  linear-gradient(
-    rgba(0,0,0,.3),
-    rgba(0,0,0,.3)),
-  url(../img/sydney.jpg) center center;
-  background-size: cover;
+	background:
+	linear-gradient(
+		rgba(0,0,0,.3),
+		rgba(0,0,0,.3)),
+	url(../img/sydney.jpg) center center;
+	background-size: cover;
+	box-shadow: inset 0px 0px 42px 5px rgba(0,0,0,1);
 }
 .holly:hover{
-  background:
-  linear-gradient(
-    rgba(0,0,0,.3),
-    rgba(0,0,0,.3)),
-  url(../img/LA_guide.jpg) center center;
+	background:
+	linear-gradient(
+		rgba(0,0,0,.3),
+		rgba(0,0,0,.3)),
+	url(../img/LA_guide.jpg) center center;
+	box-shadow: inset 0px 0px 42px 5px rgba(0,0,0,1);
 }
 /*********************************/
 /******************** CONTACT **/
 .contact-form{
-  background-color: #fff;
-  padding-bottom: 40px;
-  padding-top: 40px;
+	background-color: #fff;
+	padding-bottom: 40px;
+	padding-top: 40px;
 }
 .contact-form-header{
-  font-size: 32px;
-  text-align: center;
-  margin-bottom: 40px;
+	font-size: 32px;
+	text-align: center;
+	margin-bottom: 40px;
 }
 .form-control{
-  border-radius: 0;
-  box-shadow: none;
-  border: none;
-  border: 1px solid #333;
+	border-radius: 0;
+	box-shadow: none;
+	border: none;
+	border: 1px solid #333;
 }
 .message{
-  border: 1px solid #333;
+	border: 1px solid #333;
 }
 .control-group{
-  margin-bottom: 40px;
+	margin-bottom: 40px;
 }
 .controls label{
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 .label-text{
-  font-size: 22px;
+	font-size: 22px;
 }
 form .btn-primary{
-  background-color: #fff;
-  color: #333;
-  border: 1px solid black;
-  border-radius: 0;
-  transition: .3s background-color,
-  .3s color;
+	background-color: #fff;
+	color: #333;
+	border: 1px solid black;
+	border-radius: 0;
+	transition: .3s background-color,
+	.3s color;
 }
 .btn-text{
-  font-size: 20px;
+	font-size: 20px;
 }
 form .btn-primary:hover{
-  background-color: #333;
-  color: #fff;
-  border: 1px solid #333;
+	background-color: #333;
+	color: #fff;
+	border: 1px solid #333;
 }
 form{
-  width: 50%;
-  margin: 0 auto;
+	width: 50%;
+	margin: 0 auto;
 }
 .contactNavbar{
-  background: #000;
+	background: #000;
 }
 .contactNavbar a{
-  color: #fff;
+	color: #fff;
 }
 .contactNavbar a:hover{
-  color: #9E9E9E;
-}
-/*********************************/
-/******************** LOCATION PAGES **/
-/*Carousel*/
-#loc-carousel{
-  height:90vh;
-}
-header.carousel{
-  margin-top: -50px;
-}
-.loc-carousel-one{
-  background:url(../img/nica_one.jpg);
-}
-.loc-carousel-two{
-  background: url(../img/nica_two.jpg);
-}
-.loc-carousel-caption{
-  padding: 0;
-  margin-bottom: 0px;
-}
-.loc-carousel-text{
-  font-size: 72px;
-  letter-spacing: 2px;
-  color: #333;
-}
-/*Container*/
-.loc-container{
-  margin-top: 20px;
-  margin-bottom: 50px;
-  width: 70%;
-}
-.loc-header{
-  text-align: left;
-  font-size: 64px;
-  margin-bottom: 20px;
-}
-.loc-main-text{
-  font-size: 24px;
-  line-height: 40px;
-}
-.loc-sub-header{
-  font-size: 40px;
-  text-decoration: underline;
-  text-align: left;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.activity-header{
-  text-align: left;
-  font-size: 28px;
-  margin-top: 70px;
-}
-.activity-sub-header{
-  text-align: left;
-  font-size: 24px;
-  letter-spacing: 2px;
-  color: #444;
-}
-.loc-list-item{
-  list-style-type: none;
-  font-size: 24px;
-  margin-top: 10px;
-}
-.modal-title{
-  font-size: 30px;
-  letter-spacing: 1px;
-}
-.modal-btn-text{
-  font-size: 22px;
+	color: #9E9E9E;
 }
 /*********************************/
 /******************** FOOTER **/
 footer{
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 .footer-copy{
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 32px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 32px;
 }
 .footer{
-  border-top: 1px solid #212121;
+	border-top: 1px solid #212121;
 }
 .social-links{
-  float: right;
-  margin-right: 20px;
-  margin-bottom: 20px;
+	float: right;
+	margin-right: 20px;
+	margin-bottom: 20px;
 }
 .fa-instagram,
 .fa-facebook-square,
 .fa-youtube-play,
 .fa-twitter-square{
-  margin-right: 10px;
-  cursor: pointer;
+	margin-right: 10px;
+	cursor: pointer;
 }
 .social-links a{
-  color: #333;
+	color: #333;
 }
 .top{
-  position: absolute;
-  top:0;
-  right:0;
-  margin-right: 40px;
-  margin-top: 20px;
-  font-size: 22px;
-  color: #212121;
-  cursor: pointer;
+	position: absolute;
+	top:0;
+	right:0;
+	margin-right: 40px;
+	margin-top: 20px;
+	font-size: 22px;
+	color: #212121;
+	cursor: pointer;
 }
 .top:hover{
-  text-decoration: none;
+	text-decoration: none;
 }
 /**********************************/
+
+
+/****************************************
+************LOCATION PAGES**********
+*****************************************/
+.loc-bg-img{
+	width: 101%;
+	height: 460px;
+	position: absolute;
+	top: 40px;
+	left: -10px;
+	background-image:
+	linear-gradient(
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+		),
+	url(../img/nica_one.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	filter:blur(2px);
+}
+.loc-wrapper{
+	width: 960px;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 150px;
+	box-shadow: 4px -2px 25px -4px rgba(0,0,0,0.75);
+}
+.header{
+	position: relative;
+	width: 100%;
+	height: 460px;
+	background-image:
+	linear-gradient(
+		rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0)
+		),
+	url(../img/nica_one.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.loc-main{
+	width: 100%;
+	text-align: center;
+	padding: 60px 20px 40px 20px;
+	border-right: 1px solid #999;
+	border-left: 1px solid #999;
+}
+.header-bot-links{
+	width: 100%;
+	height: 40px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	top: 460px;
+
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	text-align: center;
+
+	font-weight: 700;
+	font-size: 18px;
+}
+.loc-sub-header-text{
+	color: #000;
+	text-align: left;
+	margin-top: 10px;
+	margin-left: 5px;
+	font-weight: 400;
+	font-size: 28px;
+}
+.guide-serv-text{
+	font-family: 'Open Sans Condensed';
+	font-size: 24px;
+	font-weight: 300;
+	text-align: left;
+}
+.loc-sec-header{
+	text-align: left;
+	padding-top: 80px;
+	letter-spacing: 1px;
+}
+.loc-header-text{
+	font-size: 72px;
+	color: #fafafa;
+	position: absolute;
+	top: 70px;
+	left: 80px;
+	z-index: 100;
+}
+.dest-img{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.glyphicon{
+	position: absolute;
+	top:13px;
+}
+.glyphicon-menu-left{
+	left: 20px;
+}
+.glyphicon-menu-right{
+	right: 20px;
+}
+.inner-menu{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+	width: 100%;
+	height: 100%;
+}
+.inner-menu a{
+	display:block;
+	color:#333;
+	text-decoration:none;
+	font-weight:600;
+	font-size:18px;
+	line-height:32px;
+	width: 192px;
+	height: 40px;
+	margin-right: auto;
+	margin-left: auto;
+	transition: .4s all;
+}
+.inner-menu-a:hover{
+	background-color: #999;
+	border-bottom: 1px solid black;
+}
+.inner-menu li{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+	border-bottom: 1px solid black;
+}
+.inner-menu ul{
+	display:none;
+	position:absolute;
+	top:97%;
+	left:0;
+	background:#fff;
+	padding:0;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+.inner-menu ul li{
+	float: none;
+	width:100%;
+}
+.inner-menu ul a{
+	line-height: 120%;
+	padding: 10px 15px;
+	border-bottom: 1px solid black;
+}
+.inner-menu ul ul{
+	top: 0;
+	left: 100%;
+	border-top: 1px solid black;
+}
+.inner-menu ul ul li{
+	border: 1px solid black;
+}
+.inner-menu li:hover > ul{
+	display:block;
+	background-color: #eee;
+}
+.dir:hover{
+	background-color: #BFBFBF;
+}
+.dir a:hover{
+	background-color: lightgrey;
+}
+/****************************************
+****************************************
+****************************************/
+
+
+
 /**MEDIA QUERIES **/
 @media screen and (min-width: 0px) and (max-width: 320px) {
-  /**NAVBAR********************/
-  .navbar-toggle{
-    border: 1px solid #f3f3f3;
-    background-color: #000;
-  }
-  .navbar-toggle span{
-    background-color: white;
-  }
-  .navbar-collapse{
-    background: #000;
-    color: white;
-  }
-  /**CAROUSEL*********************/
-  .carousel-caption{
-    padding: 0;
-    margin-bottom: 370px;
-  }
-  .carousel-text{
-    font-size: 28px;
-    letter-spacing: 2px;
-  }
-  /***BLOCKQUOTE***************/
-  .quote-sect{
-    height: 500px;
-  }
-  .quote-text{
-    padding: 0px  0px 0px 0px;
-    font-size: 26px;
-  }
-  blockquote{
-    display:block;
-    padding: 50px 10px 20px 30px;
-    margin: 0px;
-    position: relative;
-    font-size: 26px;
-    line-height: 2;
-    text-align: center;
-    border:none;
-  }
-  blockquote::before{
-    content: "\201C"; /*Unicode for Left Double Quote*/
-    /*Font*/
-    font-family: Georgia, serif;
-    font-size: 40px;
-    font-weight: bold;
-    color: #212121;
-    /*Positioning*/
-    position: absolute;
-    left: 10px;
-    top:40px;
-  }
-  blockquote::after{
-    /*Reset to make sure*/
-    content: "";
-  }
-  blockquote footer{
-    font-size: 28px;
-    color: #333;
-    font-family: 'Permanent Marker', cursive;
-    letter-spacing: 1px;
-    margin-top: 20px;
-  }
+	/**NAVBAR********************/
+	.navbar-toggle{
+		border: 1px solid #f3f3f3;
+		background-color: #000;
+	}
+	.navbar-toggle span{
+		background-color: white;
+	}
+	.navbar-collapse{
+		background: #000;
+		color: white;
+	}
+	/**CAROUSEL*********************/
+	.carousel-caption{
+		padding: 0;
+		margin-bottom: 370px;
+	}
+	.carousel-text{
+		font-size: 28px;
+		letter-spacing: 2px;
+	}
+	/***BLOCKQUOTE***************/
+	.quote-sect{
+		height: 500px;
+	}
+	.quote-text{
+		padding: 0px  0px 0px 0px;
+		font-size: 26px;
+	}
+	blockquote{
+		display:block;
+		padding: 50px 10px 20px 30px;
+		margin: 0px;
+		position: relative;
+		font-size: 26px;
+		line-height: 2;
+		text-align: center;
+		border:none;
+	}
+	blockquote::before{
+		content: "\201C"; /*Unicode for Left Double Quote*/
+		/*Font*/
+		font-family: Georgia, serif;
+		font-size: 40px;
+		font-weight: bold;
+		color: #212121;
+		/*Positioning*/
+		position: absolute;
+		left: 10px;
+		top:40px;
+	}
+	blockquote::after{
+		/*Reset to make sure*/
+		content: "";
+	}
+	blockquote footer{
+		font-size: 28px;
+		color: #333;
+		font-family: 'Permanent Marker', cursive;
+		letter-spacing: 1px;
+		margin-top: 20px;
+	}
 
-  /******************** About US / Mission **/
-  .index-about,
-  .index-mission{
-    background:
-    linear-gradient(
-      rgba(0,0,0,.3),
-      rgba(0,0,0,.3)),
-    url(../img/about_us.jpeg);
-    background-position: top center;
-    transition: 500ms background;
-    padding: 0;
-    margin:0;
-  }
-  .index-mission{
-    background:
-    linear-gradient(
-      rgba(0,0,0,.3),
-      rgba(0,0,0,.3)),
-    url(../img/miss_stmt_lg.jpg);
-  }
-  .index-about:hover{
-    background:
-    linear-gradient(
-      rgba(0,0,0,.6),
-      rgba(0,0,0,.6)),
-    url(../img/about_us.jpeg);
-    background-position: top center;
-    cursor: pointer;
-  }
-  .index-mission:hover{
-    background:
-    linear-gradient(
-      rgba(0,0,0,.6),
-      rgba(0,0,0,.6)),
-    url(../img/miss_stmt_lg.jpg);
-    background-position: top left;
-    cursor: pointer;
-  }
-  .about-text,
-  .miss-text{
-    margin-top: 0px;
-    padding-top: 120px;
-    text-align: center;
-    font-size: 56px;
-    color: white;
-  }
-  #about button{
-    margin-top: 120px;
-  }
-  .learn-more{
-    width: 120px;
-    height: 40px;
-    border: 1px solid white;
-    background-color: transparent;
-    border-radius: 10px;
-    color: white;
-    font-size: 18px;
-    letter-spacing: 1px;
-    font-weight: 300;
-  }
-  .index-about:active .learn-more,
-  .index-mission:active .learn-more{
-    background-color: white;
-    color: #333;
-    border-radius: none;
-  }
-  /******************** BIO Section **/
-  #bio{
-    margin-top: 0px;
-    margin-bottom: 80px;
-  }
-  .team-text{
-    padding-top: 50px;
-    margin-bottom: 20px;
-  }
-  .bio-flex{
-    flex-flow: row wrap;
-  }
-  .bio-flex-child{
-    width: 100%;
-    height: 350px;
-  }
-  /******************** Social Media/ Guides & Services **/
-  .serv-title{
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 20px;
-    padding-top: 40px;
-  }
-  .service-flex{
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    padding-bottom: 150px;
-  }
-  .ser-flex-child{
-    height: 270px;
-  }
-  .serv-header{
-    text-align: center;
-    color: #eee;
-    margin-top: 70px;
-    letter-spacing: 1px;
-    font-weight: 300;
-    opacity: 1;
-  }
-  .san-fran:hover .serv-header,
-  .nica:hover .serv-header,
-  .holly:hover .serv-header,
-  .santa:hover .serv-header,
-  .la:hover .serv-header,
-  .san-diego:hover .serv-header{
-    margin-top: 70px;
-  }
-  /******************** CONTACT **/
-  form{
-    width: 100%;
-  }
-  /*********************FOOOTER**/
-  .footer-copy{
-    text-align: center;
-    font-size: 26px;
-  }
-  .social-links{
-    float: right;
-    margin-right: -10px;
-    margin-bottom: 20px;
-  }
-  .fa-instagram,
-  .fa-facebook-square,
-  .fa-youtube-play,
-  .fa-twitter-square{
-    margin-right: 5px;
-    cursor: pointer;
-  }
-  .social-links a{
-    color: #333;
-  }
-  .top{
-    margin-right: 10px;
-  }
-  /******************** loc PAGES **/
-  /*Carousel*/
-  #loc-carousel{
-    height:60vh;
-  }
-  .loc-carousel-one{
-    background:url(../img/nica_one.jpg);
-  }
-  .loc-carousel-two{
-    background: url(../img/nica_two.jpg);
-  }
-  .loc-carousel-caption{
-    padding: 0;
-    margin-bottom: 175px;
-  }
-  .loc-carousel-text{
-    font-size: 32px;
-    letter-spacing: 2px;
-    color: #333;
-  }
-  /*Container*/
-  .loc-container{
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
-  .loc-header{
-    text-align: left;
-    margin-bottom: 20px;
-  }
-  .loc-main-text{
-    font-size: 20px;
-    line-height: 40px;
-    letter-spacing: 1px;
-  }
+	/******************** About US / Mission **/
+	.index-about,
+	.index-mission{
+		background:
+		linear-gradient(
+			rgba(0,0,0,.3),
+			rgba(0,0,0,.3)),
+		url(../img/about_us.jpeg);
+		background-position: top center;
+		transition: 500ms background;
+		padding: 0;
+		margin:0;
+	}
+	.index-mission{
+		background:
+		linear-gradient(
+			rgba(0,0,0,.3),
+			rgba(0,0,0,.3)),
+		url(../img/miss_stmt_lg.jpg);
+	}
+	.index-about:hover{
+		background:
+		linear-gradient(
+			rgba(0,0,0,.6),
+			rgba(0,0,0,.6)),
+		url(../img/about_us.jpeg);
+		background-position: top center;
+		cursor: pointer;
+	}
+	.index-mission:hover{
+		background:
+		linear-gradient(
+			rgba(0,0,0,.6),
+			rgba(0,0,0,.6)),
+		url(../img/miss_stmt_lg.jpg);
+		background-position: top left;
+		cursor: pointer;
+	}
+	.about-text,
+	.miss-text{
+		margin-top: 0px;
+		padding-top: 120px;
+		text-align: center;
+		font-size: 56px;
+		color: white;
+	}
+	#about button{
+		margin-top: 120px;
+	}
+	.learn-more{
+		width: 120px;
+		height: 40px;
+		border: 1px solid white;
+		background-color: transparent;
+		border-radius: 10px;
+		color: white;
+		font-size: 18px;
+		letter-spacing: 1px;
+		font-weight: 300;
+	}
+	.index-about:active .learn-more,
+	.index-mission:active .learn-more{
+		background-color: white;
+		color: #333;
+		border-radius: 0;
+	}
+	/******************** BIO Section **/
+	#bio{
+		margin-top: 0px;
+		margin-bottom: 80px;
+	}
+	.team-text{
+		padding-top: 50px;
+		margin-bottom: 20px;
+	}
+	.bio-flex{
+		flex-flow: row wrap;
+	}
+	.bio-flex-child{
+		width: 100%;
+		height: 350px;
+	}
+	/******************** Social Media/ Guides & Services **/
+	.serv-title{
+		text-align: center;
+		font-size: 32px;
+		margin-bottom: 20px;
+		padding-top: 40px;
+	}
+	.service-flex{
+		display: flex;
+		justify-content: space-around;
+		flex-flow: row wrap;
+		padding-bottom: 150px;
+	}
+	.ser-flex-child{
+		height: 270px;
+	}
+	.serv-header{
+		text-align: center;
+		color: #eee;
+		margin-top: 70px;
+		letter-spacing: 1px;
+		font-weight: 300;
+		opacity: 1;
+	}
+	.san-fran:hover .serv-header,
+	.nica:hover .serv-header,
+	.holly:hover .serv-header,
+	.santa:hover .serv-header,
+	.la:hover .serv-header,
+	.san-diego:hover .serv-header{
+		margin-top: 70px;
+	}
+	/******************** CONTACT **/
+	form{
+		width: 100%;
+	}
+	/*********************FOOOTER**/
+	.footer-copy{
+		text-align: center;
+		font-size: 26px;
+	}
+	.social-links{
+		float: right;
+		margin-right: -10px;
+		margin-bottom: 20px;
+	}
+	.fa-instagram,
+	.fa-facebook-square,
+	.fa-youtube-play,
+	.fa-twitter-square{
+		margin-right: 5px;
+		cursor: pointer;
+	}
+	.social-links a{
+		color: #333;
+	}
+	.top{
+		margin-right: 10px;
+	}
+	/******************** LOCATION PAGES **/
+	.loc-bg-img{
+		display: none;
+	}
+	.loc-wrapper{
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		margin-top: 30px;
+		box-shadow: none;
+	}
+	.loc-header-text{
+		font-size: 32px;
+		color: #333;
+		position: absolute;
+		top: 100px;
+		left: 50px;
+		z-index: 100;
+	}
+	.header-bot-links{
+		height: 60px;
+		font-size: 18px;
+	}
+	.inner-menu a{
+		font-size: 14px;
+		line-height: 32px;
+		width: 100%;
+		height: 60px;
+		padding-top: 8px;
+		padding-left: 6px;
+		padding-right: 6px;
+	}
+	.loc-main{
+		width: 100%;
+		text-align: center;
+		padding: 60px 10px 40px 10px;
+		border: none;
+	}
+	.dest-img{
+		width: 100%;
+	}
+	.loc-sub-header-text{
+		font-size: 30px;
+	}
+	.guide-serv-text{
+		font-size: 22px;
+		line-height: 50px;
+	}
 
 }
 
-
 @media screen and (min-width: 321px) and (max-width: 375px) {
-  /**NAVBAR********************/
-  .navbar-toggle{
-    border: 1px solid #f3f3f3;
-    background-color: #000;
-  }
-  .navbar-toggle span{
-    background-color: white;
-  }
-  .navbar-collapse{
-    background: #000;
-    color: white;
-  }
-  /**CAROUSEL*********************/
-  .carousel-caption{
-    padding: 0;
-    margin-bottom: 350px;
-  }
-  .carousel-text{
-    font-size: 34px;
-    letter-spacing: 2px;
-  }
-  /***BLOCKQUOTE***************/
-  .quote-sect{
-    height: 500px;
-  }
-  .quote-text{
-    padding: 0px  0px 0px 0px;
-    font-size: 28px;
-  }
-  blockquote{
-    display:block;
-    padding: 50px 10px 20px 30px;
-    margin: 0px;
-    position: relative;
-    font-size: 26px;
-    line-height: 2;
-    text-align: center;
-    border:none;
-  }
-  blockquote::before{
-    content: "\201C"; /*Unicode for Left Double Quote*/
-    /*Font*/
-    font-family: Georgia, serif;
-    font-size: 40px;
-    font-weight: bold;
-    color: #212121;
-    /*Positioning*/
-    position: absolute;
-    left: 10px;
-    top:40px;
-  }
-  blockquote::after{
-    /*Reset to make sure*/
-    content: "";
-  }
-  blockquote footer{
-    font-size: 30px;
-    color: #333;
-    font-family: 'Permanent Marker', cursive;
-    letter-spacing: 1px;
-    margin-top: 20px;
-  }
+	/**NAVBAR********************/
+	.navbar-toggle{
+		border: 1px solid #f3f3f3;
+		background-color: #000;
+	}
+	.navbar-toggle span{
+		background-color: white;
+	}
+	.navbar-collapse{
+		background: #000;
+		color: white;
+	}
+	/**CAROUSEL*********************/
+	.carousel-caption{
+		padding: 0;
+		margin-bottom: 350px;
+	}
+	.carousel-text{
+		font-size: 34px;
+		letter-spacing: 2px;
+	}
+	/***BLOCKQUOTE***************/
+	.quote-sect{
+		height: 500px;
+	}
+	.quote-text{
+		padding: 0px  0px 0px 0px;
+		font-size: 28px;
+	}
+	blockquote{
+		display:block;
+		padding: 50px 10px 20px 30px;
+		margin: 0px;
+		position: relative;
+		font-size: 26px;
+		line-height: 2;
+		text-align: center;
+		border:none;
+	}
+	blockquote::before{
+		content: "\201C"; /*Unicode for Left Double Quote*/
+		/*Font*/
+		font-family: Georgia, serif;
+		font-size: 40px;
+		font-weight: bold;
+		color: #212121;
+		/*Positioning*/
+		position: absolute;
+		left: 10px;
+		top:40px;
+	}
+	blockquote::after{
+		/*Reset to make sure*/
+		content: "";
+	}
+	blockquote footer{
+		font-size: 30px;
+		color: #333;
+		font-family: 'Permanent Marker', cursive;
+		letter-spacing: 1px;
+		margin-top: 20px;
+	}
 
-  /******************** About US / Mission **/
-  .index-about,
-  .index-mission{
-    background:
-    linear-gradient(
-      rgba(0,0,0,.3),
-      rgba(0,0,0,.3)),
-    url(../img/about_us.jpeg);
-    background-position: top center;
-    transition: 500ms background;
-    padding: 0;
-    margin:0;
-  }
-  .index-mission{
-    background:
-    linear-gradient(
-      rgba(0,0,0,.3),
-      rgba(0,0,0,.3)),
-    url(../img/miss_stmt_lg.jpg);
-  }
-  .index-about:hover{
-    background:
-    linear-gradient(
-      rgba(0,0,0,.6),
-      rgba(0,0,0,.6)),
-    url(../img/about_us.jpeg);
-    background-position: top center;
-    cursor: pointer;
-  }
-  .index-mission:hover{
-    background:
-    linear-gradient(
-      rgba(0,0,0,.6),
-      rgba(0,0,0,.6)),
-    url(../img/miss_stmt_lg.jpg);
-    background-position: top left;
-    cursor: pointer;
-  }
-  .about-text,
-  .miss-text{
-    margin-top: 0px;
-    padding-top: 120px;
-    text-align: center;
-    font-size: 56px;
-    color: white;
-  }
-  #about button{
-    margin-top: 120px;
-  }
-  .learn-more{
-    width: 120px;
-    height: 40px;
-    border: 1px solid white;
-    background-color: transparent;
-    border-radius: 10px;
-    color: white;
-    font-size: 18px;
-    letter-spacing: 1px;
-    font-weight: 300;
-  }
-  .index-about:active .learn-more,
-  .index-mission:active .learn-more{
-    background-color: white;
-    color: #333;
-    border-radius: none;
-  }
-  /******************** BIO Section **/
-  #bio{
-    margin-top: 0px;
-    margin-bottom: 100px;
-  }
-  .team-text{
-    padding-top: 50px;
-    margin-bottom: 20px;
-  }
-  .bio-flex{
-    flex-flow: row wrap;
-  }
-  .bio-flex-child{
-    width: 100%;
-    height: 350px;
-    margin-bottom: 40px;
-  }
+	/******************** About US / Mission **/
+	.index-about,
+	.index-mission{
+		background:
+		linear-gradient(
+			rgba(0,0,0,.3),
+			rgba(0,0,0,.3)),
+		url(../img/about_us.jpeg);
+		background-position: top center;
+		transition: 500ms background;
+		padding: 0;
+		margin:0;
+	}
+	.index-mission{
+		background:
+		linear-gradient(
+			rgba(0,0,0,.3),
+			rgba(0,0,0,.3)),
+		url(../img/miss_stmt_lg.jpg);
+	}
+	.index-about:hover{
+		background:
+		linear-gradient(
+			rgba(0,0,0,.6),
+			rgba(0,0,0,.6)),
+		url(../img/about_us.jpeg);
+		background-position: top center;
+		cursor: pointer;
+	}
+	.index-mission:hover{
+		background:
+		linear-gradient(
+			rgba(0,0,0,.6),
+			rgba(0,0,0,.6)),
+		url(../img/miss_stmt_lg.jpg);
+		background-position: top left;
+		cursor: pointer;
+	}
+	.about-text,
+	.miss-text{
+		margin-top: 0px;
+		padding-top: 120px;
+		text-align: center;
+		font-size: 56px;
+		color: white;
+	}
+	#about button{
+		margin-top: 120px;
+	}
+	.learn-more{
+		width: 120px;
+		height: 40px;
+		border: 1px solid white;
+		background-color: transparent;
+		border-radius: 10px;
+		color: white;
+		font-size: 18px;
+		letter-spacing: 1px;
+		font-weight: 300;
+	}
+	.index-about:active .learn-more,
+	.index-mission:active .learn-more{
+		background-color: white;
+		color: #333;
+		border-radius: 0;
+	}
+	/******************** BIO Section **/
+	#bio{
+		margin-top: 0px;
+		margin-bottom: 100px;
+	}
+	.team-text{
+		padding-top: 50px;
+		margin-bottom: 20px;
+	}
+	.bio-flex{
+		flex-flow: row wrap;
+	}
+	.bio-flex-child{
+		width: 100%;
+		height: 350px;
+		margin-bottom: 40px;
+	}
 
-  /******************** Social Media/ Guides & Services **/
-  .serv-title{
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 20px;
-    padding-top: 40px;
-  }
-  .service-flex{
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    padding-bottom: 150px;
-  }
-  .ser-flex-child{
-    height: 270px;
-  }
-  .serv-header{
-    text-align: center;
-    color: #eee;
-    margin-top: 70px;
-    letter-spacing: 1px;
-    font-weight: 300;
-    opacity: 1;
-  }
-  .san-fran:hover .serv-header,
-  .nica:hover .serv-header,
-  .holly:hover .serv-header,
-  .santa:hover .serv-header,
-  .la:hover .serv-header,
-  .san-diego:hover .serv-header{
-    margin-top: 70px;
-  }
-  /******************** CONTACT **/
-  form{
-    width: 100%;
-  }
-  /*********************FOOOTER**/
-  .footer-copy{
-    text-align: center;
-    font-size: 26px;
-  }
-  .social-links{
-    float: right;
-    margin-right: -10px;
-    margin-bottom: 20px;
-  }
-  .fa-instagram,
-  .fa-facebook-square,
-  .fa-youtube-play,
-  .fa-twitter-square{
-    margin-right: 5px;
-    cursor: pointer;
-  }
-  .social-links a{
-    color: #333;
-  }
-  .top{
-    margin-right: 10px;
-    margin-top: 55px;
-  }
-  /******************** loc PAGES **/
-  /*Carousel*/
-  #loc-carousel{
-    height:70vh;
-  }
-  .loc-carousel-one{
-    background:url(../img/nica_one.jpg);
-  }
-  .loc-carousel-two{
-    background: url(../img/nica_two.jpg);
-  }
-  .loc-carousel-caption{
-    padding: 0;
-    margin-bottom: 255px;
-  }
-  .loc-carousel-text{
-    font-size: 42px;
-    letter-spacing: 2px;
-    color: #333;
-  }
-  /*Container*/
-  .loc-container{
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
-  .loc-header{
-    text-align: left;
-    margin-bottom: 20px;
-  }
-  .loc-main-text{
-    font-size: 24px;
-    line-height: 40px;
-    letter-spacing: 1px;
-  }
+	/******************** Social Media/ Guides & Services **/
+	.serv-title{
+		text-align: center;
+		font-size: 32px;
+		margin-bottom: 20px;
+		padding-top: 40px;
+	}
+	.service-flex{
+		display: flex;
+		justify-content: space-around;
+		flex-flow: row wrap;
+		padding-bottom: 150px;
+	}
+	.ser-flex-child{
+		height: 270px;
+	}
+	.serv-header{
+		text-align: center;
+		color: #eee;
+		margin-top: 70px;
+		letter-spacing: 1px;
+		font-weight: 300;
+		opacity: 1;
+	}
+	.san-fran:hover .serv-header,
+	.nica:hover .serv-header,
+	.holly:hover .serv-header,
+	.santa:hover .serv-header,
+	.la:hover .serv-header,
+	.san-diego:hover .serv-header{
+		margin-top: 70px;
+	}
+	/******************** CONTACT **/
+	form{
+		width: 100%;
+	}
+	/*********************FOOOTER**/
+	.footer-copy{
+		text-align: center;
+		font-size: 26px;
+	}
+	.social-links{
+		float: right;
+		margin-right: -10px;
+		margin-bottom: 20px;
+	}
+	.fa-instagram,
+	.fa-facebook-square,
+	.fa-youtube-play,
+	.fa-twitter-square{
+		margin-right: 5px;
+		cursor: pointer;
+	}
+	.social-links a{
+		color: #333;
+	}
+	.top{
+		margin-right: 10px;
+		margin-top: 55px;
+	}
+	/******************** LOCATION PAGES **/
+	.loc-bg-img{
+		display: none;
+	}
+	.loc-wrapper{
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		margin-top: 30px;
+		box-shadow: none;
+	}
+	.loc-header-text{
+		font-size: 38px;
+		color: #333;
+		position: absolute;
+		top: 140px;
+		left: 50px;
+		z-index: 100;
+	}
+	.header-bot-links{
+		height: 60px;
+		font-size: 18px;
+	}
+	.inner-menu a{
+		font-size: 14px;
+		line-height: 32px;
+		width: 100%;
+		height: 60px;
+		padding-top: 8px;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+	.loc-main{
+		width: 100%;
+		text-align: center;
+		padding: 60px 10px 40px 10px;
+		border: none;
+	}
+	.dest-img{
+		width: 100%;
+	}
+	.loc-sub-header-text{
+		font-size: 30px;
+	}
+	.guide-serv-text{
+		font-size: 22px;
+		line-height: 50px;
+	}
 }
 
 
 @media screen and (min-width: 376px) and (max-width: 425px) {
-  /**NAVBAR********************/
-  .navbar-toggle{
-    border: 1px solid #f3f3f3;
-    background-color: #000;
-  }
-  .navbar-toggle span{
-    background-color: white;
-  }
-  .navbar-collapse{
-    background: #000;
-    color: white;
-  }
-  /**CAROUSEL*********************/
-  .carousel-caption{
-    padding: 0;
-    margin-bottom: 350px;
-  }
-  .carousel-text{
-    font-size: 36px;
-    letter-spacing: 2px;
-  }
-  /***BLOCKQUOTE***************/
-  .quote-sect{
-    height: 500px;
-  }
-  .quote-text{
-    padding: 0px  0px 0px 0px;
-    font-size: 28px;
-  }
-  blockquote{
-    display:block;
-    padding: 50px 10px 20px 30px;
-    margin: 0px;
-    position: relative;
-    font-size: 26px;
-    line-height: 2;
-    text-align: center;
-    border:none;
-  }
-  blockquote::before{
-    content: "\201C"; /*Unicode for Left Double Quote*/
-    /*Font*/
-    font-family: Georgia, serif;
-    font-size: 40px;
-    font-weight: bold;
-    color: #212121;
-    /*Positioning*/
-    position: absolute;
-    left: 10px;
-    top:40px;
-  }
-  blockquote::after{
-    /*Reset to make sure*/
-    content: "";
-  }
-  blockquote footer{
-    font-size: 30px;
-    color: #333;
-    font-family: 'Permanent Marker', cursive;
-    letter-spacing: 1px;
-    margin-top: 20px;
-  }
+	/**NAVBAR********************/
+	.navbar-toggle{
+		border: 1px solid #f3f3f3;
+		background-color: #000;
+	}
+	.navbar-toggle span{
+		background-color: white;
+	}
+	.navbar-collapse{
+		background: #000;
+		color: white;
+	}
+	/**CAROUSEL*********************/
+	.carousel-caption{
+		padding: 0;
+		margin-bottom: 350px;
+	}
+	.carousel-text{
+		font-size: 36px;
+		letter-spacing: 2px;
+	}
+	/***BLOCKQUOTE***************/
+	.quote-sect{
+		height: 500px;
+	}
+	.quote-text{
+		padding: 0px  0px 0px 0px;
+		font-size: 28px;
+	}
+	blockquote{
+		display:block;
+		padding: 50px 10px 20px 30px;
+		margin: 0px;
+		position: relative;
+		font-size: 26px;
+		line-height: 2;
+		text-align: center;
+		border:none;
+	}
+	blockquote::before{
+		content: "\201C"; /*Unicode for Left Double Quote*/
+		/*Font*/
+		font-family: Georgia, serif;
+		font-size: 40px;
+		font-weight: bold;
+		color: #212121;
+		/*Positioning*/
+		position: absolute;
+		left: 10px;
+		top:40px;
+	}
+	blockquote::after{
+		/*Reset to make sure*/
+		content: "";
+	}
+	blockquote footer{
+		font-size: 30px;
+		color: #333;
+		font-family: 'Permanent Marker', cursive;
+		letter-spacing: 1px;
+		margin-top: 20px;
+	}
 
-  /******************** About US / Mission **/
-  .index-about,
-  .index-mission{
-    background:
-    linear-gradient(
-      rgba(0,0,0,.3),
-      rgba(0,0,0,.3)),
-    url(../img/about_us.jpeg);
-    background-position: top center;
-    transition: 500ms background;
-    padding: 0;
-    margin:0;
-  }
-  .index-mission{
-    background:
-    linear-gradient(
-      rgba(0,0,0,.3),
-      rgba(0,0,0,.3)),
-    url(../img/miss_stmt_lg.jpg);
-  }
-  .index-about:hover{
-    background:
-    linear-gradient(
-      rgba(0,0,0,.6),
-      rgba(0,0,0,.6)),
-    url(../img/about_us.jpeg);
-    background-position: top center;
-    cursor: pointer;
-  }
-  .index-mission:hover{
-    background:
-    linear-gradient(
-      rgba(0,0,0,.6),
-      rgba(0,0,0,.6)),
-    url(../img/miss_stmt_lg.jpg);
-    background-position: top left;
-    cursor: pointer;
-  }
-  .about-text,
-  .miss-text{
-    margin-top: 0px;
-    padding-top: 120px;
-    text-align: center;
-    font-size: 56px;
-    color: white;
-  }
-  #about button{
-    margin-top: 120px;
-  }
-  .learn-more{
-    width: 120px;
-    height: 40px;
-    border: 1px solid white;
-    background-color: transparent;
-    border-radius: 10px;
-    color: white;
-    font-size: 18px;
-    letter-spacing: 1px;
-    font-weight: 300;
-  }
-  .index-about:active .learn-more,
-  .index-mission:active .learn-more{
-    background-color: white;
-    color: #333;
-    border-radius: none;
-  }
-  /******************** BIO Section **/
-  #bio{
-    margin-top: 0px;
-    margin-bottom: 100px;
-  }
-  .team-text{
-    padding-top: 50px;
-    margin-bottom: 20px;
-    font-size: 38px;
-  }
-  .bio-flex{
-    flex-flow: row wrap;
-  }
-  .bio-flex-child{
-    width: 100%;
-    height: 400px;
-    margin-bottom: 80px;
-  }
+	/******************** About US / Mission **/
+	.index-about,
+	.index-mission{
+		background:
+		linear-gradient(
+			rgba(0,0,0,.3),
+			rgba(0,0,0,.3)),
+		url(../img/about_us.jpeg);
+		background-position: top center;
+		transition: 500ms background;
+		padding: 0;
+		margin:0;
+	}
+	.index-mission{
+		background:
+		linear-gradient(
+			rgba(0,0,0,.3),
+			rgba(0,0,0,.3)),
+		url(../img/miss_stmt_lg.jpg);
+	}
+	.index-about:hover{
+		background:
+		linear-gradient(
+			rgba(0,0,0,.6),
+			rgba(0,0,0,.6)),
+		url(../img/about_us.jpeg);
+		background-position: top center;
+		cursor: pointer;
+	}
+	.index-mission:hover{
+		background:
+		linear-gradient(
+			rgba(0,0,0,.6),
+			rgba(0,0,0,.6)),
+		url(../img/miss_stmt_lg.jpg);
+		background-position: top left;
+		cursor: pointer;
+	}
+	.about-text,
+	.miss-text{
+		margin-top: 0px;
+		padding-top: 120px;
+		text-align: center;
+		font-size: 56px;
+		color: white;
+	}
+	#about button{
+		margin-top: 120px;
+	}
+	.learn-more{
+		width: 120px;
+		height: 40px;
+		border: 1px solid white;
+		background-color: transparent;
+		border-radius: 10px;
+		color: white;
+		font-size: 18px;
+		letter-spacing: 1px;
+		font-weight: 300;
+	}
+	.index-about:active .learn-more,
+	.index-mission:active .learn-more{
+		background-color: white;
+		color: #333;
+		border-radius: 0;
+	}
+	/******************** BIO Section **/
+	#bio{
+		margin-top: 0px;
+		margin-bottom: 100px;
+	}
+	.team-text{
+		padding-top: 50px;
+		margin-bottom: 20px;
+		font-size: 38px;
+	}
+	.bio-flex{
+		flex-flow: row wrap;
+	}
+	.bio-flex-child{
+		width: 100%;
+		height: 400px;
+		margin-bottom: 80px;
+	}
 
-  /******************** Social Media/ Guides & Services **/
-  .serv-title{
-    text-align: center;
-    font-size: 38px;
-    margin-bottom: 20px;
-    padding-top: 40px;
-  }
-  .service-flex{
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    padding-bottom: 150px;
-  }
-  .ser-flex-child{
-    height: 270px;
-  }
-  .serv-header{
-    text-align: center;
-    color: #eee;
-    margin-top: 70px;
-    letter-spacing: 1px;
-    font-weight: 300;
-    opacity: 1;
-  }
-  .san-fran:hover .serv-header,
-  .nica:hover .serv-header,
-  .holly:hover .serv-header,
-  .santa:hover .serv-header,
-  .la:hover .serv-header,
-  .san-diego:hover .serv-header{
-    margin-top: 70px;
-  }
-  /******************** CONTACT **/
-  form{
-    width: 100%;
-  }
-  /*********************FOOOTER**/
-  .footer-copy{
-    text-align: center;
-    font-size: 26px;
-  }
-  .social-links{
-    float: right;
-    margin-right: 35px;
-    margin-bottom: 20px;
-  }
-  .fa-instagram,
-  .fa-facebook-square,
-  .fa-youtube-play,
-  .fa-twitter-square{
-    margin-right: 5px;
-    cursor: pointer;
-  }
-  .social-links a{
-    color: #333;
-  }
-  .top{
-    margin-right: 10px;
-    margin-top: 65px;
-  }
-  /******************** loc PAGES **/
-  /*Carousel*/
-  #loc-carousel{
-    height:70vh;
-  }
-  .loc-carousel-one{
-    background:url(../img/nica_one.jpg);
-  }
-  .loc-carousel-two{
-    background: url(../img/nica_two.jpg);
-  }
-  .loc-carousel-caption{
-    padding: 0;
-    margin-bottom: 255px;
-  }
-  .loc-carousel-text{
-    font-size: 42px;
-    letter-spacing: 2px;
-    color: #333;
-  }
-  /*Container*/
-  .loc-container{
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
-  .loc-header{
-    text-align: left;
-    margin-bottom: 20px;
-  }
-  .loc-main-text{
-    font-size: 24px;
-    line-height: 40px;
-    letter-spacing: 1px;
-  }
-
+	/******************** Social Media/ Guides & Services **/
+	.serv-title{
+		text-align: center;
+		font-size: 38px;
+		margin-bottom: 20px;
+		padding-top: 40px;
+	}
+	.service-flex{
+		display: flex;
+		justify-content: space-around;
+		flex-flow: row wrap;
+		padding-bottom: 150px;
+	}
+	.ser-flex-child{
+		height: 270px;
+	}
+	.serv-header{
+		text-align: center;
+		color: #eee;
+		margin-top: 70px;
+		letter-spacing: 1px;
+		font-weight: 300;
+		opacity: 1;
+	}
+	.san-fran:hover .serv-header,
+	.nica:hover .serv-header,
+	.holly:hover .serv-header,
+	.santa:hover .serv-header,
+	.la:hover .serv-header,
+	.san-diego:hover .serv-header{
+		margin-top: 70px;
+	}
+	/******************** CONTACT **/
+	form{
+		width: 100%;
+	}
+	/*********************FOOOTER**/
+	.footer-copy{
+		text-align: center;
+		font-size: 26px;
+	}
+	.social-links{
+		float: right;
+		margin-right: 35px;
+		margin-bottom: 20px;
+	}
+	.fa-instagram,
+	.fa-facebook-square,
+	.fa-youtube-play,
+	.fa-twitter-square{
+		margin-right: 5px;
+		cursor: pointer;
+	}
+	.social-links a{
+		color: #333;
+	}
+	.top{
+		margin-right: 10px;
+		margin-top: 65px;
+	}
+	/******************** LOCATION PAGES **/
+	.loc-bg-img{
+		display: none;
+	}
+	.loc-wrapper{
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		margin-top: 30px;
+		box-shadow: none;
+	}
+	.loc-header-text{
+		font-size: 38px;
+		color: #333;
+		position: absolute;
+		top: 140px;
+		left: 50px;
+		z-index: 100;
+	}
+	.header-bot-links{
+		height: 60px;
+		font-size: 18px;
+	}
+	.inner-menu a{
+		font-size: 14px;
+		line-height: 32px;
+		width: 100%;
+		height: 60px;
+		padding-top: 8px;
+		padding-left: 17px;
+		padding-right: 17px;
+	}
+	.loc-main{
+		width: 100%;
+		text-align: center;
+		padding: 60px 15px 40px 15px;
+		border: none;
+	}
+	.dest-img{
+		width: 100%;
+	}
+	.loc-sub-header-text{
+		font-size: 30px;
+	}
+	.guide-serv-text{
+		font-size: 22px;
+		line-height: 50px;
+	}
 }
 
 
 @media screen and (min-width: 426px) and (max-width: 599px) {
-  /**NAVBAR********************/
-  .navbar{
-    border: 1px solid #f3f3f3;
-    background-color: #000;
-  }
-  .navbar span{
-    background-color: white;
-  }
-  /**CAROUSEL*********************/
-  .carousel-caption{
-    padding: 0;
-    margin-bottom: 550px;
-  }
-  /***BLOCKQUOTE***************/
-  .quote-sect{
-    height: 500px;
-  }
-  .quote-text{
-    padding: 0px  0px 0px 0px;
-    font-size: 34px;
-  }
-  blockquote{
-    display:block;
-    padding: 50px 10px 20px 30px;
-    margin: 0px;
-    position: relative;
-    font-size: 26px;
-    line-height: 2;
-    text-align: center;
-    border:none;
-  }
-  blockquote::before{
-    content: "\201C"; /*Unicode for Left Double Quote*/
-    /*Font*/
-    font-family: Georgia, serif;
-    font-size: 44px;
-    font-weight: bold;
-    color: #212121;
-    /*Positioning*/
-    position: absolute;
-    left: 10px;
-    top:40px;
-  }
-  blockquote::after{
-    /*Reset to make sure*/
-    content: "";
-  }
-  blockquote footer{
-    font-size: 36px;
-    color: #333;
-    font-family: 'Permanent Marker', cursive;
-    letter-spacing: 1px;
-    margin-top: 20px;
-  }
+	/**NAVBAR********************/
+	.navbar{
+		border: 1px solid #f3f3f3;
+		background-color: #000;
+	}
+	.navbar span{
+		background-color: white;
+	}
+	/**CAROUSEL*********************/
+	.carousel-caption{
+		padding: 0;
+		margin-bottom: 550px;
+	}
+	/***BLOCKQUOTE***************/
+	.quote-sect{
+		height: 500px;
+	}
+	.quote-text{
+		padding: 0px  0px 0px 0px;
+		font-size: 34px;
+	}
+	blockquote{
+		display:block;
+		padding: 50px 10px 20px 30px;
+		margin: 0px;
+		position: relative;
+		font-size: 26px;
+		line-height: 2;
+		text-align: center;
+		border:none;
+	}
+	blockquote::before{
+		content: "\201C"; /*Unicode for Left Double Quote*/
+		/*Font*/
+		font-family: Georgia, serif;
+		font-size: 44px;
+		font-weight: bold;
+		color: #212121;
+		/*Positioning*/
+		position: absolute;
+		left: 10px;
+		top:40px;
+	}
+	blockquote::after{
+		/*Reset to make sure*/
+		content: "";
+	}
+	blockquote footer{
+		font-size: 36px;
+		color: #333;
+		font-family: 'Permanent Marker', cursive;
+		letter-spacing: 1px;
+		margin-top: 20px;
+	}
 
-  /******************** About US / Mission **/
-  .index-about,
-  .index-mission{
-    background:
-    linear-gradient(
-      rgba(0,0,0,.3),
-      rgba(0,0,0,.3)),
-    url(../img/about_us.jpeg);
-    background-position: top center;
-    transition: 500ms background;
-    padding: 0;
-    margin:0;
-  }
-  .index-mission{
-    background:
-    linear-gradient(
-      rgba(0,0,0,.3),
-      rgba(0,0,0,.3)),
-    url(../img/miss_stmt_lg.jpg);
-  }
-  .index-about:hover{
-    background:
-    linear-gradient(
-      rgba(0,0,0,.6),
-      rgba(0,0,0,.6)),
-    url(../img/about_us.jpeg);
-    background-position: top center;
-    cursor: pointer;
-  }
-  .index-mission:hover{
-    background:
-    linear-gradient(
-      rgba(0,0,0,.6),
-      rgba(0,0,0,.6)),
-    url(../img/miss_stmt_lg.jpg);
-    background-position: top left;
-    cursor: pointer;
-  }
-  .about-text,
-  .miss-text{
-    margin-top: 0px;
-    padding-top: 120px;
-    text-align: center;
-    font-size: 56px;
-  }
-  #about button{
-    margin-top: 120px;
-  }
-  .learn-more{
-    width: 140px;
-    height: 60px;
-    border: 1px solid #333;
-    background-color: #333;
-    border-radius: 10px;
-    color: white;
-    font-size: 24px;
-    letter-spacing: 1px;
-    font-weight: 300;
-  }
-  .index-about:active .learn-more,
-  .index-mission:active .learn-more{
-    background-color: white;
-    color: #333;
-    border-radius: none;
-  }
-  /******************** BIO Section **/
-  #bio{
-    margin-top: 0px;
-    margin-bottom: 100px;
-  }
-  .team-text{
-    padding-top: 50px;
-    margin-bottom: 40px;
-    font-size: 56px;
-  }
-  .bio-text{
-    font-size: 38px;
-  }
-  .bio-flex{
-    flex-flow: row wrap;
-  }
-  .bio-flex-child{
-    width: 100%;
-    height: 530px;
-    margin-bottom: 80px;
-  }
+	/******************** About US / Mission **/
+	.index-about,
+	.index-mission{
+		background:
+		linear-gradient(
+			rgba(0,0,0,.3),
+			rgba(0,0,0,.3)),
+		url(../img/about_us.jpeg);
+		background-position: top center;
+		transition: 500ms background;
+		padding: 0;
+		margin:0;
+	}
+	.index-mission{
+		background:
+		linear-gradient(
+			rgba(0,0,0,.3),
+			rgba(0,0,0,.3)),
+		url(../img/miss_stmt_lg.jpg);
+	}
+	.index-about:hover{
+		background:
+		linear-gradient(
+			rgba(0,0,0,.6),
+			rgba(0,0,0,.6)),
+		url(../img/about_us.jpeg);
+		background-position: top center;
+		cursor: pointer;
+	}
+	.index-mission:hover{
+		background:
+		linear-gradient(
+			rgba(0,0,0,.6),
+			rgba(0,0,0,.6)),
+		url(../img/miss_stmt_lg.jpg);
+		background-position: top left;
+		cursor: pointer;
+	}
+	.about-text,
+	.miss-text{
+		margin-top: 0px;
+		padding-top: 120px;
+		text-align: center;
+		font-size: 56px;
+	}
+	#about button{
+		margin-top: 120px;
+	}
+	.learn-more{
+		width: 140px;
+		height: 60px;
+		border: 1px solid #333;
+		background-color: #333;
+		border-radius: 10px;
+		color: white;
+		font-size: 24px;
+		letter-spacing: 1px;
+		font-weight: 300;
+	}
+	.index-about:active .learn-more,
+	.index-mission:active .learn-more{
+		background-color: white;
+		color: #333;
+		border-radius: 0;
+	}
+	/******************** BIO Section **/
+	#bio{
+		margin-top: 0px;
+		margin-bottom: 100px;
+	}
+	.team-text{
+		padding-top: 50px;
+		margin-bottom: 40px;
+		font-size: 56px;
+	}
+	.bio-text{
+		font-size: 38px;
+	}
+	.bio-flex{
+		flex-flow: row wrap;
+	}
+	.bio-flex-child{
+		width: 100%;
+		height: 530px;
+		margin-bottom: 80px;
+	}
 
-  /******************** Social Media/ Guides & Services **/
-  .serv-title{
-    text-align: center;
-    font-size: 56px;
-    margin-bottom: 20px;
-    padding-top: 40px;
-  }
-  .service-flex{
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    padding-bottom: 150px;
-  }
-  .ser-flex-child{
-    height: 400px;
-    width: 400px;
-  }
-  .serv-header{
-    text-align: center;
-    color: #eee;
-    margin-top: 110px;
-    letter-spacing: 1px;
-    font-weight: 300;
-    font-size: 38px;
-    opacity: 1;
-  }
-  .san-fran:hover .serv-header,
-  .nica:hover .serv-header,
-  .holly:hover .serv-header,
-  .santa:hover .serv-header,
-  .la:hover .serv-header,
-  .san-diego:hover .serv-header{
-    margin-top: 70px;
-  }
-  /******************** CONTACT **/
-  .contact-form-header{
-    font-size: 56px;
-  }
-  .form-control{
-    border-radius: 0;
-    box-shadow: none;
-    border: none;
-    border: 1px solid #333;
-  }
-  .controls input{
-    height: 40px;
-  }
-  .message{
-    border: 1px solid #333;
-  }
-  .control-group{
-    margin-bottom: 40px;
-  }
-  .controls label{
-    margin-bottom: 10px;
-  }
-  .label-text{
-    font-size: 38px;
-  }
-  form .btn-primary{
-    width: 180px;
-    height: 60px;
-  }
-  .btn-text{
-    font-size: 26px;
-    letter-spacing: 1.5px;
-  }
-  form{
-    width: 100%;
-    margin: 0 auto;
-  }
-  .controls input[type="text"],
-  .controls input[type="email"],
-  .controls textarea{
-    font-size: 28px;
-  }
-  /*********************FOOOTER**/
-  .footer-copy{
-    text-align: center;
-    font-size: 28px;
-  }
-  .social-links{
-    float: right;
-    margin-right: 35px;
-    margin-bottom: 20px;
-  }
-  .fa-instagram,
-  .fa-facebook-square,
-  .fa-youtube-play,
-  .fa-twitter-square{
-    margin-right: 10px;
-    cursor: pointer;
-  }
-  .social-links a{
-    color: #333;
-  }
-  .top{
-    margin-right: 10px;
-    margin-top: 65px;
-    font-size: 24px;
-  }
-  /******************** loc PAGES **/
-  /*Carousel*/
-  #loc-carousel{
-    height:70vh;
-  }
-  .loc-carousel-one{
-    background:url(../img/nica_one.jpg);
-  }
-  .loc-carousel-two{
-    background: url(../img/nica_two.jpg);
-  }
-  .loc-carousel-caption{
-    padding: 0;
-    margin-bottom: 355px;
-  }
-  .loc-carousel-text{
-    font-size: 42px;
-    letter-spacing: 2px;
-    color: #333;
-  }
-  /*Container*/
-  .loc-container{
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
-  .loc-header{
-    text-align: left;
-    font-size: 42px;
-    margin-bottom: 20px;
-  }
-  .loc-main-text{
-    font-size: 32px;
-    line-height: 60px;
-    letter-spacing: 1px;
-  }
-
+	/******************** Social Media/ Guides & Services **/
+	.serv-title{
+		text-align: center;
+		font-size: 56px;
+		margin-bottom: 20px;
+		padding-top: 40px;
+	}
+	.service-flex{
+		display: flex;
+		justify-content: space-around;
+		flex-flow: row wrap;
+		padding-bottom: 150px;
+	}
+	.ser-flex-child{
+		height: 400px;
+		width: 400px;
+	}
+	.serv-header{
+		text-align: center;
+		color: #eee;
+		margin-top: 110px;
+		letter-spacing: 1px;
+		font-weight: 300;
+		font-size: 38px;
+		opacity: 1;
+	}
+	.san-fran:hover .serv-header,
+	.nica:hover .serv-header,
+	.holly:hover .serv-header,
+	.santa:hover .serv-header,
+	.la:hover .serv-header,
+	.san-diego:hover .serv-header{
+		margin-top: 70px;
+	}
+	/******************** CONTACT **/
+	.contact-form-header{
+		font-size: 56px;
+	}
+	.form-control{
+		border-radius: 0;
+		box-shadow: none;
+		border: none;
+		border: 1px solid #333;
+	}
+	.controls input{
+		height: 40px;
+	}
+	.message{
+		border: 1px solid #333;
+	}
+	.control-group{
+		margin-bottom: 40px;
+	}
+	.controls label{
+		margin-bottom: 10px;
+	}
+	.label-text{
+		font-size: 38px;
+	}
+	form .btn-primary{
+		width: 180px;
+		height: 60px;
+	}
+	.btn-text{
+		font-size: 26px;
+		letter-spacing: 1.5px;
+	}
+	form{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.controls input[type="text"],
+	.controls input[type="email"],
+	.controls textarea{
+		font-size: 28px;
+	}
+	/*********************FOOOTER**/
+	.footer-copy{
+		text-align: center;
+		font-size: 28px;
+	}
+	.social-links{
+		float: right;
+		margin-right: 35px;
+		margin-bottom: 20px;
+	}
+	.fa-instagram,
+	.fa-facebook-square,
+	.fa-youtube-play,
+	.fa-twitter-square{
+		margin-right: 10px;
+		cursor: pointer;
+	}
+	.social-links a{
+		color: #333;
+	}
+	.top{
+		margin-right: 10px;
+		margin-top: 65px;
+		font-size: 24px;
+	}
+	/******************** LOCATION PAGES **/
+	.loc-bg-img{
+		display: none;
+	}
+	.loc-wrapper{
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		margin-top: 30px;
+		box-shadow: none;
+	}
+	.loc-header-text{
+		font-size: 48px;
+		color: #333;
+		position: absolute;
+		top: 140px;
+		left: 70px;
+		z-index: 100;
+	}
+	.header-bot-links{
+		height: 60px;
+	}
+	.inner-menu a{
+		font-size: 20px;
+		line-height: 32px;
+		width: 100%;
+		height: 60px;
+		padding-top: 8px;
+		padding-left: 17px;
+		padding-right: 17px;
+	}
+	.loc-main{
+		width: 100%;
+		text-align: center;
+		padding: 60px 15px 40px 15px;
+		border: none;
+	}
+	.dest-img{
+		width: 100%;
+	}
+	.loc-sub-header-text{
+		font-size: 34px;
+	}
+	.guide-serv-text{
+		font-size: 28px;
+		line-height: 55px;
+	}
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
-  /**NAVBAR********************/
-  .navbar{
-    border: 1px solid #f3f3f3;
-    background-color: #000;
-  }
-  .navbar span{
-    background-color: white;
-  }
-  /**CAROUSEL*********************/
-  .carousel-caption{
-    padding: 0;
-    margin-bottom: 450px;
-  }
-  /***BLOCKQUOTE***************/
-  .quote-sect{
-    height: 500px;
-  }
-  .quote-text{
-    padding: 0px  0px 0px 0px;
-    font-size: 34px;
-  }
-  blockquote{
-    display:block;
-    padding: 50px 10px 20px 30px;
-    margin: 0px;
-    position: relative;
-    font-size: 26px;
-    line-height: 2;
-    text-align: center;
-    border:none;
-  }
-  blockquote::before{
-    content: "\201C"; /*Unicode for Left Double Quote*/
-    /*Font*/
-    font-family: Georgia, serif;
-    font-size: 44px;
-    font-weight: bold;
-    color: #212121;
-    /*Positioning*/
-    position: absolute;
-    left: 10px;
-    top:40px;
-  }
-  blockquote::after{
-    /*Reset to make sure*/
-    content: "";
-  }
-  blockquote footer{
-    font-size: 36px;
-    color: #333;
-    font-family: 'Permanent Marker', cursive;
-    letter-spacing: 1px;
-    margin-top: 20px;
-  }
+	/**NAVBAR********************/
+	.navbar{
+		border: 1px solid #f3f3f3;
+		background-color: #000;
+	}
+	.navbar span{
+		background-color: white;
+	}
+	/**CAROUSEL*********************/
+	.carousel-caption{
+		padding: 0;
+		margin-bottom: 450px;
+	}
+	/***BLOCKQUOTE***************/
+	.quote-sect{
+		height: 500px;
+	}
+	.quote-text{
+		padding: 0px  0px 0px 0px;
+		font-size: 34px;
+	}
+	blockquote{
+		display:block;
+		padding: 50px 10px 20px 30px;
+		margin: 0px;
+		position: relative;
+		font-size: 26px;
+		line-height: 2;
+		text-align: center;
+		border:none;
+	}
+	blockquote::before{
+		content: "\201C"; /*Unicode for Left Double Quote*/
+		/*Font*/
+		font-family: Georgia, serif;
+		font-size: 44px;
+		font-weight: bold;
+		color: #212121;
+		/*Positioning*/
+		position: absolute;
+		left: 10px;
+		top:40px;
+	}
+	blockquote::after{
+		/*Reset to make sure*/
+		content: "";
+	}
+	blockquote footer{
+		font-size: 36px;
+		color: #333;
+		font-family: 'Permanent Marker', cursive;
+		letter-spacing: 1px;
+		margin-top: 20px;
+	}
 
-  /******************** About US / Mission **/
-  .index-about,
-  .index-mission{
-    background:
-    linear-gradient(
-      rgba(0,0,0,.3),
-      rgba(0,0,0,.3)),
-    url(../img/about_us.jpeg);
-    background-position: top center;
-    transition: 500ms background;
-    padding: 0;
-    margin:0;
-  }
-  .index-mission{
-    background:
-    linear-gradient(
-      rgba(0,0,0,.3),
-      rgba(0,0,0,.3)),
-    url(../img/miss_stmt_lg.jpg);
-  }
-  .index-about:hover{
-    background:
-    linear-gradient(
-      rgba(0,0,0,.6),
-      rgba(0,0,0,.6)),
-    url(../img/about_us.jpeg);
-    background-position: top center;
-    cursor: pointer;
-  }
-  .index-mission:hover{
-    background:
-    linear-gradient(
-      rgba(0,0,0,.6),
-      rgba(0,0,0,.6)),
-    url(../img/miss_stmt_lg.jpg);
-    background-position: top left;
-    cursor: pointer;
-  }
-  .about-text,
-  .miss-text{
-    margin-top: 0px;
-    padding-top: 120px;
-    text-align: center;
-    font-size: 56px;
-  }
-  #about button{
-    margin-top: 120px;
-  }
-  .learn-more{
-    width: 140px;
-    height: 60px;
-    border: 1px solid #333;
-    background-color: #333;
-    border-radius: 10px;
-    color: white;
-    font-size: 24px;
-    letter-spacing: 1px;
-    font-weight: 300;
-  }
-  .index-about:active .learn-more,
-  .index-mission:active .learn-more{
-    background-color: white;
-    color: #333;
-    border-radius: none;
-  }
-  /******************** BIO Section **/
-  #bio{
-    margin-top: 0px;
-    margin-bottom: 100px;
-  }
-  .team-text{
-    padding-top: 50px;
-    margin-bottom: 40px;
-    font-size: 56px;
-  }
-  .bio-text{
-    font-size: 38px;
-  }
-  .bio-flex{
-    flex-flow: row wrap;
-  }
-  .bio-flex-child{
-    width: 100%;
-    height: 530px;
-    margin-bottom: 200px;
-  }
+	/******************** About US / Mission **/
+	.index-about,
+	.index-mission{
+		background:
+		linear-gradient(
+			rgba(0,0,0,.3),
+			rgba(0,0,0,.3)),
+		url(../img/about_us.jpeg);
+		background-position: top center;
+		transition: 500ms background;
+		padding: 0;
+		margin:0;
+	}
+	.index-mission{
+		background:
+		linear-gradient(
+			rgba(0,0,0,.3),
+			rgba(0,0,0,.3)),
+		url(../img/miss_stmt_lg.jpg);
+	}
+	.index-about:hover{
+		background:
+		linear-gradient(
+			rgba(0,0,0,.6),
+			rgba(0,0,0,.6)),
+		url(../img/about_us.jpeg);
+		background-position: top center;
+		cursor: pointer;
+	}
+	.index-mission:hover{
+		background:
+		linear-gradient(
+			rgba(0,0,0,.6),
+			rgba(0,0,0,.6)),
+		url(../img/miss_stmt_lg.jpg);
+		background-position: top left;
+		cursor: pointer;
+	}
+	.about-text,
+	.miss-text{
+		margin-top: 0px;
+		padding-top: 120px;
+		text-align: center;
+		font-size: 56px;
+	}
+	#about button{
+		margin-top: 120px;
+	}
+	.learn-more{
+		width: 140px;
+		height: 60px;
+		border: 1px solid #333;
+		background-color: #333;
+		border-radius: 10px;
+		color: white;
+		font-size: 24px;
+		letter-spacing: 1px;
+		font-weight: 300;
+	}
+	.index-about:active .learn-more,
+	.index-mission:active .learn-more{
+		background-color: white;
+		color: #333;
+		border-radius: 0;
+	}
+	/******************** BIO Section **/
+	#bio{
+		margin-top: 0px;
+		margin-bottom: 100px;
+	}
+	.team-text{
+		padding-top: 50px;
+		margin-bottom: 40px;
+		font-size: 56px;
+	}
+	.bio-text{
+		font-size: 38px;
+	}
+	.bio-flex{
+		flex-flow: row wrap;
+	}
+	.bio-flex-child{
+		width: 100%;
+		height: 530px;
+		margin-bottom: 200px;
+	}
 
-  /******************** Social Media/ Guides & Services **/
-  .serv-title{
-    text-align: center;
-    font-size: 56px;
-    margin-bottom: 20px;
-    padding-top: 40px;
-  }
-  .service-flex{
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    padding-bottom: 150px;
-  }
-  .ser-flex-child{
-    width: 80%;
-    height: 450px;
-    background-size: cover;
-  }
-  .serv-header{
-    text-align: center;
-    color: #eee;
-    margin-top: 110px;
-    letter-spacing: 1px;
-    font-weight: 300;
-    font-size: 38px;
-    opacity: 1;
-  }
-  .san-fran:hover .serv-header,
-  .nica:hover .serv-header,
-  .holly:hover .serv-header,
-  .santa:hover .serv-header,
-  .la:hover .serv-header,
-  .san-diego:hover .serv-header{
-    margin-top: 70px;
-  }
-  /******************** CONTACT **/
-  .contact-form-header{
-    font-size: 56px;
-  }
-  .form-control{
-    border-radius: 0;
-    box-shadow: none;
-    border: none;
-    border: 1px solid #333;
-  }
-  .controls input{
-    height: 40px;
-  }
-  .message{
-    border: 1px solid #333;
-  }
-  .control-group{
-    margin-bottom: 40px;
-  }
-  .controls label{
-    margin-bottom: 10px;
-  }
-  .label-text{
-    font-size: 38px;
-  }
-  form .btn-primary{
-    width: 180px;
-    height: 60px;
-  }
-  .btn-text{
-    font-size: 26px;
-    letter-spacing: 1.5px;
-  }
-  form{
-    width: 100%;
-    margin: 0 auto;
-  }
-  .controls input[type="text"],
-  .controls input[type="email"],
-  .controls textarea{
-    font-size: 28px;
-  }
-  /*********************FOOOTER**/
-  .footer-copy{
-    text-align: center;
-    font-size: 28px;
-  }
-  .social-links{
-    float: right;
-    margin-right: 35px;
-    margin-bottom: 20px;
-  }
-  .fa-instagram,
-  .fa-facebook-square,
-  .fa-youtube-play,
-  .fa-twitter-square{
-    margin-right: 10px;
-    cursor: pointer;
-  }
-  .social-links a{
-    color: #333;
-  }
-  .top{
-    margin-right: 10px;
-    margin-top: 65px;
-    font-size: 24px;
-  }
-  /******************** loc PAGES **/
-  /*Carousel*/
-  #loc-carousel{
-    height:70vh;
-  }
-  .loc-carousel-one{
-    background:url(../img/nica_one.jpg);
-  }
-  .loc-carousel-two{
-    background: url(../img/nica_two.jpg);
-  }
-  .loc-carousel-caption{
-    padding: 0;
-    margin-bottom: 400px;
-  }
-  .loc-carousel-text{
-    font-size: 48px;
-    letter-spacing: 2px;
-    color: #333;
-  }
-  /*Container*/
-  .loc-container{
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
-  .loc-header{
-    text-align: left;
-    font-size: 48px;
-    margin-bottom: 20px;
-  }
-  .loc-main-text{
-    font-size: 38px;
-    line-height: 70px;
-    letter-spacing: 1px;
-  }
+	/******************** Social Media/ Guides & Services **/
+	.serv-title{
+		text-align: center;
+		font-size: 56px;
+		margin-bottom: 20px;
+		padding-top: 40px;
+	}
+	.service-flex{
+		display: flex;
+		justify-content: space-around;
+		flex-flow: row wrap;
+		padding-bottom: 150px;
+	}
+	.ser-flex-child{
+		width: 80%;
+		height: 450px;
+		background-size: cover;
+	}
+	.serv-header{
+		text-align: center;
+		color: #eee;
+		margin-top: 110px;
+		letter-spacing: 1px;
+		font-weight: 300;
+		font-size: 38px;
+		opacity: 1;
+	}
+	.san-fran:hover .serv-header,
+	.nica:hover .serv-header,
+	.holly:hover .serv-header,
+	.santa:hover .serv-header,
+	.la:hover .serv-header,
+	.san-diego:hover .serv-header{
+		margin-top: 70px;
+	}
+	/******************** CONTACT **/
+	.contact-form-header{
+		font-size: 56px;
+	}
+	.form-control{
+		border-radius: 0;
+		box-shadow: none;
+		border: none;
+		border: 1px solid #333;
+	}
+	.controls input{
+		height: 40px;
+	}
+	.message{
+		border: 1px solid #333;
+	}
+	.control-group{
+		margin-bottom: 40px;
+	}
+	.controls label{
+		margin-bottom: 10px;
+	}
+	.label-text{
+		font-size: 38px;
+	}
+	form .btn-primary{
+		width: 180px;
+		height: 60px;
+	}
+	.btn-text{
+		font-size: 26px;
+		letter-spacing: 1.5px;
+	}
+	form{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.controls input[type="text"],
+	.controls input[type="email"],
+	.controls textarea{
+		font-size: 28px;
+	}
+	/*********************FOOOTER**/
+	.footer-copy{
+		text-align: center;
+		font-size: 28px;
+	}
+	.social-links{
+		float: right;
+		margin-right: 35px;
+		margin-bottom: 20px;
+	}
+	.fa-instagram,
+	.fa-facebook-square,
+	.fa-youtube-play,
+	.fa-twitter-square{
+		margin-right: 10px;
+		cursor: pointer;
+	}
+	.social-links a{
+		color: #333;
+	}
+	.top{
+		margin-right: 10px;
+		margin-top: 65px;
+		font-size: 24px;
+	}
+	/******************** LOCATION PAGES **/
+	.loc-bg-img{
+		display: none;
+	}
+	.loc-wrapper{
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		margin-top: 30px;
+		box-shadow: none;
+	}
+	.loc-header-text{
+		font-size: 48px;
+		color: #333;
+		position: absolute;
+		top: 140px;
+		left: 70px;
+		z-index: 100;
+	}
+	.header-bot-links{
+		height: 60px;
+	}
+	.inner-menu a{
+		font-size: 24px;
+		line-height: 32px;
+		width: 153px;
+		height: 60px;
+		padding-top: 8px;
+	}
+	.dir ul li{
+		width: 200px;
+	}
+	.loc-main{
+		width: 100%;
+		text-align: center;
+		padding: 60px 15px 40px 15px;
+		border: none;
+	}
+	.dest-img{
+		width: 100%;
+	}
+	.loc-sub-header-text{
+		font-size: 34px;
+	}
+	.guide-serv-text{
+		font-size: 28px;
+		line-height: 55px;
+	}
 
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
-  /**CAROUSEL*********************/
-  .carousel-caption{
-    padding: 0;
-    margin-bottom: 400px;
-  }
-  .carousel-text{
-    font-size: 36px;
-    letter-spacing: 2px;
-  }
-  /*********************FOOOTER**/
-  .footer-copy{
-    text-align: center;
-    font-size: 28px;
-  }
-  .social-links{
-    float: right;
-    margin-right: 35px;
-    margin-bottom: 20px;
-  }
-  .fa-instagram,
-  .fa-facebook-square,
-  .fa-youtube-play,
-  .fa-twitter-square{
-    margin-right: 10px;
-    cursor: pointer;
-  }
-  .social-links a{
-    color: #333;
-  }
-  .top{
-    margin-right: 10px;
-    margin-top: 65px;
-    font-size: 24px;
-  }
-  /******************** loc PAGES **/
-  /*Carousel*/
-  #loc-carousel{
-    height:70vh;
-  }
-  .loc-carousel-one{
-    background:url(../img/nica_one.jpg);
-  }
-  .loc-carousel-two{
-    background: url(../img/nica_two.jpg);
-  }
-  .loc-carousel-caption{
-    padding: 0;
-    margin-bottom: 500px;
-  }
-  .loc-carousel-text{
-    font-size: 68px;
-    letter-spacing: 2px;
-    color: #333;
-  }
-  /*Container*/
-  .loc-container{
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
-  .loc-header{
-    text-align: left;
-    font-size: 68px;
-    margin-top: 60px;
-    margin-bottom: 20px;
-  }
-  .loc-main-text{
-    font-size: 48px;
-    line-height: 80px;
-    letter-spacing: 1px;
-  }
+	/**CAROUSEL*********************/
+	.carousel-caption{
+		padding: 0;
+		margin-bottom: 400px;
+	}
+	.carousel-text{
+		font-size: 36px;
+		letter-spacing: 2px;
+	}
+	/*********************FOOOTER**/
+	.footer-copy{
+		text-align: center;
+		font-size: 28px;
+	}
+	.social-links{
+		float: right;
+		margin-right: 35px;
+		margin-bottom: 20px;
+	}
+	.fa-instagram,
+	.fa-facebook-square,
+	.fa-youtube-play,
+	.fa-twitter-square{
+		margin-right: 10px;
+		cursor: pointer;
+	}
+	.social-links a{
+		color: #333;
+	}
+	.top{
+		margin-right: 10px;
+		margin-top: 65px;
+		font-size: 24px;
+	}
+	/******************** LOCATION PAGES **/
+	.loc-bg-img{
+		display: none;
+	}
+	.loc-wrapper{
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		margin-top: 50px;
+		box-shadow: none;
+	}
+	.loc-header-text{
+		font-size: 62px;
+		color: #333;
+		position: absolute;
+		top: 140px;
+		left: 150px;
+		z-index: 100;
+	}
+	.header-bot-links{
+		height: 70px;
+	}
+	.inner-menu a{
+		font-size: 24px;
+		width: 153px;
+		height: 70px;
+		padding-top: 15px;
+	}
+	.dir ul li{
+		width: 200px;
+	}
+	.loc-main{
+		width: 100%;
+		text-align: center;
+		padding: 80px 20px 40px 20px;
+		border: none;
+	}
+	.dest-img{
+		width: 100%;
+	}
+	.loc-sub-header-text{
+		font-size: 34px;
+	}
+	.guide-serv-text{
+		font-size: 30px;
+		line-height: 60px;
+	}
 
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .navbar a{
-    font-size: 28px;
-  }
-  /**CAROUSEL*********************/
-  .carousel-caption{
-    padding: 0;
-    margin-bottom: 470px;
-  }
-  .carousel-text{
-    font-size: 52px;
-    letter-spacing: 2px;
-  }
-  /*********************FOOOTER**/
-  .footer-copy{
-    text-align: center;
-    font-size: 28px;
-  }
-  .social-links{
-    float: right;
-    margin-right: 35px;
-    margin-bottom: 20px;
-  }
-  .fa-instagram,
-  .fa-facebook-square,
-  .fa-youtube-play,
-  .fa-twitter-square{
-    margin-right: 10px;
-    cursor: pointer;
-  }
-  .social-links a{
-    color: #333;
-  }
-  .top{
-    margin-right: 10px;
-    margin-top: 65px;
-    font-size: 24px;
-  }
-  /******************** loc PAGES **/
-  /*Carousel*/
-  #loc-carousel{
-    height: 80vh;
-  }
-  .loc-carousel-one{
-    background:url(../img/nica_one.jpg);
-  }
-  .loc-carousel-two{
-    background: url(../img/nica_two.jpg);
-  }
-  .loc-carousel-caption{
-    padding: 0;
-    margin-bottom: 240px;
-  }
-  .loc-carousel-text{
-    font-size: 50px;
-    letter-spacing: 2px;
-    color: #333;
-  }
-  /*Container*/
-  .loc-container{
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
-  .loc-header{
-    text-align: left;
-    font-size: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .loc-main-text{
-    font-size: 32px;
-    line-height: 60px;
-    letter-spacing: 1px;
-  }
+	.navbar a{
+		font-size: 28px;
+	}
+	/**CAROUSEL*********************/
+	.carousel-caption{
+		padding: 0;
+		margin-bottom: 470px;
+	}
+	.carousel-text{
+		font-size: 52px;
+		letter-spacing: 2px;
+	}
+	/*********************FOOOTER**/
+	.footer-copy{
+		text-align: center;
+		font-size: 28px;
+	}
+	.social-links{
+		float: right;
+		margin-right: 35px;
+		margin-bottom: 20px;
+	}
+	.fa-instagram,
+	.fa-facebook-square,
+	.fa-youtube-play,
+	.fa-twitter-square{
+		margin-right: 10px;
+		cursor: pointer;
+	}
+	.social-links a{
+		color: #333;
+	}
+	.top{
+		margin-right: 10px;
+		margin-top: 65px;
+		font-size: 24px;
+	}
+	/******************** loc PAGES **/
+	/*Carousel*/
+	#loc-carousel{
+		height: 80vh;
+	}
+	.loc-carousel-one{
+		background:url(../img/nica_one.jpg);
+	}
+	.loc-carousel-two{
+		background: url(../img/nica_two.jpg);
+	}
+	.loc-carousel-caption{
+		padding: 0;
+		margin-bottom: 240px;
+	}
+	.loc-carousel-text{
+		font-size: 50px;
+		letter-spacing: 2px;
+		color: #333;
+	}
+	/*Container*/
+	.loc-container{
+		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+	.loc-header{
+		text-align: left;
+		font-size: 50px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.loc-main-text{
+		font-size: 32px;
+		line-height: 60px;
+		letter-spacing: 1px;
+	}
 }
 
 
 @media screen and (min-width: 1280px) and (max-width: 1366px) {
-  .navbar a{
-    font-size: 28px;
-  }
-  /**CAROUSEL*********************/
-  .carousel-caption{
-    padding: 0;
-    margin-bottom: 470px;
-  }
-  .carousel-text{
-    font-size: 52px;
-    letter-spacing: 2px;
-  }
-  /******************** loc PAGES **/
-  /*Carousel*/
-  #loc-carousel{
-    height: 80vh;
-  }
-  .loc-carousel-one{
-    background:url(../img/nica_one.jpg);
-  }
-  .loc-carousel-two{
-    background: url(../img/nica_two.jpg);
-  }
-  .loc-carousel-caption{
-    padding: 0;
-    margin-bottom: 340px;
-  }
-  .loc-carousel-text{
-    font-size: 56px;
-    letter-spacing: 2px;
-    color: #333;
-  }
-  /*Container*/
-  .loc-container{
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
-  .loc-header{
-    text-align: left;
-    font-size: 56px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .loc-main-text{
-    font-size: 32px;
-    line-height: 60px;
-    letter-spacing: 1px;
-  }
+	.navbar a{
+		font-size: 28px;
+	}
+	/**CAROUSEL*********************/
+	.carousel-caption{
+		padding: 0;
+		margin-bottom: 470px;
+	}
+	.carousel-text{
+		font-size: 52px;
+		letter-spacing: 2px;
+	}
+	/******************** loc PAGES **/
+	/*Carousel*/
+	#loc-carousel{
+		height: 80vh;
+	}
+	.loc-carousel-one{
+		background:url(../img/nica_one.jpg);
+	}
+	.loc-carousel-two{
+		background: url(../img/nica_two.jpg);
+	}
+	.loc-carousel-caption{
+		padding: 0;
+		margin-bottom: 340px;
+	}
+	.loc-carousel-text{
+		font-size: 56px;
+		letter-spacing: 2px;
+		color: #333;
+	}
+	/*Container*/
+	.loc-container{
+		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+	.loc-header{
+		text-align: left;
+		font-size: 56px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.loc-main-text{
+		font-size: 32px;
+		line-height: 60px;
+		letter-spacing: 1px;
+	}
 }
 
 @media screen and (min-width: 1367px) and (max-width: 1440px) {
-  .navbar{
-    padding-top: 10px;
-  }
-  .navbar a{
-    color: #fff;
-    font-size: 32px;
-  }
-  #comp_name{
-    font-size: 40px;
-  }
+	.navbar{
+		padding-top: 10px;
+	}
+	.navbar a{
+		color: #fff;
+		font-size: 32px;
+	}
+	#comp_name{
+		font-size: 40px;
+	}
 
-  /**CAROUSEL*********************/
-  /** Header section **/
-  #myCarousel{
-    height:100vh;
-  }
-  header.carousel{
-    margin-top: -50px;
-    height: 700px;
-  }
-  .carousel-caption{
-    padding: 0;
-    margin-bottom: 500px;
-  }
-  .carousel-text{
-    font-size: 48px;
-    letter-spacing: 2px;
-  }
-  /*********************/
-  /******************** Blockquote **/
-  #test{
-    background-color: #fff;
-  }
-  .quote-sect{
-    height: 500px;
-  }
-  .quote-text{
-    padding: 70px 30px 30px 30px;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 40px;
-  }
-  blockquote{
-    display:block;
-    padding: 15px 50px 15px 50px;
-    margin: 60px 30px 30px 30px;
-    position: relative;
-    /*Font*/
-    font-family: Georgia, serif;
-    font-size: 28px;
-    line-height: 1.5;
-    color: #212121;
-    text-align: center;
-    border:none;
-  }
-  blockquote::before{
-    content: "\201C"; /*Unicode for Left Double Quote*/
-    /*Font*/
-    font-family: Georgia, serif;
-    font-size: 60px;
-    font-weight: bold;
-    color: #212121;
-    /*Positioning*/
-    position: absolute;
-    left: 30px;
-    top:20px;
-  }
-  blockquote::after{
-    /*Reset to make sure*/
-    content: "";
-  }
-  blockquote footer{
-    font-size: 44px;
-    color: #333;
-    font-family: 'Permanent Marker', cursive;
-    letter-spacing: 1px;
-  }
-  /***************************/
-  /******************** About US / Mission **/
-  .about-text,
-  .miss-text{
-    margin-top: 200px;
-    text-align: center;
-    font-size: 62px;
-    letter-spacing: 1px;
-  }
-  .learn-more{
-    width: 140px;
-    height: 60px;
-    font-size: 26px;
-    letter-spacing: 1px;
-  }
-  /*********************************/
-  /******************** BIO Section **/
-  .team-text{
-    font-size: 46px;
-  }
-  .bio-text{
-    font-size: 36px;
-  }
-  /*********************************/
-  /******************** Social Media/ Guides & Services **/
-  #services{
-    margin-top: 30px;
-  }
-  .serv-title{
-    font-size: 46px;
-  }
-  .serv-header{
-    font-size: 36px;
-  }
-  /*********************************/
-  /******************** CONTACT **/
-  .contact-form-header{
-    font-size: 46px;
-  }
-  .form-control{
-    border-radius: 0;
-    box-shadow: none;
-    border: none;
-    border: 1px solid #333;
-  }
-  .controls input{
-    height: 40px;
-  }
+	/**CAROUSEL*********************/
+	/** Header section **/
+	#myCarousel{
+		height:100vh;
+	}
+	header.carousel{
+		margin-top: -50px;
+		height: 700px;
+	}
+	.carousel-caption{
+		padding: 0;
+		margin-bottom: 500px;
+	}
+	.carousel-text{
+		font-size: 48px;
+		letter-spacing: 2px;
+	}
+	/*********************/
+	/******************** Blockquote **/
+	#test{
+		background-color: #fff;
+	}
+	.quote-sect{
+		height: 500px;
+	}
+	.quote-text{
+		padding: 70px 30px 30px 30px;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size: 40px;
+	}
+	blockquote{
+		display:block;
+		padding: 15px 50px 15px 50px;
+		margin: 60px 30px 30px 30px;
+		position: relative;
+		/*Font*/
+		font-family: Georgia, serif;
+		font-size: 28px;
+		line-height: 1.5;
+		color: #212121;
+		text-align: center;
+		border:none;
+	}
+	blockquote::before{
+		content: "\201C"; /*Unicode for Left Double Quote*/
+		/*Font*/
+		font-family: Georgia, serif;
+		font-size: 60px;
+		font-weight: bold;
+		color: #212121;
+		/*Positioning*/
+		position: absolute;
+		left: 30px;
+		top:20px;
+	}
+	blockquote::after{
+		/*Reset to make sure*/
+		content: "";
+	}
+	blockquote footer{
+		font-size: 44px;
+		color: #333;
+		font-family: 'Permanent Marker', cursive;
+		letter-spacing: 1px;
+	}
+	/***************************/
+	/******************** About US / Mission **/
+	.about-text,
+	.miss-text{
+		margin-top: 200px;
+		text-align: center;
+		font-size: 62px;
+		letter-spacing: 1px;
+	}
+	.learn-more{
+		width: 140px;
+		height: 60px;
+		font-size: 26px;
+		letter-spacing: 1px;
+	}
+	/*********************************/
+	/******************** BIO Section **/
+	.team-text{
+		font-size: 46px;
+	}
+	.bio-text{
+		font-size: 36px;
+	}
+	/*********************************/
+	/******************** Social Media/ Guides & Services **/
+	#services{
+		margin-top: 30px;
+	}
+	.serv-title{
+		font-size: 46px;
+	}
+	.serv-header{
+		font-size: 36px;
+	}
+	/*********************************/
+	/******************** CONTACT **/
+	.contact-form-header{
+		font-size: 46px;
+	}
+	.form-control{
+		border-radius: 0;
+		box-shadow: none;
+		border: none;
+		border: 1px solid #333;
+	}
+	.controls input{
+		height: 40px;
+	}
 
-  .message{
-    border: 1px solid #333;
-  }
-  .control-group{
-    margin-bottom: 40px;
-  }
-  .controls label{
-    margin-bottom: 10px;
-  }
-  .label-text{
-    font-size: 36px;
-  }
-  form .btn-primary{
-    width: 180px;
-    height: 60px;
-  }
-  .btn-text{
-    font-size: 26px;
-    letter-spacing: 1.5px;
-  }
-  form{
-    width: 60%;
-    margin: 0 auto;
-  }
-  .controls input[type="text"],
-  .controls input[type="email"],
-  .controls textarea{
-    font-size: 28px;
-  }
-  /*********************************/
-  /******************** FOOTER **/
-  .footer-copy{
-    font-size: 46px;
-  }
-  .fa-instagram,
-  .fa-facebook-square,
-  .fa-youtube-play,
-  .fa-twitter-square{
-    margin-right: 15px;
-    cursor: pointer;
-  }
-  .top{
-    font-size: 28px;
-    color: #212121;
-    cursor: pointer;
-  }
-  /******************** loc PAGES **/
-  /*Carousel*/
-  #loc-carousel{
-    height: 80vh;
-  }
-  .loc-carousel-one{
-    background:url(../img/nica_one.jpg);
-  }
-  .loc-carousel-two{
-    background: url(../img/nica_two.jpg);
-  }
-  .loc-carousel-caption{
-    padding: 0;
-    margin-bottom: 370px;
-  }
-  .loc-carousel-text{
-    font-size: 58px;
-    letter-spacing: 2px;
-    color: #333;
-  }
-  /*Container*/
-  .loc-container{
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
-  .loc-header{
-    text-align: left;
-    font-size: 58px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .loc-main-text{
-    font-size: 36px;
-    line-height: 65px;
-    letter-spacing: 1px;
-  }
+	.message{
+		border: 1px solid #333;
+	}
+	.control-group{
+		margin-bottom: 40px;
+	}
+	.controls label{
+		margin-bottom: 10px;
+	}
+	.label-text{
+		font-size: 36px;
+	}
+	form .btn-primary{
+		width: 180px;
+		height: 60px;
+	}
+	.btn-text{
+		font-size: 26px;
+		letter-spacing: 1.5px;
+	}
+	form{
+		width: 60%;
+		margin: 0 auto;
+	}
+	.controls input[type="text"],
+	.controls input[type="email"],
+	.controls textarea{
+		font-size: 28px;
+	}
+	/*********************************/
+	/******************** FOOTER **/
+	.footer-copy{
+		font-size: 46px;
+	}
+	.fa-instagram,
+	.fa-facebook-square,
+	.fa-youtube-play,
+	.fa-twitter-square{
+		margin-right: 15px;
+		cursor: pointer;
+	}
+	.top{
+		font-size: 28px;
+		color: #212121;
+		cursor: pointer;
+	}
+	/******************** loc PAGES **/
+	/*Carousel*/
+	#loc-carousel{
+		height: 80vh;
+	}
+	.loc-carousel-one{
+		background:url(../img/nica_one.jpg);
+	}
+	.loc-carousel-two{
+		background: url(../img/nica_two.jpg);
+	}
+	.loc-carousel-caption{
+		padding: 0;
+		margin-bottom: 370px;
+	}
+	.loc-carousel-text{
+		font-size: 58px;
+		letter-spacing: 2px;
+		color: #333;
+	}
+	/*Container*/
+	.loc-container{
+		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+	.loc-header{
+		text-align: left;
+		font-size: 58px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.loc-main-text{
+		font-size: 36px;
+		line-height: 65px;
+		letter-spacing: 1px;
+	}
 }
 @media screen and (min-width: 1441px) and (max-width: 1600px){
-  .navbar{
-    padding-top: 10px;
-  }
-  .navbar a{
-    color: #fff;
-    font-size: 32px;
-  }
-  #comp_name{
-    font-size: 40px;
-  }
+	.navbar{
+		padding-top: 10px;
+	}
+	.navbar a{
+		color: #fff;
+		font-size: 32px;
+	}
+	#comp_name{
+		font-size: 40px;
+	}
 
-  /**CAROUSEL*********************/
-  /** Header section **/
-  #myCarousel{
-    height:100vh;
-  }
-  header.carousel{
-    margin-top: -50px;
-    height: 700px;
-  }
-  .carousel-caption{
-    padding: 0;
-    margin-bottom: 500px;
-  }
-  .carousel-text{
-    font-size: 48px;
-    letter-spacing: 2px;
-  }
-  /*********************/
-  /******************** Blockquote **/
-  #test{
-    background-color: #fff;
-  }
-  .quote-sect{
-    height: 500px;
-  }
-  .quote-text{
-    padding: 70px 30px 30px 30px;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 40px;
-  }
-  blockquote{
-    display:block;
-    padding: 15px 50px 15px 50px;
-    margin: 60px 30px 30px 30px;
-    position: relative;
-    /*Font*/
-    font-family: Georgia, serif;
-    font-size: 28px;
-    line-height: 1.5;
-    color: #212121;
-    text-align: center;
-    border:none;
-  }
-  blockquote::before{
-    content: "\201C"; /*Unicode for Left Double Quote*/
-    /*Font*/
-    font-family: Georgia, serif;
-    font-size: 60px;
-    font-weight: bold;
-    color: #212121;
-    /*Positioning*/
-    position: absolute;
-    left: 30px;
-    top:20px;
-  }
-  blockquote::after{
-    /*Reset to make sure*/
-    content: "";
-  }
-  blockquote footer{
-    font-size: 44px;
-    color: #333;
-    font-family: 'Permanent Marker', cursive;
-    letter-spacing: 1px;
-  }
-  /***************************/
-  /******************** About US / Mission **/
-  .about-text,
-  .miss-text{
-    margin-top: 200px;
-    text-align: center;
-    font-size: 62px;
-    letter-spacing: 1px;
-  }
-  .learn-more{
-    width: 140px;
-    height: 60px;
-    font-size: 26px;
-    letter-spacing: 1px;
-  }
-  /*********************************/
-  /******************** BIO Section **/
-  .team-text{
-    font-size: 46px;
-  }
-  .bio-text{
-    font-size: 36px;
-  }
-  /*********************************/
-  /******************** Social Media/ Guides & Services **/
-  #services{
-    margin-top: 30px;
-  }
-  .serv-title{
-    font-size: 46px;
-  }
-  .serv-header{
-    font-size: 36px;
-  }
-  /*********************************/
-  /******************** CONTACT **/
-  .contact-form-header{
-    font-size: 46px;
-  }
-  .form-control{
-    border-radius: 0;
-    box-shadow: none;
-    border: none;
-    border: 1px solid #333;
-  }
-  .controls input{
-    height: 40px;
-  }
+	/**CAROUSEL*********************/
+	/** Header section **/
+	#myCarousel{
+		height:100vh;
+	}
+	header.carousel{
+		margin-top: -50px;
+		height: 700px;
+	}
+	.carousel-caption{
+		padding: 0;
+		margin-bottom: 500px;
+	}
+	.carousel-text{
+		font-size: 48px;
+		letter-spacing: 2px;
+	}
+	/*********************/
+	/******************** Blockquote **/
+	#test{
+		background-color: #fff;
+	}
+	.quote-sect{
+		height: 500px;
+	}
+	.quote-text{
+		padding: 70px 30px 30px 30px;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size: 40px;
+	}
+	blockquote{
+		display:block;
+		padding: 15px 50px 15px 50px;
+		margin: 60px 30px 30px 30px;
+		position: relative;
+		/*Font*/
+		font-family: Georgia, serif;
+		font-size: 28px;
+		line-height: 1.5;
+		color: #212121;
+		text-align: center;
+		border:none;
+	}
+	blockquote::before{
+		content: "\201C"; /*Unicode for Left Double Quote*/
+		/*Font*/
+		font-family: Georgia, serif;
+		font-size: 60px;
+		font-weight: bold;
+		color: #212121;
+		/*Positioning*/
+		position: absolute;
+		left: 30px;
+		top:20px;
+	}
+	blockquote::after{
+		/*Reset to make sure*/
+		content: "";
+	}
+	blockquote footer{
+		font-size: 44px;
+		color: #333;
+		font-family: 'Permanent Marker', cursive;
+		letter-spacing: 1px;
+	}
+	/***************************/
+	/******************** About US / Mission **/
+	.about-text,
+	.miss-text{
+		margin-top: 200px;
+		text-align: center;
+		font-size: 62px;
+		letter-spacing: 1px;
+	}
+	.learn-more{
+		width: 140px;
+		height: 60px;
+		font-size: 26px;
+		letter-spacing: 1px;
+	}
+	/*********************************/
+	/******************** BIO Section **/
+	.team-text{
+		font-size: 46px;
+	}
+	.bio-text{
+		font-size: 36px;
+	}
+	/*********************************/
+	/******************** Social Media/ Guides & Services **/
+	#services{
+		margin-top: 30px;
+	}
+	.serv-title{
+		font-size: 46px;
+	}
+	.serv-header{
+		font-size: 36px;
+	}
+	/*********************************/
+	/******************** CONTACT **/
+	.contact-form-header{
+		font-size: 46px;
+	}
+	.form-control{
+		border-radius: 0;
+		box-shadow: none;
+		border: none;
+		border: 1px solid #333;
+	}
+	.controls input{
+		height: 40px;
+	}
 
-  .message{
-    border: 1px solid #333;
-  }
-  .control-group{
-    margin-bottom: 40px;
-  }
-  .controls label{
-    margin-bottom: 10px;
-  }
-  .label-text{
-    font-size: 36px;
-  }
-  form .btn-primary{
-    width: 180px;
-    height: 60px;
-  }
-  .btn-text{
-    font-size: 26px;
-    letter-spacing: 1.5px;
-  }
-  form{
-    width: 60%;
-    margin: 0 auto;
-  }
-  .controls input[type="text"],
-  .controls input[type="email"],
-  .controls textarea{
-    font-size: 28px;
-  }
-  /*********************************/
-  /******************** FOOTER **/
-  .footer-copy{
-    font-size: 46px;
-  }
-  .fa-instagram,
-  .fa-facebook-square,
-  .fa-youtube-play,
-  .fa-twitter-square{
-    margin-right: 15px;
-    cursor: pointer;
-  }
-  .top{
-    font-size: 28px;
-    color: #212121;
-    cursor: pointer;
-  }
-  /******************** loc PAGES **/
-  /*Carousel*/
-  #loc-carousel{
-    height: 80vh;
-  }
-  .loc-carousel-one{
-    background:url(../img/nica_one.jpg);
-  }
-  .loc-carousel-two{
-    background: url(../img/nica_two.jpg);
-  }
-  .loc-carousel-caption{
-    padding: 0;
-    margin-bottom: 400px;
-  }
-  .loc-carousel-text{
-    font-size: 64px;
-    letter-spacing: 2px;
-    color: #333;
-  }
-  /*Container*/
-  .loc-container{
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
-  .loc-header{
-    text-align: left;
-    font-size: 64px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .loc-main-text{
-    font-size: 30px;
-    line-height: 65px;
-    letter-spacing: 1px;
-  }
+	.message{
+		border: 1px solid #333;
+	}
+	.control-group{
+		margin-bottom: 40px;
+	}
+	.controls label{
+		margin-bottom: 10px;
+	}
+	.label-text{
+		font-size: 36px;
+	}
+	form .btn-primary{
+		width: 180px;
+		height: 60px;
+	}
+	.btn-text{
+		font-size: 26px;
+		letter-spacing: 1.5px;
+	}
+	form{
+		width: 60%;
+		margin: 0 auto;
+	}
+	.controls input[type="text"],
+	.controls input[type="email"],
+	.controls textarea{
+		font-size: 28px;
+	}
+	/*********************************/
+	/******************** FOOTER **/
+	.footer-copy{
+		font-size: 46px;
+	}
+	.fa-instagram,
+	.fa-facebook-square,
+	.fa-youtube-play,
+	.fa-twitter-square{
+		margin-right: 15px;
+		cursor: pointer;
+	}
+	.top{
+		font-size: 28px;
+		color: #212121;
+		cursor: pointer;
+	}
+	/******************** loc PAGES **/
+	/*Carousel*/
+	#loc-carousel{
+		height: 80vh;
+	}
+	.loc-carousel-one{
+		background:url(../img/nica_one.jpg);
+	}
+	.loc-carousel-two{
+		background: url(../img/nica_two.jpg);
+	}
+	.loc-carousel-caption{
+		padding: 0;
+		margin-bottom: 400px;
+	}
+	.loc-carousel-text{
+		font-size: 64px;
+		letter-spacing: 2px;
+		color: #333;
+	}
+	/*Container*/
+	.loc-container{
+		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+	.loc-header{
+		text-align: left;
+		font-size: 64px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.loc-main-text{
+		font-size: 30px;
+		line-height: 65px;
+		letter-spacing: 1px;
+	}
 }
 
 @media screen and (min-width: 1601px){
-  .navbar{
-    padding-top: 30px;
-  }
-  .navbar a{
-    color: #fff;
-    font-size: 36px;
-  }
-  #comp_name{
-    font-size: 40px;
-  }
+	.navbar{
+		padding-top: 30px;
+	}
+	.navbar a{
+		color: #fff;
+		font-size: 36px;
+	}
+	#comp_name{
+		font-size: 40px;
+	}
 
-  /**CAROUSEL*********************/
-  /** Header section **/
-  .carousel-caption{
-    padding: 0;
-    margin-bottom: 650px;
-  }
-  .carousel-text{
-    font-size: 58px;
-    letter-spacing: 2px;
-  }
-  /*********************/
-  /******************** Blockquote **/
-  .quote-text{
-    padding: 70px 30px 30px 30px;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 48px;
-  }
+	/**CAROUSEL*********************/
+	/** Header section **/
+	.carousel-caption{
+		padding: 0;
+		margin-bottom: 650px;
+	}
+	.carousel-text{
+		font-size: 58px;
+		letter-spacing: 2px;
+	}
+	/*********************/
+	/******************** Blockquote **/
+	.quote-text{
+		padding: 70px 30px 30px 30px;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size: 48px;
+	}
 
-  blockquote footer{
-    font-size: 54px;
-    color: #333;
-    font-family: 'Permanent Marker', cursive;
-    letter-spacing: 1px;
-  }
-  /***************************/
-  /******************** About US / Mission **/
-  .about-text,
-  .miss-text{
-    margin-top: 150px;
-    text-align: center;
-    font-size: 68px;
-    letter-spacing: 2px;
-  }
-  .learn-more{
-    width: 180px;
-    height: 70px;
-    font-size: 32px;
-    letter-spacing: 1px;
-  }
-  /*********************************/
-  /******************** BIO Section **/
-  .team-text{
-    font-size: 68px;
-    padding-top: 80px;
-  }
-  .bio-text{
-    font-size: 46px;
-  }
-  /*********************************/
-  /******************** Social Media/ Guides & Services **/
-  #services{
-    margin-top: 30px;
-    width: 80%;
-  }
-  .ser-flex-child{
-    width: 400px;
-    height: 400px;
-  }
-  .serv-title{
-    font-size: 68px;
-    padding-top: 80px;
-  }
-  .serv-header{
-    font-size: 46px;
-  }
-  /*********************************/
-  /******************** CONTACT **/
-  .contact-form-header{
-    font-size: 68px;
-    padding-top: 70px;
-  }
-  .form-control{
-    border-radius: 0;
-    box-shadow: none;
-    border: none;
-    border: 1px solid #333;
-  }
-  .controls input{
-    height: 50px;
-  }
-  .label-text{
-    font-size: 46px;
-  }
-  form .btn-primary{
-    width: 200px;
-    height: 60px;
-  }
-  .btn-text{
-    font-size: 32px;
-    letter-spacing: 1.5px;
-  }
-  form{
-    width: 60%;
-    margin: 0 auto;
-  }
-  .controls input[type="text"],
-  .controls input[type="email"],
-  .controls textarea{
-    font-size: 28px;
-  }
-  /*********************************/
-  /******************** FOOTER **/
-  .footer-copy{
-    font-size: 56px;
-  }
-  .fa-instagram,
-  .fa-facebook-square,
-  .fa-youtube-play,
-  .fa-twitter-square{
-    margin-right: 15px;
-    cursor: pointer;
-  }
-  .top{
-    font-size: 36px;
-    color: #212121;
-    cursor: pointer;
-  }
-  /******************** loc PAGES **/
-  /*Carousel*/
-  #loc-carousel{
-    height: 80vh;
-  }
-  .loc-carousel-one{
-    background:url(../img/nica_one.jpg);
-  }
-  .loc-carousel-two{
-    background: url(../img/nica_two.jpg);
-  }
-  .loc-carousel-caption{
-    padding: 0;
-    margin-bottom: 460px;
-  }
-  .loc-carousel-text{
-    font-size: 68px;
-    letter-spacing: 2px;
-    color: #333;
-  }
-  /*Container*/
-  .loc-container{
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
-  .loc-header{
-    text-align: left;
-    font-size: 68px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .loc-main-text{
-    font-size: 38px;
-    line-height: 80px;
-    letter-spacing: 1px;
-  }
+	blockquote footer{
+		font-size: 54px;
+		color: #333;
+		font-family: 'Permanent Marker', cursive;
+		letter-spacing: 1px;
+	}
+	/***************************/
+	/******************** About US / Mission **/
+	.about-text,
+	.miss-text{
+		margin-top: 150px;
+		text-align: center;
+		font-size: 68px;
+		letter-spacing: 2px;
+	}
+	.learn-more{
+		width: 180px;
+		height: 70px;
+		font-size: 32px;
+		letter-spacing: 1px;
+	}
+	/*********************************/
+	/******************** BIO Section **/
+	.team-text{
+		font-size: 68px;
+		padding-top: 80px;
+	}
+	.bio-text{
+		font-size: 46px;
+	}
+	/*********************************/
+	/******************** Social Media/ Guides & Services **/
+	#services{
+		margin-top: 30px;
+		width: 80%;
+	}
+	.ser-flex-child{
+		width: 400px;
+		height: 400px;
+	}
+	.serv-title{
+		font-size: 68px;
+		padding-top: 80px;
+	}
+	.serv-header{
+		font-size: 46px;
+	}
+	/*********************************/
+	/******************** CONTACT **/
+	.contact-form-header{
+		font-size: 68px;
+		padding-top: 70px;
+	}
+	.form-control{
+		border-radius: 0;
+		box-shadow: none;
+		border: none;
+		border: 1px solid #333;
+	}
+	.controls input{
+		height: 50px;
+	}
+	.label-text{
+		font-size: 46px;
+	}
+	form .btn-primary{
+		width: 200px;
+		height: 60px;
+	}
+	.btn-text{
+		font-size: 32px;
+		letter-spacing: 1.5px;
+	}
+	form{
+		width: 60%;
+		margin: 0 auto;
+	}
+	.controls input[type="text"],
+	.controls input[type="email"],
+	.controls textarea{
+		font-size: 28px;
+	}
+	/*********************************/
+	/******************** FOOTER **/
+	.footer-copy{
+		font-size: 56px;
+	}
+	.fa-instagram,
+	.fa-facebook-square,
+	.fa-youtube-play,
+	.fa-twitter-square{
+		margin-right: 15px;
+		cursor: pointer;
+	}
+	.top{
+		font-size: 36px;
+		color: #212121;
+		cursor: pointer;
+	}
+	/******************** loc PAGES **/
+	/*Carousel*/
+	#loc-carousel{
+		height: 80vh;
+	}
+	.loc-carousel-one{
+		background:url(../img/nica_one.jpg);
+	}
+	.loc-carousel-two{
+		background: url(../img/nica_two.jpg);
+	}
+	.loc-carousel-caption{
+		padding: 0;
+		margin-bottom: 460px;
+	}
+	.loc-carousel-text{
+		font-size: 68px;
+		letter-spacing: 2px;
+		color: #333;
+	}
+	/*Container*/
+	.loc-container{
+		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+	.loc-header{
+		text-align: left;
+		font-size: 68px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.loc-main-text{
+		font-size: 38px;
+		line-height: 80px;
+		letter-spacing: 1px;
+	}
 }
